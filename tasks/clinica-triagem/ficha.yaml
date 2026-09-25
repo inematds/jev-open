@@ -1,0 +1,88 @@
+# Ficha: triagem de mensagens da recepção de uma clínica/consultório.
+# Escopo ADMINISTRATIVO. Não diagnostica, não prioriza clinicamente, não responde ao paciente.
+# Toda mensagem chega à secretária; o modelo só ordena a fila e sinaliza.
+tarefa: clinica-triagem
+versao_ficha: 1
+idioma: pt-BR
+entrada: "Uma mensagem de paciente ou acompanhante (WhatsApp ou e-mail) enviada à recepção"
+rotulos: [sim, nao, incerto]          # a ordem é o contrato: índice 0, 1, 2
+
+# Significado geral dos rótulos NESTA tarefa (diferente do hotel):
+#  - pedidos (agendar, remarcar, documento): se a mensagem não pede, é "nao".
+#    "incerto" só quando há pista mas é ambíguo.
+#  - alarme: qualquer indício vago de sintoma agudo já é "incerto" (nunca "nao").
+perguntas:
+  - id: agendar
+    pergunta: "O remetente quer marcar uma NOVA consulta ou exame?"
+    afirmacao: "O remetente quer marcar uma nova consulta ou exame."
+    hipoteses:
+      sim: "O remetente quer marcar uma nova consulta ou exame."
+      nao: "O remetente não está pedindo para marcar uma nova consulta ou exame."
+      incerto: "Não dá para saber se o remetente quer marcar uma nova consulta ou exame."
+    significados:
+      sim: "pede horário, disponibilidade ou encaixe para algo ainda não marcado"
+      nao: "não pede; ou só mexe num horário que já existe (isso é 'remarcar')"
+      incerto: "pergunta vaga que pode ou não ser pedido de horário ('vocês atendem hoje?')"
+
+  - id: remarcar
+    pergunta: "O remetente quer remarcar, adiantar ou cancelar um horário JÁ marcado?"
+    afirmacao: "O remetente quer remarcar, adiantar ou cancelar um horário que já estava marcado."
+    hipoteses:
+      sim: "O remetente quer remarcar, adiantar ou cancelar um horário que já estava marcado."
+      nao: "O remetente não está pedindo para mudar ou cancelar um horário já marcado."
+      incerto: "Não dá para saber se o remetente quer mudar ou cancelar um horário já marcado."
+    significados:
+      sim: "cita um horário existente e pede para mudar, adiantar ou cancelar"
+      nao: "não fala de horário existente"
+      incerto: "cita um horário existente sem deixar claro o que quer"
+
+  - id: documento
+    pergunta: "O remetente pede resultado de exame, receita, atestado, laudo, guia ou outro documento?"
+    afirmacao: "O remetente pede um resultado de exame, uma receita, um atestado, um laudo ou outro documento."
+    hipoteses:
+      sim: "O remetente pede um resultado de exame, uma receita, um atestado, um laudo ou outro documento."
+      nao: "O remetente não pede nenhum resultado de exame, receita, atestado, laudo ou documento."
+      incerto: "Não dá para saber se o remetente está pedindo algum documento ou resultado."
+    significados:
+      sim: "pedido explícito de documento, 2ª via ou resultado"
+      nao: "não pede documento"
+      incerto: "menciona documento sem pedir claramente"
+
+  - id: alarme
+    pergunta: "A mensagem relata um sintoma que pode ser urgente AGORA (do paciente, mesmo se escrito por outra pessoa)?"
+    afirmacao: "A mensagem relata um sintoma que pode ser urgente agora, como dor no peito, falta de ar, desmaio, sangramento forte, sinais de AVC ou pensamento de se ferir."
+    hipoteses:
+      sim: "A mensagem relata um sintoma que pode ser urgente agora, como dor no peito, falta de ar, desmaio, sangramento forte, sinais de AVC ou pensamento de se ferir."
+      nao: "A mensagem não relata nenhum sintoma atual; trata só de assuntos administrativos."
+      incerto: "A mensagem cita algum mal-estar, mas não dá para saber se é urgente."
+    significados:
+      sim: "relata sintoma de alarme atual (lista a validar por profissional de saúde)"
+      nao: "nenhum sintoma atual; negação explícita ('não é dor no peito') conta como não"
+      incerto: "mal-estar vago, sintoma sem gravidade clara"
+    assimetria: "errar para menos é inaceitável: meta de alarmes perdidos = 0"
+
+# Ações: aplicadas pelo CÓDIGO (tasks/clinica-triagem/regras.py), nunca pelo modelo.
+acoes:
+  alarme: {sim: humano_imediato, incerto: humano_imediato, nao: fila_normal}
+  agendar: {sim: fila_agenda, incerto: fila_secretaria, nao: null}
+  remarcar: {sim: fila_agenda, incerto: fila_secretaria, nao: null}
+  documento: {sim: fila_documentos, incerto: fila_secretaria, nao: null}
+
+# O que é CÓDIGO e não modelo:
+codigo:
+  - "prioridade entre filas (alarme > remarcar > agendar > documento)"
+  - "horário de funcionamento e resposta automática fora do horário"
+  - "consulta à agenda e ao cadastro/convênio do paciente"
+  - "rede de palavras-chave de alarme (OU com o modelo; só escalona)"
+  - "textos fixos de orientação de urgência (SAMU 192, CVV 188) — A VALIDAR por profissional de saúde"
+
+metas:  # rubrica definida antes de treinar
+  alarme_perdidos_teste: 0          # nenhum 'sim' real classificado como 'nao'
+  macro_f1_dev_min: 0.85
+  ood_macro_f1_min: 0.70
+  queda_ood_max_pp: 15
+
+modelos_candidatos:
+  - {id: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7, revisao: b5113eb38ab63efdd7f280f8c144ea8b13f978ce, nota: "multilíngue, 3 classes, MIT, ~280M"}
+  - {id: MoritzLaurer/bge-m3-zeroshot-v2.0, revisao: 9abf1c8aaeb82a2447809c20753ed0b106b76652, nota: "multilíngue, binário, MIT, ~570M, contexto longo"}
+  - {id: MoritzLaurer/ModernBERT-base-zeroshot-v2.0, revisao: d421c4545a438fd006fb43f8b981c5d908faa1e1, nota: "controle do autor; só inglês"}

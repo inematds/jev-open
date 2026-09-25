@@ -1,0 +1,1066 @@
+{
+ "escopo": "smoke zero-shot, NÃO é benchmark",
+ "tarefa": "clinica-triagem",
+ "data": "2026-09-25T03:35:04+00:00",
+ "dados_sha256": "880592e296b62462246b57dcc9d02de578b79fe93834b8583819dec4183e73a3",
+ "n_decisoes": 20,
+ "motores": {
+  "mDeBERTa-v3-base-xnli-multilingual-nli-2mil7|hipoteses": {
+   "modelo": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "revisao": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+   "device": "cuda",
+   "nli_labels": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+   },
+   "acertos": 6,
+   "carga_s": 1.4,
+   "inferencia_s": 0.84,
+   "linhas": [
+    {
+     "id": "rev-01",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.977,
+      0.022,
+      0.001
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.996,
+      0.001,
+      0.004
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.431,
+      0.427,
+      0.141
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.947,
+      0.044,
+      0.009
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.653,
+      0.337,
+      0.01
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.982,
+      0.001,
+      0.017
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "alarme",
+     "gold": "sim",
+     "pred": "incerto",
+     "probs": [
+      0.42,
+      0.0,
+      0.58
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.998,
+      0.002,
+      0.0
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.986,
+      0.014,
+      0.001
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.999,
+      0.0,
+      0.0
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.828,
+      0.009,
+      0.162
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "agendar",
+     "gold": "incerto",
+     "pred": "sim",
+     "probs": [
+      0.952,
+      0.011,
+      0.037
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.845,
+      0.116,
+      0.039
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.974,
+      0.002,
+      0.024
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "alarme",
+     "gold": "incerto",
+     "pred": "sim",
+     "probs": [
+      0.619,
+      0.0,
+      0.381
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "agendar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.999,
+      0.001,
+      0.0
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.957,
+      0.041,
+      0.002
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.999,
+      0.0,
+      0.001
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.7,
+      0.065,
+      0.235
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "mDeBERTa-v3-base-xnli-multilingual-nli-2mil7|unica": {
+   "modelo": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "revisao": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+   "device": "cuda",
+   "nli_labels": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+   },
+   "acertos": 7,
+   "carga_s": 1.4,
+   "inferencia_s": 0.22,
+   "linhas": [
+    {
+     "id": "rev-01",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.996,
+      0.0,
+      0.003
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.997,
+      0.0,
+      0.002
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.828,
+      0.002,
+      0.171
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "incerto",
+     "probs": [
+      0.051,
+      0.214,
+      0.735
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.986,
+      0.001,
+      0.013
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.997,
+      0.001,
+      0.002
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.897,
+      0.001,
+      0.103
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "alarme",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.638,
+      0.006,
+      0.357
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.992,
+      0.001,
+      0.008
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.95,
+      0.001,
+      0.049
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.791,
+      0.001,
+      0.207
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "incerto",
+     "probs": [
+      0.02,
+      0.004,
+      0.975
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "agendar",
+     "gold": "incerto",
+     "pred": "incerto",
+     "probs": [
+      0.281,
+      0.001,
+      0.718
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.797,
+      0.003,
+      0.201
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "incerto",
+     "probs": [
+      0.478,
+      0.003,
+      0.519
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "alarme",
+     "gold": "incerto",
+     "pred": "incerto",
+     "probs": [
+      0.197,
+      0.003,
+      0.8
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "agendar",
+     "gold": "sim",
+     "pred": "incerto",
+     "probs": [
+      0.393,
+      0.0,
+      0.606
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "incerto",
+     "probs": [
+      0.377,
+      0.001,
+      0.622
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "incerto",
+     "probs": [
+      0.368,
+      0.001,
+      0.631
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "incerto",
+     "probs": [
+      0.01,
+      0.001,
+      0.989
+     ],
+     "ok": false
+    }
+   ]
+  },
+  "bge-m3-zeroshot-v2.0|hipoteses": {
+   "modelo": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652",
+   "device": "cuda",
+   "nli_labels": {
+    "0": "entailment",
+    "1": "not_entailment"
+   },
+   "acertos": 15,
+   "carga_s": 1.1,
+   "inferencia_s": 0.61,
+   "linhas": [
+    {
+     "id": "rev-01",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.873,
+      0.093,
+      0.034
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.918,
+      0.012,
+      0.069
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.001,
+      0.985,
+      0.014
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.009,
+      0.605,
+      0.386
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.778,
+      0.132,
+      0.09
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.589,
+      0.314,
+      0.097
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.014,
+      0.91,
+      0.076
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "alarme",
+     "gold": "sim",
+     "pred": "incerto",
+     "probs": [
+      0.284,
+      0.001,
+      0.715
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.031,
+      0.844,
+      0.125
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.893,
+      0.013,
+      0.095
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.588,
+      0.006,
+      0.406
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.028,
+      0.953,
+      0.018
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "agendar",
+     "gold": "incerto",
+     "pred": "nao",
+     "probs": [
+      0.073,
+      0.737,
+      0.19
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.211,
+      0.602,
+      0.187
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.005,
+      0.935,
+      0.06
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "alarme",
+     "gold": "incerto",
+     "pred": "incerto",
+     "probs": [
+      0.075,
+      0.001,
+      0.924
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "agendar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.583,
+      0.375,
+      0.042
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.538,
+      0.425,
+      0.037
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.958,
+      0.007,
+      0.036
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.113,
+      0.695,
+      0.191
+     ],
+     "ok": true
+    }
+   ]
+  },
+  "ModernBERT-base-zeroshot-v2.0|hipoteses": {
+   "modelo": "MoritzLaurer/ModernBERT-base-zeroshot-v2.0",
+   "revisao": "d421c4545a438fd006fb43f8b981c5d908faa1e1",
+   "device": "cuda",
+   "nli_labels": {
+    "0": "entailment",
+    "1": "not_entailment"
+   },
+   "acertos": 8,
+   "carga_s": 15.2,
+   "inferencia_s": 3.75,
+   "linhas": [
+    {
+     "id": "rev-01",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.494,
+      0.022,
+      0.484
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.464,
+      0.36,
+      0.176
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "nao",
+     "probs": [
+      0.163,
+      0.733,
+      0.105
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-01",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "incerto",
+     "probs": [
+      0.197,
+      0.161,
+      0.641
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.518,
+      0.042,
+      0.44
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.567,
+      0.065,
+      0.368
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.613,
+      0.057,
+      0.33
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-02",
+     "pergunta": "alarme",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.88,
+      0.029,
+      0.091
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "agendar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.738,
+      0.012,
+      0.25
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "remarcar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.652,
+      0.002,
+      0.346
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.463,
+      0.104,
+      0.433
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-03",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.876,
+      0.07,
+      0.055
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "agendar",
+     "gold": "incerto",
+     "pred": "sim",
+     "probs": [
+      0.613,
+      0.032,
+      0.355
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.659,
+      0.108,
+      0.233
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "documento",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.752,
+      0.033,
+      0.215
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-04",
+     "pergunta": "alarme",
+     "gold": "incerto",
+     "pred": "sim",
+     "probs": [
+      0.951,
+      0.009,
+      0.04
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "agendar",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.577,
+      0.028,
+      0.395
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "remarcar",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.55,
+      0.136,
+      0.314
+     ],
+     "ok": false
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "documento",
+     "gold": "sim",
+     "pred": "sim",
+     "probs": [
+      0.517,
+      0.037,
+      0.446
+     ],
+     "ok": true
+    },
+    {
+     "id": "rev-05",
+     "pergunta": "alarme",
+     "gold": "nao",
+     "pred": "sim",
+     "probs": [
+      0.93,
+      0.052,
+      0.018
+     ],
+     "ok": false
+    }
+   ]
+  }
+ },
+ "rede_alarme": {
+  "linhas": [
+   {
+    "id": "rev-01",
+    "gold": "nao",
+    "termos": [
+     "dor no peito"
+    ],
+    "pred": "sim"
+   },
+   {
+    "id": "rev-02",
+    "gold": "sim",
+    "termos": [
+     "falta de ar"
+    ],
+    "pred": "sim"
+   },
+   {
+    "id": "rev-03",
+    "gold": "nao",
+    "termos": [],
+    "pred": "nao"
+   },
+   {
+    "id": "rev-04",
+    "gold": "incerto",
+    "termos": [],
+    "pred": "nao"
+   },
+   {
+    "id": "rev-05",
+    "gold": "nao",
+    "termos": [],
+    "pred": "nao"
+   }
+  ],
+  "acertos": 3
+ }
+}
