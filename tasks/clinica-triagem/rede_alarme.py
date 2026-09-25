@@ -8,11 +8,11 @@ import re
 import unicodedata
 
 TERMOS = [
-    r'dor no peito', r'aperto no peito', r'falta de ar', r'sem ar', r'nao consigo respirar',
+    r'dor no peito', r'aperto no peito', r'falta de ar', r'sem ar\b', r'nao consigo respirar',
     r'desmai', r'convuls', r'sangra\w* (muito|forte|sem parar)', r'hemorragia',
     r'boca torta', r'fala enrolada', r'nao mexe (o|a) (braco|perna|lado)', r'formigamento de um lado',
     r'me matar', r'suicid', r'me machucar', r'tirar minha vida', r'nao quero mais viver',
-    r'febre alta', r'bebe (roxo|mole)', r'engoliu', r'intoxica',
+    r'febre alta', r'bebe (roxo|mole)', r'\bengoliu', r'intoxica',
 ]
 _RX = re.compile('|'.join(TERMOS))
 

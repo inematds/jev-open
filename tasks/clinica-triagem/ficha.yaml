@@ -12,6 +12,8 @@ portao_1: {aprovado: true, data: 2026-09-25, por: usuario}
 # Os exemplos de revisão contam SOMENTE como teste (smoke/regressão da pilha).
 # Nunca entram em treino, dev, teste final, OOD nem em métrica de benchmark.
 somente_teste: [exemplos-revisao.jsonl]
+# Rede de palavras-chave determinística (só escalona) e a pergunta que ela protege.
+rede: {modulo: rede_alarme, pergunta: alarme}
 
 # Significado geral dos rótulos NESTA tarefa (diferente do hotel):
 #  - pedidos (agendar, remarcar, documento): se a mensagem não pede, é "nao".

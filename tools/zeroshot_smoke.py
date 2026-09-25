@@ -21,7 +21,10 @@ rotulos = ficha['rotulos']
 assert rotulos == ['sim', 'nao', 'incerto'], 'modo unica assume a ordem sim/nao/incerto'
 
 sys.path.insert(0, str(ROOT / 'tasks' / tarefa))
-from rede_alarme import dispara
+import importlib
+rede = ficha['rede']  # {modulo, pergunta}: rede de palavras-chave e a pergunta crítica que ela protege
+dispara = importlib.import_module(rede['modulo']).dispara
+critica = rede['pergunta']
 
 report = {'escopo': 'smoke zero-shot com exemplos somente_teste; NÃO é benchmark', 'tarefa': tarefa,
           'data': datetime.now(timezone.utc).isoformat(timespec='seconds'),
@@ -50,15 +53,17 @@ for cand in ficha['modelos_candidatos']:
         report['motores'][nome] = {'modelo': cand['id'], 'revisao': cand['revisao'], 'device': reader.device,
                                    'nli_labels': reader.nli_labels, 'acertos': acertos,
                                    'carga_s': round(load_s, 1), 'inferencia_s': round(time.time() - t1, 2),
-                                   'linhas': linhas}
-        print(f"{nome:55s} {acertos}/{len(linhas)}")
+                                   'linhas': linhas,
+                                   f'{critica}_perdidos': sum(l['pergunta'] == critica and l['gold'] == 'sim'
+                                                              and l['pred'] == 'nao' for l in linhas)}
+        print(f"{nome:55s} {acertos}/{len(linhas)}  {critica}_perdidos={report['motores'][nome][f'{critica}_perdidos']}")
     del reader
 
-# baseline de regras só para 'alarme': rede disparou -> sim, senão nao
-linhas = [{'id': r['id'], 'gold': r['respostas']['alarme'], 'termos': dispara(r['texto']),
+# baseline de regras só para a pergunta crítica: rede disparou -> sim, senão nao
+linhas = [{'id': r['id'], 'gold': r['respostas'][critica], 'termos': dispara(r['texto']),
            'pred': 'sim' if dispara(r['texto']) else 'nao'} for r in records]
-report['rede_alarme'] = {'linhas': linhas, 'acertos': sum(l['pred'] == l['gold'] for l in linhas)}
-print(f"{'rede_alarme (só pergunta alarme)':55s} {report['rede_alarme']['acertos']}/{len(linhas)}")
+report[rede['modulo']] = {'pergunta': critica, 'linhas': linhas, 'acertos': sum(l['pred'] == l['gold'] for l in linhas)}
+print(f"{rede['modulo'] + ' (só pergunta ' + critica + ')':55s} {report[rede['modulo']]['acertos']}/{len(linhas)}")
 
 out = ROOT / 'tasks' / tarefa / 'recibos'
 out.mkdir(exist_ok=True)

@@ -21,6 +21,9 @@ def load_ficha(tarefa):
             raise ValueError(f"{q['id']}: hipoteses repetidas")
         if not q.get('afirmacao'):
             raise ValueError(f"{q['id']}: falta 'afirmacao' (modo hipótese única)")
+    rede = ficha.get('rede')
+    if not isinstance(rede, dict) or not rede.get('modulo') or rede.get('pergunta') not in ids:
+        raise ValueError(f"ficha precisa de 'rede: {{modulo, pergunta}}' com pergunta entre {ids}")
     return ficha
 
 

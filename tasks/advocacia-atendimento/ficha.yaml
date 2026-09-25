@@ -1,0 +1,137 @@
+# Ficha: triagem de mensagens do atendimento de um escritório de advocacia.
+# Escopo ADMINISTRATIVO. Não dá parecer jurídico, não calcula prazo, não responde ao cliente.
+# Toda mensagem chega ao atendimento; o modelo só ordena a fila e sinaliza.
+tarefa: advocacia-atendimento
+versao_ficha: 1
+idioma: pt-BR
+entrada: "Uma mensagem de cliente, familiar ou interessado (WhatsApp, e-mail ou formulário do site) enviada ao escritório"
+rotulos: [sim, nao, incerto]          # a ordem é o contrato: índice 0, 1, 2
+
+# Portão 1: revisão do usuário DISPENSADA (usuário autorizou concluir sem ele). Não é validação humana.
+portao_1: {aprovado: false, revisao_usuario: dispensada, data: 2026-09-25, nota: "exemplos sintéticos escritos pelo Claude, somente teste"}
+# Exemplos de revisão contam SOMENTE como teste (smoke/regressão da pilha).
+# Nunca entram em treino, dev, teste final, OOD nem em métrica de benchmark.
+somente_teste: [exemplos-revisao.jsonl]
+# Rede de palavras-chave determinística (só escalona) e a pergunta que ela protege.
+rede: {modulo: rede_urgencia, pergunta: urgencia}
+
+# Significado geral dos rótulos NESTA tarefa:
+#  - pedidos (agendar, andamento, pagamento, documento, servico, duvida_juridica):
+#    se a mensagem não pede, é "nao"; "incerto" só quando há pista mas é ambíguo.
+#  - urgencia: qualquer indício de prazo, prisão ou ordem judicial sem data clara já é "incerto" (nunca "nao").
+perguntas:
+  - id: agendar
+    pergunta: "O remetente quer marcar, remarcar ou cancelar uma reunião ou consulta com o advogado?"
+    afirmacao: "O remetente quer marcar, remarcar ou cancelar uma reunião ou consulta com o advogado."
+    hipoteses:
+      sim: "O remetente quer marcar, remarcar ou cancelar uma reunião ou consulta com o advogado."
+      nao: "O remetente não está pedindo para marcar, remarcar ou cancelar uma reunião ou consulta."
+      incerto: "Não dá para saber se o remetente quer marcar uma reunião ou consulta com o advogado."
+    significados:
+      sim: "pede horário, reunião, atendimento presencial/online ou mudança de um horário existente"
+      nao: "não fala de horário"
+      incerto: "pede 'falar com alguém' sem deixar claro se é reunião ou só um retorno"
+
+  - id: servico
+    pergunta: "O remetente pergunta se o escritório atende uma área ou faz um serviço, ou quanto custa um serviço novo?"
+    afirmacao: "O remetente pergunta se o escritório atende um tipo de caso ou quanto custa um serviço."
+    hipoteses:
+      sim: "O remetente pergunta se o escritório atende um tipo de caso ou quanto custa um serviço."
+      nao: "O remetente não pergunta quais serviços o escritório oferece nem o preço de um serviço."
+      incerto: "Não dá para saber se o remetente quer contratar um serviço do escritório."
+    significados:
+      sim: "'vocês fazem inventário?', 'atendem trabalhista?', 'quanto custa a consulta?'"
+      nao: "já é cliente e fala de algo em curso, ou não trata de serviço"
+      incerto: "conta um problema sem perguntar se o escritório pega o caso"
+
+  - id: andamento
+    pergunta: "O remetente quer saber como está um processo ou caso que o escritório já conduz?"
+    afirmacao: "O remetente quer saber como está o andamento do seu processo ou caso."
+    hipoteses:
+      sim: "O remetente quer saber como está o andamento do seu processo ou caso."
+      nao: "O remetente não pergunta sobre o andamento de nenhum processo ou caso."
+      incerto: "Não dá para saber se o remetente quer notícias do seu processo."
+    significados:
+      sim: "pede notícia, status, previsão ou explicação de movimentação de um processo existente"
+      nao: "não fala de processo em curso"
+      incerto: "cita o processo sem pedir notícia"
+
+  - id: pagamento
+    pergunta: "O remetente trata de pagamento de algo já contratado (honorários, boleto, parcela, comprovante, nota fiscal, custas)?"
+    afirmacao: "O remetente trata do pagamento de honorários, boleto, parcela, comprovante ou custas."
+    hipoteses:
+      sim: "O remetente trata do pagamento de honorários, boleto, parcela, comprovante ou custas."
+      nao: "O remetente não fala de pagamento, boleto, parcela ou honorários."
+      incerto: "Não dá para saber se o remetente está tratando de algum pagamento."
+    significados:
+      sim: "2ª via, boleto não chegou, parcela, comprovante, nota, reembolso de custas, renegociação"
+      nao: "não fala de pagamento; preço de serviço novo é 'servico', não 'pagamento'"
+      incerto: "menciona dinheiro sem ficar claro se é cobrança do escritório"
+
+  - id: documento
+    pergunta: "O remetente pede ou envia documento (contrato, procuração, cópia do processo, certidão, comprovante)?"
+    afirmacao: "O remetente pede ou envia um documento, como contrato, procuração, cópia do processo ou certidão."
+    hipoteses:
+      sim: "O remetente pede ou envia um documento, como contrato, procuração, cópia do processo ou certidão."
+      nao: "O remetente não pede nem envia nenhum documento."
+      incerto: "Não dá para saber se o remetente está pedindo ou enviando algum documento."
+    significados:
+      sim: "pedido ou envio explícito de documento"
+      nao: "não fala de documento; boleto é 'pagamento'"
+      incerto: "cita um papel recebido sem pedir nem enviar"
+
+  - id: duvida_juridica
+    pergunta: "O remetente faz uma pergunta de mérito jurídico (se tem direito, o que a lei diz, o que deve fazer no caso)?"
+    afirmacao: "O remetente faz uma pergunta jurídica sobre seus direitos ou sobre o que deve fazer no caso."
+    hipoteses:
+      sim: "O remetente faz uma pergunta jurídica sobre seus direitos ou sobre o que deve fazer no caso."
+      nao: "O remetente não faz nenhuma pergunta jurídica sobre direitos ou sobre o que fazer no caso."
+      incerto: "Não dá para saber se o remetente está fazendo uma pergunta jurídica."
+    significados:
+      sim: "'tenho direito a...?', 'posso ser despejado?', 'o que eu faço?'"
+      nao: "só pedido administrativo"
+      incerto: "desabafo ou relato sem pergunta clara"
+    nota: "o código NUNCA responde mérito; sim/incerto sempre vai para advogado"
+
+  - id: urgencia
+    pergunta: "A mensagem indica urgência jurídica AGORA (prisão, audiência ou prazo hoje/amanhã, ordem judicial, violência, despejo, bloqueio de conta)?"
+    afirmacao: "A mensagem indica uma urgência jurídica imediata, como prisão, audiência ou prazo para hoje ou amanhã, mandado, violência, despejo ou bloqueio de conta."
+    hipoteses:
+      sim: "A mensagem indica uma urgência jurídica imediata, como prisão, audiência ou prazo para hoje ou amanhã, mandado, violência, despejo ou bloqueio de conta."
+      nao: "A mensagem não indica nenhuma urgência jurídica; trata só de assuntos sem prazo imediato."
+      incerto: "A mensagem cita algo judicial, mas não dá para saber se é urgente."
+    significados:
+      sim: "prisão/flagrante, audiência ou prazo hoje/amanhã, mandado, oficial de justiça, violência doméstica, despejo iminente, bloqueio de conta"
+      nao: "sem prazo nem ordem judicial; negação explícita ('não tem prazo') conta como não"
+      incerto: "recebeu citação/intimação/carta do tribunal sem data clara"
+    assimetria: "errar para menos é inaceitável: meta de urgências perdidas = 0"
+
+# Ações: aplicadas pelo CÓDIGO (tasks/advocacia-atendimento/regras.py), nunca pelo modelo.
+acoes:
+  urgencia: {sim: advogado_imediato, incerto: advogado_imediato, nao: fila_normal}
+  duvida_juridica: {sim: fila_advogado, incerto: fila_advogado, nao: null}
+  andamento: {sim: fila_andamento, incerto: fila_atendimento, nao: null}
+  agendar: {sim: fila_agenda, incerto: fila_atendimento, nao: null}
+  pagamento: {sim: fila_financeiro, incerto: fila_atendimento, nao: null}
+  documento: {sim: fila_documentos, incerto: fila_atendimento, nao: null}
+  servico: {sim: fila_comercial, incerto: fila_atendimento, nao: null}
+
+# O que é CÓDIGO e não modelo:
+codigo:
+  - "prioridade entre filas (urgência > dúvida jurídica > andamento > agenda > financeiro > documentos > comercial)"
+  - "verificação de identidade antes de informar andamento (sigilo profissional): só cliente ou representante cadastrado"
+  - "consulta ao sistema de processos, à agenda e ao financeiro; cálculo de prazo é do sistema/advogado, nunca do modelo"
+  - "rede de palavras-chave de urgência (OU com o modelo; só escalona)"
+  - "textos fixos: plantão do escritório, Defensoria Pública, Disque 180 / 190 — A VALIDAR pelo escritório"
+  - "nenhuma resposta de mérito automática; nada de captação ativa (Código de Ética da OAB) — A VALIDAR pelo escritório"
+
+metas:  # rubrica definida antes de treinar
+  urgencia_perdidas_teste: 0        # nenhum 'sim' real classificado como 'nao'
+  macro_f1_dev_min: 0.85
+  ood_macro_f1_min: 0.70
+  queda_ood_max_pp: 15
+
+modelos_candidatos:
+  - {id: MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7, revisao: b5113eb38ab63efdd7f280f8c144ea8b13f978ce, nota: "multilíngue, 3 classes, MIT, ~280M"}
+  - {id: MoritzLaurer/bge-m3-zeroshot-v2.0, revisao: 9abf1c8aaeb82a2447809c20753ed0b106b76652, nota: "multilíngue, binário, MIT, ~570M, contexto longo"}
+  - {id: MoritzLaurer/ModernBERT-base-zeroshot-v2.0, revisao: d421c4545a438fd006fb43f8b981c5d908faa1e1, nota: "controle do autor; só inglês"}
