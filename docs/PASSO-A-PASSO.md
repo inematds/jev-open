@@ -4,7 +4,7 @@ Este guia ensina a montar, do zero, um **especialista classificador local**: um 
 
 Os exemplos são os dois nichos deste repositório: **atendimento de escritório de advocacia** (`tasks/advocacia-atendimento/`) e **recepção de clínica** (`tasks/clinica-triagem/`). A parte 3 mostra como aplicar a mesma receita em qualquer outro nicho.
 
-> **Estado honesto (2026-09-25).** Os dois nichos rodam até o teste de fumaça [medido]. As fases 2–6 estão implementadas nas ferramentas abaixo e estão rodando com **dados 100% sintéticos**. Por isso, qualquer número que sair delas é **[simulação] do pipeline, não evidência do domínio**. Nada aqui foi medido numa VPS nem comparado com o Jev.
+> **Estado honesto (2026-09-25).** O run v1 rodou de ponta a ponta nos dois nichos (fases 2–6), com **dados 100% sintéticos**: os números são **[simulação] do pipeline, não evidência do domínio**, e várias metas foram reprovadas (urgência perdida, OOD abaixo de 0,70, portão int8 da clínica) (ver [RESULTADOS-v1.md](RESULTADOS-v1.md)). Nada aqui foi medido numa VPS nem comparado com o Jev.
 
 ---
 
@@ -150,7 +150,7 @@ docker compose up --build                         # mesma API em container, 2 CP
 - O pacote carrega um hash da ficha. Se as hipóteses mudarem, o serviço **recusa** o pacote em vez de rodar um modelo que aprendeu outra coisa.
 - Texto vazio, texto longo demais (nunca truncado) e erro interno vão para `fila_revisao`. No texto longo, a rede de palavras-chave ainda roda.
 - Os logs guardam só rota e status, nunca o texto (LGPD e sigilo).
-- Latência [medido em rascunho: 1 mensagem, modelo base, GB10 CPU, 2 threads, **não é VPS**]: ~1,1 s por mensagem com 7 perguntas no int8. O número do pacote treinado sai no `servir.json`.
+- Latência e RAM [medido na GB10, CPU, 2 threads, **não é VPS**]: p50 de 1,53 s (advocacia, 7 perguntas) e 0,73 s (clínica, 4 perguntas); pico de 1,2–1,3 GB por nicho. Meça com `uv run python tools/medir_pacote.py <nicho>` num processo limpo (sem torch).
 
 ---
 

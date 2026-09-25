@@ -1,0 +1,92 @@
+{
+ "data": "2026-09-25T06:30:41+00:00",
+ "base": "http://127.0.0.1:8137",
+ "origem": "local",
+ "todos_ok": true,
+ "casos": [
+  {
+   "caso": "urgente",
+   "status": 200,
+   "ok": true,
+   "prioridade": "advogado_imediato",
+   "motivos": [
+    "servico=sim -> fila_comercial",
+    "urgencia=sim -> advogado_imediato",
+    "rede de palavras-chave: delegacia, preso -> advogado_imediato"
+   ],
+   "ms": 997.1
+  },
+  {
+   "caso": "ambigua",
+   "status": 200,
+   "ok": true,
+   "prioridade": "fila_advogado",
+   "motivos": [
+    "duvida_juridica=sim -> fila_advogado",
+    "urgencia=nao -> fila_normal"
+   ],
+   "ms": 750.6
+  },
+  {
+   "caso": "contraditoria",
+   "status": 200,
+   "ok": true,
+   "prioridade": "advogado_imediato",
+   "motivos": [
+    "urgencia=nao -> fila_normal",
+    "rede de palavras-chave: delegacia, preso -> advogado_imediato"
+   ],
+   "ms": 1119.2
+  },
+  {
+   "caso": "vazia",
+   "status": 200,
+   "ok": true,
+   "prioridade": "fila_atendimento",
+   "motivos": [
+    "texto vazio -> revisão humana"
+   ],
+   "ms": 0.0
+  },
+  {
+   "caso": "longa_sem_truncar",
+   "status": 200,
+   "ok": true,
+   "prioridade": "advogado_imediato",
+   "motivos": [
+    "rede de palavras-chave: delegacia, preso -> advogado_imediato",
+    "texto longo demais (4075 tokens > 1024) -> revisão humana, sem truncar"
+   ],
+   "ms": 23.0
+  },
+  {
+   "caso": "sem_campo_texto",
+   "status": 400,
+   "ok": true,
+   "prioridade": null,
+   "motivos": null,
+   "ms": null
+  },
+  {
+   "caso": "json_quebrado",
+   "status": 400,
+   "ok": true,
+   "prioridade": null,
+   "motivos": null,
+   "ms": null
+  },
+  {
+   "caso": "texto_nao_string",
+   "status": 400,
+   "ok": true,
+   "prioridade": null,
+   "motivos": null,
+   "ms": null
+  },
+  {
+   "caso": "tarefa_desconhecida",
+   "status": 400,
+   "ok": true
+  }
+ ]
+}

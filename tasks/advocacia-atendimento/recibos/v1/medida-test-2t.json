@@ -1,0 +1,20 @@
+{
+ "data": "2026-09-25T06:29:14+00:00",
+ "pacote": "advocacia-atendimento-v1-6df28fe7",
+ "escopo": "[medido] nesta máquina, processo limpo sem torch; NÃO é uma VPS",
+ "maquina": {
+  "cpu": "aarch64",
+  "threads_onnx": 2
+ },
+ "split": "test",
+ "n": 60,
+ "perguntas_por_mensagem": 7,
+ "carga_s": 1.22,
+ "p50_ms": 1534.8,
+ "p95_ms": 2852.8,
+ "max_ms": 3673.1,
+ "ram_pico_mb": 1321.6,
+ "ram_pico_apos_carga_mb": 938.6,
+ "ram_python_antes_mb": 52.8,
+ "corrige": "rss_max_mb do servir.json (ru_maxrss herdado do processo pai com torch)"
+}

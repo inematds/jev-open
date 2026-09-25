@@ -26,6 +26,10 @@ def load_ficha(tarefa):
     rede = ficha.get('rede')
     if not isinstance(rede, dict) or not rede.get('modulo') or rede.get('pergunta') not in ids:
         raise ValueError(f"ficha precisa de 'rede: {{modulo, pergunta}}' com pergunta entre {ids}")
+    metas = ficha.get('metas', {})
+    faltam = [k for k in (f"{rede['pergunta']}_perdidos_teste", 'macro_f1_dev_min', 'ood_macro_f1_min', 'queda_ood_max_pp') if k not in metas]
+    if faltam:
+        raise ValueError(f'metas da ficha sem {faltam}')
     return ficha
 
 

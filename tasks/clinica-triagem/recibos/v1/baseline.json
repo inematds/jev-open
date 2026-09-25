@@ -1,0 +1,238 @@
+{
+ "data": "2026-09-25T06:02:33+00:00",
+ "split": "dev",
+ "escopo": "[simulação] dados sintéticos",
+ "dev_sha256": "189fe936119a12c4a66b4e6b1263ec99239fd017b7902f2f77a3e7a5e2666bea",
+ "motores": {
+  "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7|hipoteses": {
+   "modelo": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "revisao": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+   "modo": "hipoteses",
+   "device": "cuda",
+   "segundos": 5.1,
+   "decisoes": 240,
+   "acuracia": 0.2625,
+   "macro_f1": 0.1536,
+   "alarme_perdidos": 0,
+   "alarme_sim_total": 16,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.2014,
+     "acuracia": 0.2333,
+     "gold_por_rotulo": {
+      "sim": 13,
+      "nao": 47,
+      "incerto": 0
+     }
+    },
+    "remarcar": {
+     "macro_f1": 0.1646,
+     "acuracia": 0.3,
+     "gold_por_rotulo": {
+      "sim": 17,
+      "nao": 42,
+      "incerto": 1
+     }
+    },
+    "documento": {
+     "macro_f1": 0.3023,
+     "acuracia": 0.4333,
+     "gold_por_rotulo": {
+      "sim": 26,
+      "nao": 34,
+      "incerto": 0
+     }
+    },
+    "alarme": {
+     "macro_f1": 0.0704,
+     "acuracia": 0.0833,
+     "gold_por_rotulo": {
+      "sim": 16,
+      "nao": 44,
+      "incerto": 0
+     }
+    }
+   }
+  },
+  "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7|unica": {
+   "modelo": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "revisao": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+   "modo": "unica",
+   "device": "cuda",
+   "segundos": 2.7,
+   "decisoes": 240,
+   "acuracia": 0.2792,
+   "macro_f1": 0.1779,
+   "alarme_perdidos": 0,
+   "alarme_sim_total": 16,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.1472,
+     "acuracia": 0.2333,
+     "gold_por_rotulo": {
+      "sim": 13,
+      "nao": 47,
+      "incerto": 0
+     }
+    },
+    "remarcar": {
+     "macro_f1": 0.1472,
+     "acuracia": 0.2833,
+     "gold_por_rotulo": {
+      "sim": 17,
+      "nao": 42,
+      "incerto": 1
+     }
+    },
+    "documento": {
+     "macro_f1": 0.2088,
+     "acuracia": 0.4333,
+     "gold_por_rotulo": {
+      "sim": 26,
+      "nao": 34,
+      "incerto": 0
+     }
+    },
+    "alarme": {
+     "macro_f1": 0.2381,
+     "acuracia": 0.1667,
+     "gold_por_rotulo": {
+      "sim": 16,
+      "nao": 44,
+      "incerto": 0
+     }
+    }
+   }
+  },
+  "MoritzLaurer/bge-m3-zeroshot-v2.0|hipoteses": {
+   "modelo": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652",
+   "modo": "hipoteses",
+   "device": "cuda",
+   "segundos": 5.8,
+   "decisoes": 240,
+   "acuracia": 0.8083,
+   "macro_f1": 0.5564,
+   "alarme_perdidos": 0,
+   "alarme_sim_total": 16,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.746,
+     "acuracia": 0.7833,
+     "gold_por_rotulo": {
+      "sim": 13,
+      "nao": 47,
+      "incerto": 0
+     }
+    },
+    "remarcar": {
+     "macro_f1": 0.6409,
+     "acuracia": 0.9333,
+     "gold_por_rotulo": {
+      "sim": 17,
+      "nao": 42,
+      "incerto": 1
+     }
+    },
+    "documento": {
+     "macro_f1": 0.5989,
+     "acuracia": 0.8667,
+     "gold_por_rotulo": {
+      "sim": 26,
+      "nao": 34,
+      "incerto": 0
+     }
+    },
+    "alarme": {
+     "macro_f1": 0.4493,
+     "acuracia": 0.65,
+     "gold_por_rotulo": {
+      "sim": 16,
+      "nao": 44,
+      "incerto": 0
+     }
+    }
+   }
+  },
+  "MoritzLaurer/ModernBERT-base-zeroshot-v2.0|hipoteses": {
+   "modelo": "MoritzLaurer/ModernBERT-base-zeroshot-v2.0",
+   "revisao": "d421c4545a438fd006fb43f8b981c5d908faa1e1",
+   "modo": "hipoteses",
+   "device": "cuda",
+   "segundos": 5.8,
+   "decisoes": 240,
+   "acuracia": 0.2667,
+   "macro_f1": 0.1925,
+   "alarme_perdidos": 0,
+   "alarme_sim_total": 16,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.1464,
+     "acuracia": 0.2,
+     "gold_por_rotulo": {
+      "sim": 13,
+      "nao": 47,
+      "incerto": 0
+     }
+    },
+    "remarcar": {
+     "macro_f1": 0.251,
+     "acuracia": 0.3167,
+     "gold_por_rotulo": {
+      "sim": 17,
+      "nao": 42,
+      "incerto": 1
+     }
+    },
+    "documento": {
+     "macro_f1": 0.2359,
+     "acuracia": 0.3167,
+     "gold_por_rotulo": {
+      "sim": 26,
+      "nao": 34,
+      "incerto": 0
+     }
+    },
+    "alarme": {
+     "macro_f1": 0.1279,
+     "acuracia": 0.2333,
+     "gold_por_rotulo": {
+      "sim": 16,
+      "nao": 44,
+      "incerto": 0
+     }
+    }
+   }
+  }
+ },
+ "rede_palavras_chave": {
+  "pergunta": "alarme",
+  "decisoes": 60,
+  "acuracia": 0.9667,
+  "macro_f1": 0.9556,
+  "alarme_perdidos": 2,
+  "alarme_sim_total": 16,
+  "por_pergunta": {
+   "alarme": {
+    "macro_f1": 0.9556,
+    "acuracia": 0.9667,
+    "gold_por_rotulo": {
+     "sim": 16,
+     "nao": 44,
+     "incerto": 0
+    }
+   }
+  }
+ },
+ "decisao": {
+  "meta_macro_f1_dev_min": 0.85,
+  "melhor_zero_shot": "MoritzLaurer/bge-m3-zeroshot-v2.0|hipoteses",
+  "macro_f1": 0.5564,
+  "treinar": true,
+  "modelo_para_treino": {
+   "id": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652"
+  },
+  "regra": "treina o melhor candidato do modo hipoteses se o zero-shot não bate a meta no dev"
+ }
+}

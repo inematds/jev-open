@@ -1,0 +1,91 @@
+{
+ "data": "2026-09-25T06:31:23+00:00",
+ "base": "http://127.0.0.1:8138",
+ "origem": "docker",
+ "todos_ok": true,
+ "casos": [
+  {
+   "caso": "urgente",
+   "status": 200,
+   "ok": true,
+   "prioridade": "humano_imediato",
+   "motivos": [
+    "remarcar=sim -> fila_agenda",
+    "alarme=sim -> humano_imediato",
+    "rede de palavras-chave: falta de ar -> humano_imediato"
+   ],
+   "ms": 604.9
+  },
+  {
+   "caso": "ambigua",
+   "status": 200,
+   "ok": true,
+   "prioridade": "humano_imediato",
+   "motivos": [
+    "alarme=incerto -> humano_imediato"
+   ],
+   "ms": 459.7
+  },
+  {
+   "caso": "contraditoria",
+   "status": 200,
+   "ok": true,
+   "prioridade": "humano_imediato",
+   "motivos": [
+    "alarme=incerto -> humano_imediato",
+    "rede de palavras-chave: falta de ar -> humano_imediato"
+   ],
+   "ms": 651.0
+  },
+  {
+   "caso": "vazia",
+   "status": 200,
+   "ok": true,
+   "prioridade": "fila_secretaria",
+   "motivos": [
+    "texto vazio -> revisão humana"
+   ],
+   "ms": 0.0
+  },
+  {
+   "caso": "longa_sem_truncar",
+   "status": 200,
+   "ok": true,
+   "prioridade": "humano_imediato",
+   "motivos": [
+    "rede de palavras-chave: falta de ar -> humano_imediato",
+    "texto longo demais (4077 tokens > 1024) -> revisão humana, sem truncar"
+   ],
+   "ms": 21.3
+  },
+  {
+   "caso": "sem_campo_texto",
+   "status": 400,
+   "ok": true,
+   "prioridade": null,
+   "motivos": null,
+   "ms": null
+  },
+  {
+   "caso": "json_quebrado",
+   "status": 400,
+   "ok": true,
+   "prioridade": null,
+   "motivos": null,
+   "ms": null
+  },
+  {
+   "caso": "texto_nao_string",
+   "status": 400,
+   "ok": true,
+   "prioridade": null,
+   "motivos": null,
+   "ms": null
+  },
+  {
+   "caso": "tarefa_desconhecida",
+   "status": 400,
+   "ok": true
+  }
+ ]
+}

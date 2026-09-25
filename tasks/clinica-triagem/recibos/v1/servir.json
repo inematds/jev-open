@@ -1,0 +1,53 @@
+{
+ "data": "2026-09-25T06:27:13+00:00",
+ "pacote": "clinica-triagem-v1-05a719f3",
+ "escopo": "[simulação] dados sintéticos; latência/RAM [medido] na GB10, NÃO numa VPS",
+ "maquina": {
+  "cpu": "aarch64",
+  "threads_onnx": 2,
+  "nota": "GB10 (aarch64); a VPS de 2 vCPU/4 GB continua [não medido]"
+ },
+ "teste_sha256": "4aa00b414bf375f4c3fed1c5025d63725888d4f015455090020155077b18a3cb",
+ "torch_fp32_macro_f1": 0.7737,
+ "medidas": {
+  "model.fp32.onnx": {
+   "carga_s": 1.07,
+   "n": 60,
+   "p50_ms": 3050.6,
+   "p95_ms": 4761.0,
+   "max_ms": 8489.2,
+   "rss_max_mb": 12459.4,
+   "metricas_teste": {
+    "decisoes": 240,
+    "acuracia": 0.9625,
+    "macro_f1": 0.7737,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 19
+   },
+   "concordancia_com_torch": 1.0,
+   "tamanho_mb": 2271.6
+  },
+  "model.int8.onnx": {
+   "carga_s": 1.18,
+   "n": 60,
+   "p50_ms": 732.1,
+   "p95_ms": 1141.2,
+   "max_ms": 2333.9,
+   "rss_max_mb": 12459.4,
+   "metricas_teste": {
+    "decisoes": 240,
+    "acuracia": 0.9583,
+    "macro_f1": 0.7505,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 19
+   },
+   "concordancia_com_torch": 0.9958,
+   "tamanho_mb": 569.7
+  }
+ },
+ "portao": {
+  "int8_vs_fp32_pp": -2.32,
+  "meta_pp": 1.0,
+  "aprovado": false
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "data": "2026-09-25T06:02:31+00:00",
+ "tarefa": "clinica-triagem",
+ "run": "v1",
+ "sintetico": true,
+ "aviso": "dados 100% sintéticos gerados e conferidos por LLMs locais; resultados são [simulação] do pipeline, não evidência do domínio",
+ "fontes": {
+  "indist": {
+   "arquivo": "tasks/clinica-triagem/dados/sintetico.jsonl",
+   "sha256": "ed76f0f5b0f83d4a2461c00242e17ac8cfdbb91926338541e023da2e544c4db1",
+   "registros": 320
+  },
+  "ood": {
+   "arquivo": "tasks/clinica-triagem/dados/ood-sintetico.jsonl",
+   "sha256": "e4bc83b8f132251126fe1029db3ea05cc8a6c8e88ade986d6e639790e2ab749c",
+   "registros": 60
+  }
+ },
+ "dedup": {
+  "jaccard_5gramas": 0.6,
+  "pares_perto_no_indist_agrupados": 2,
+  "descartes": {
+   "exato": 0,
+   "perto_de_revisao": 0,
+   "ood_perto_de_indist": 0
+  },
+  "ids_descartados": {
+   "exato": [],
+   "perto_de_revisao": [],
+   "ood_perto_de_indist": []
+  }
+ },
+ "splits": {
+  "train": {
+   "arquivo": "tasks/clinica-triagem/dados/train.jsonl",
+   "sha256": "55089a9c0ff0be9d1b2f44bef574d89870f3c03b5384843c7e8953ac251d26a2",
+   "registros": 200,
+   "grupos": 198,
+   "rotulos": {
+    "agendar": {
+     "sim": 51,
+     "nao": 143,
+     "incerto": 6
+    },
+    "remarcar": {
+     "sim": 64,
+     "nao": 134,
+     "incerto": 2
+    },
+    "documento": {
+     "sim": 61,
+     "nao": 139,
+     "incerto": 0
+    },
+    "alarme": {
+     "sim": 47,
+     "nao": 151,
+     "incerto": 2
+    }
+   }
+  },
+  "dev": {
+   "arquivo": "tasks/clinica-triagem/dados/dev.jsonl",
+   "sha256": "189fe936119a12c4a66b4e6b1263ec99239fd017b7902f2f77a3e7a5e2666bea",
+   "registros": 60,
+   "grupos": 60,
+   "rotulos": {
+    "agendar": {
+     "sim": 13,
+     "nao": 47,
+     "incerto": 0
+    },
+    "remarcar": {
+     "sim": 17,
+     "nao": 42,
+     "incerto": 1
+    },
+    "documento": {
+     "sim": 26,
+     "nao": 34,
+     "incerto": 0
+    },
+    "alarme": {
+     "sim": 16,
+     "nao": 44,
+     "incerto": 0
+    }
+   }
+  },
+  "test": {
+   "arquivo": "tasks/clinica-triagem/dados/test.jsonl",
+   "sha256": "4aa00b414bf375f4c3fed1c5025d63725888d4f015455090020155077b18a3cb",
+   "registros": 60,
+   "grupos": 60,
+   "rotulos": {
+    "agendar": {
+     "sim": 21,
+     "nao": 37,
+     "incerto": 2
+    },
+    "remarcar": {
+     "sim": 14,
+     "nao": 46,
+     "incerto": 0
+    },
+    "documento": {
+     "sim": 10,
+     "nao": 50,
+     "incerto": 0
+    },
+    "alarme": {
+     "sim": 19,
+     "nao": 40,
+     "incerto": 1
+    }
+   }
+  },
+  "ood": {
+   "arquivo": "tasks/clinica-triagem/dados/ood.jsonl",
+   "sha256": "e4bc83b8f132251126fe1029db3ea05cc8a6c8e88ade986d6e639790e2ab749c",
+   "registros": 60,
+   "grupos": 60,
+   "rotulos": {
+    "agendar": {
+     "sim": 12,
+     "nao": 47,
+     "incerto": 1
+    },
+    "remarcar": {
+     "sim": 21,
+     "nao": 39,
+     "incerto": 0
+    },
+    "documento": {
+     "sim": 17,
+     "nao": 42,
+     "incerto": 1
+    },
+    "alarme": {
+     "sim": 12,
+     "nao": 47,
+     "incerto": 1
+    }
+   }
+  }
+ }
+}

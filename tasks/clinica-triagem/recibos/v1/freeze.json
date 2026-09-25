@@ -1,0 +1,22 @@
+{
+ "data": "2026-09-25T06:05:19+00:00",
+ "checkpoint": "workshops/clinica-triagem-v1/checkpoint.safetensors",
+ "checkpoint_sha256": "46ce8ef44b91bbe140018dfaf9765d55e3da0382051df0300ac43ae612a54510",
+ "formato": "só os parâmetros treinados; carregar sobre o modelo base na revisão fixa",
+ "modelo": {
+  "id": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+  "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652"
+ },
+ "temperatura": 1.8221,
+ "rotulos": [
+  "sim",
+  "nao",
+  "incerto"
+ ],
+ "dados": {
+  "train": "55089a9c0ff0be9d1b2f44bef574d89870f3c03b5384843c7e8953ac251d26a2",
+  "dev": "189fe936119a12c4a66b4e6b1263ec99239fd017b7902f2f77a3e7a5e2666bea",
+  "test": "4aa00b414bf375f4c3fed1c5025d63725888d4f015455090020155077b18a3cb",
+  "ood": "e4bc83b8f132251126fe1029db3ea05cc8a6c8e88ade986d6e639790e2ab749c"
+ }
+}

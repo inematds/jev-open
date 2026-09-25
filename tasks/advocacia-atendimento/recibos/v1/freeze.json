@@ -1,0 +1,22 @@
+{
+ "data": "2026-09-25T05:55:48+00:00",
+ "checkpoint": "workshops/advocacia-atendimento-v1/checkpoint.safetensors",
+ "checkpoint_sha256": "7c526342d8ba36d4401622a9aabfdd2677109ce029750eff6004d65c66c0f09b",
+ "formato": "só os parâmetros treinados; carregar sobre o modelo base na revisão fixa",
+ "modelo": {
+  "id": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+  "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652"
+ },
+ "temperatura": 1.4191,
+ "rotulos": [
+  "sim",
+  "nao",
+  "incerto"
+ ],
+ "dados": {
+  "train": "809c23d4413083cdf75eccd54498fbd847c0403541fcef47f9bc79717b333e80",
+  "dev": "738fce0aab45588db3805da00eb90bc3224c78c028b370971b5db2589abe13a3",
+  "test": "b636189f67709d4aa52ed30fa51cac4fdf41af297200de182d7470cafd8bbf4e",
+  "ood": "b3105b486b2e49f5a24ac7488adf1d586bc779e9bf5cd96468163709bacd11ff"
+ }
+}

@@ -1,0 +1,336 @@
+{
+ "data": "2026-09-25T05:55:48+00:00",
+ "escopo": "[simulação] dados sintéticos",
+ "receita": {
+  "modelo": {
+   "id": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652"
+  },
+  "camadas_treinadas": 2,
+  "lr": 1e-05,
+  "lote_decisoes": 8,
+  "epocas": 4,
+  "seed": 20260925,
+  "otimizador": "AdamW wd=0.01, clip 1.0",
+  "device": "cuda"
+ },
+ "historia": [
+  {
+   "epoca": 1,
+   "loss_treino": 0.4204,
+   "dev": {
+    "decisoes": 420,
+    "acuracia": 0.9595,
+    "macro_f1": 0.6233,
+    "urgencia_perdidos": 2,
+    "urgencia_sim_total": 7,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.95,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "servico": {
+      "macro_f1": 0.798,
+      "acuracia": 0.8833,
+      "gold_por_rotulo": {
+       "sim": 14,
+       "nao": 46,
+       "incerto": 0
+      }
+     },
+     "andamento": {
+      "macro_f1": 0.9815,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 20,
+       "nao": 40,
+       "incerto": 0
+      }
+     },
+     "pagamento": {
+      "macro_f1": 0.9619,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 8,
+       "nao": 52,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.639,
+      "acuracia": 0.95,
+      "gold_por_rotulo": {
+       "sim": 10,
+       "nao": 48,
+       "incerto": 2
+      }
+     },
+     "duvida_juridica": {
+      "macro_f1": 0.9569,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "urgencia": {
+      "macro_f1": 0.6018,
+      "acuracia": 0.95,
+      "gold_por_rotulo": {
+       "sim": 7,
+       "nao": 52,
+       "incerto": 1
+      }
+     }
+    }
+   },
+   "segundos": 68.7
+  },
+  {
+   "epoca": 2,
+   "loss_treino": 0.2164,
+   "dev": {
+    "decisoes": 420,
+    "acuracia": 0.9595,
+    "macro_f1": 0.6226,
+    "urgencia_perdidos": 1,
+    "urgencia_sim_total": 7,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.8706,
+      "acuracia": 0.95,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "servico": {
+      "macro_f1": 0.798,
+      "acuracia": 0.8833,
+      "gold_por_rotulo": {
+       "sim": 14,
+       "nao": 46,
+       "incerto": 0
+      }
+     },
+     "andamento": {
+      "macro_f1": 0.9815,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 20,
+       "nao": 40,
+       "incerto": 0
+      }
+     },
+     "pagamento": {
+      "macro_f1": 0.9619,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 8,
+       "nao": 52,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.6474,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 10,
+       "nao": 48,
+       "incerto": 2
+      }
+     },
+     "duvida_juridica": {
+      "macro_f1": 0.9569,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "urgencia": {
+      "macro_f1": 0.6347,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 7,
+       "nao": 52,
+       "incerto": 1
+      }
+     }
+    }
+   },
+   "segundos": 136.9
+  },
+  {
+   "epoca": 3,
+   "loss_treino": 0.1809,
+   "dev": {
+    "decisoes": 420,
+    "acuracia": 0.9571,
+    "macro_f1": 0.621,
+    "urgencia_perdidos": 1,
+    "urgencia_sim_total": 7,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.7837,
+      "acuracia": 0.9,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "servico": {
+      "macro_f1": 0.833,
+      "acuracia": 0.9,
+      "gold_por_rotulo": {
+       "sim": 14,
+       "nao": 46,
+       "incerto": 0
+      }
+     },
+     "andamento": {
+      "macro_f1": 0.9815,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 20,
+       "nao": 40,
+       "incerto": 0
+      }
+     },
+     "pagamento": {
+      "macro_f1": 1.0,
+      "acuracia": 1.0,
+      "gold_por_rotulo": {
+       "sim": 8,
+       "nao": 52,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.6474,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 10,
+       "nao": 48,
+       "incerto": 2
+      }
+     },
+     "duvida_juridica": {
+      "macro_f1": 0.9569,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "urgencia": {
+      "macro_f1": 0.6347,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 7,
+       "nao": 52,
+       "incerto": 1
+      }
+     }
+    }
+   },
+   "segundos": 204.7
+  },
+  {
+   "epoca": 4,
+   "loss_treino": 0.1649,
+   "dev": {
+    "decisoes": 420,
+    "acuracia": 0.9619,
+    "macro_f1": 0.6283,
+    "urgencia_perdidos": 1,
+    "urgencia_sim_total": 7,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.7837,
+      "acuracia": 0.9,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "servico": {
+      "macro_f1": 0.8655,
+      "acuracia": 0.9167,
+      "gold_por_rotulo": {
+       "sim": 14,
+       "nao": 46,
+       "incerto": 0
+      }
+     },
+     "andamento": {
+      "macro_f1": 0.9815,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 20,
+       "nao": 40,
+       "incerto": 0
+      }
+     },
+     "pagamento": {
+      "macro_f1": 1.0,
+      "acuracia": 1.0,
+      "gold_por_rotulo": {
+       "sim": 8,
+       "nao": 52,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.6599,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 10,
+       "nao": 48,
+       "incerto": 2
+      }
+     },
+     "duvida_juridica": {
+      "macro_f1": 1.0,
+      "acuracia": 1.0,
+      "gold_por_rotulo": {
+       "sim": 6,
+       "nao": 54,
+       "incerto": 0
+      }
+     },
+     "urgencia": {
+      "macro_f1": 0.6347,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 7,
+       "nao": 52,
+       "incerto": 1
+      }
+     }
+    }
+   },
+   "segundos": 277.2
+  }
+ ],
+ "melhor": {
+  "epoca": 4,
+  "macro_f1": 0.6283
+ },
+ "calibracao": {
+  "temperatura": 1.4191,
+  "nll_dev": 0.1143,
+  "nll_dev_t1": 0.1278
+ }
+}

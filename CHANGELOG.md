@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.6.4 — 2026-09-25
+
+- **Run v1 de ponta a ponta nos dois nichos** (fases 2–6), com dados 100% sintéticos: resultados [simulação] do pipeline, latência/RAM [medido] na GB10. Relatório: `docs/RESULTADOS-v1.md`.
+- Clínica: 320 + 60 OOD sintéticos; baseline bge-m3 0,556 no dev; treinado: teste macro-F1 0,61→0,77 (acurácia 82%→96%), OOD 0,59→0,61; alarmes perdidos 0.
+- Advocacia: treinado: teste macro-F1 0,53→0,63 (acurácia 72%→96%), OOD 0,48→0,64; **1 urgência perdida** no teste (meta 0 reprovada; rótulo discutível: febre alta do cliente).
+- Serviço: ONNX int8 570 MB; portão int8 aprovado na advocacia (−0,79 pp) e **reprovado na clínica (−2,32 pp)**; p50 1,53 s (7 perguntas) e 0,73 s (4 perguntas) com 2 threads; pico de RAM 1,32 GB e 1,16 GB por nicho; container com os dois nichos em 1,87 GB. API e Docker passaram os 9 testes de serviço nos dois nichos.
+- `tools/medir_pacote.py`: latência e RAM num processo limpo (VmHWM). O `rss_max_mb` dos `servir.json` v1 está errado (ru_maxrss herdado do pai com torch) e foi removido do exportador; a medida correta está em `medida-test-2t.json`.
+- `load_ficha` valida as chaves de `metas`; chave `urgencia_perdidos_teste` uniformizada. `FALHAS.md` criado.
+- O `test.json` da advocacia foi gravado na 2ª execução: a 1ª imprimiu os resultados e caiu no KeyError antes de gravar; checkpoint e dados idênticos, saída idêntica.
+
 ## v0.5.4 — 2026-09-25
 
 - Guia público em `guia/index.html` (GitHub Pages via Actions), capa em `capa/capa.png`, README com link do guia. Repositório tornado público a pedido do usuário; `docs/originais/` e o clone do starter continuam fora do Git.

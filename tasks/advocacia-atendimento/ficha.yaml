@@ -127,7 +127,7 @@ codigo:
   - "nenhuma resposta de mérito automática; nada de captação ativa (Código de Ética da OAB) — A VALIDAR pelo escritório"
 
 metas:  # rubrica definida antes de treinar
-  urgencia_perdidas_teste: 0        # nenhum 'sim' real classificado como 'nao'
+  urgencia_perdidos_teste: 0        # nenhum 'sim' real classificado como 'nao'
   macro_f1_dev_min: 0.85
   ood_macro_f1_min: 0.70
   queda_ood_max_pp: 15

@@ -1,0 +1,10783 @@
+{
+ "data": "2026-09-25T06:05:22+00:00",
+ "escopo": "[simulação] teste final em dados sintéticos; UMA execução",
+ "dados": {
+  "test": "4aa00b414bf375f4c3fed1c5025d63725888d4f015455090020155077b18a3cb",
+  "ood": "e4bc83b8f132251126fe1029db3ea05cc8a6c8e88ade986d6e639790e2ab749c"
+ },
+ "motores": {
+  "base": {
+   "test": {
+    "decisoes": 240,
+    "acuracia": 0.8167,
+    "macro_f1": 0.6059,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 19,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.7456,
+      "acuracia": 0.7833,
+      "gold_por_rotulo": {
+       "sim": 21,
+       "nao": 37,
+       "incerto": 2
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.6193,
+      "acuracia": 0.9333,
+      "gold_por_rotulo": {
+       "sim": 14,
+       "nao": 46,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.6423,
+      "acuracia": 0.95,
+      "gold_por_rotulo": {
+       "sim": 10,
+       "nao": 50,
+       "incerto": 0
+      }
+     },
+     "alarme": {
+      "macro_f1": 0.4992,
+      "acuracia": 0.6,
+      "gold_por_rotulo": {
+       "sim": 19,
+       "nao": 40,
+       "incerto": 1
+      }
+     }
+    },
+    "alarme_perdidos_com_rede": 0,
+    "linhas": [
+     {
+      "id": "syn-0003",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.881,
+       0.041,
+       0.079
+      ]
+     },
+     {
+      "id": "syn-0003",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.93,
+       0.052
+      ]
+     },
+     {
+      "id": "syn-0003",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.915,
+       0.082
+      ]
+     },
+     {
+      "id": "syn-0003",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.379,
+       0.004,
+       0.617
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.054,
+       0.791,
+       0.155
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.967,
+       0.028
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.963,
+       0.036
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.687,
+       0.0,
+       0.312
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.334,
+       0.542,
+       0.124
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.615,
+       0.053,
+       0.332
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.881,
+       0.114
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.076,
+       0.903,
+       0.021
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.637,
+       0.351
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.708,
+       0.273
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.931,
+       0.067
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "alarme",
+      "gold": "incerto",
+      "pred": "incerto",
+      "probs": [
+       0.011,
+       0.001,
+       0.987
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.696,
+       0.192,
+       0.113
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.69,
+       0.144,
+       0.166
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.929,
+       0.065
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.102,
+       0.833,
+       0.065
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "agendar",
+      "gold": "incerto",
+      "pred": "incerto",
+      "probs": [
+       0.192,
+       0.362,
+       0.446
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.655,
+       0.012,
+       0.334
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.033,
+       0.543,
+       0.424
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.108,
+       0.008,
+       0.884
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.865,
+       0.059,
+       0.075
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.113,
+       0.736,
+       0.152
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.016,
+       0.754,
+       0.23
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.105,
+       0.643,
+       0.252
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.956,
+       0.017,
+       0.027
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.246,
+       0.693,
+       0.061
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.945,
+       0.005,
+       0.05
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.069,
+       0.902,
+       0.028
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.946,
+       0.036
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.98,
+       0.019
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.857,
+       0.0,
+       0.143
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.04,
+       0.907,
+       0.053
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.026,
+       0.94,
+       0.034
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.64,
+       0.014,
+       0.345
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.1,
+       0.502,
+       0.398
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.889,
+       0.018,
+       0.093
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.089,
+       0.762,
+       0.149
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.634,
+       0.361
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.002,
+       0.032,
+       0.966
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.833,
+       0.154
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.049,
+       0.827,
+       0.124
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.611,
+       0.003,
+       0.386
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.919,
+       0.054
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.857,
+       0.029,
+       0.114
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.879,
+       0.01,
+       0.111
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.02,
+       0.662,
+       0.317
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.029,
+       0.009,
+       0.962
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.918,
+       0.02,
+       0.062
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.376,
+       0.488,
+       0.136
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.871,
+       0.121
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.299,
+       0.399,
+       0.302
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.033,
+       0.772,
+       0.196
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.025,
+       0.902,
+       0.072
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.9,
+       0.093
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.27,
+       0.003,
+       0.727
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.289,
+       0.441,
+       0.27
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.479,
+       0.113,
+       0.408
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.905,
+       0.092
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.261,
+       0.115,
+       0.624
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.867,
+       0.017,
+       0.115
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.801,
+       0.03,
+       0.168
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.808,
+       0.184
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.157,
+       0.366,
+       0.478
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.952,
+       0.036
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.951,
+       0.035
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.91,
+       0.001,
+       0.089
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.068,
+       0.855,
+       0.077
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.719,
+       0.263
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.929,
+       0.043
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.379,
+       0.002,
+       0.619
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.394,
+       0.001,
+       0.604
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.892,
+       0.026,
+       0.082
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.04,
+       0.826,
+       0.133
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.841,
+       0.154
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.229,
+       0.724,
+       0.047
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.643,
+       0.315,
+       0.042
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.072,
+       0.84,
+       0.088
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.964,
+       0.034
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.364,
+       0.148,
+       0.488
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.924,
+       0.057
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.043,
+       0.933,
+       0.024
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.911,
+       0.01,
+       0.079
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.074,
+       0.571,
+       0.356
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.547,
+       0.257,
+       0.196
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.058,
+       0.816,
+       0.126
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.937,
+       0.061
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.627,
+       0.0,
+       0.373
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.904,
+       0.094
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.897,
+       0.086
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.75,
+       0.249
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.079,
+       0.647,
+       0.274
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.399,
+       0.439,
+       0.162
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.937,
+       0.012,
+       0.052
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.929,
+       0.068
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.259,
+       0.439,
+       0.303
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.166,
+       0.583,
+       0.251
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.789,
+       0.006,
+       0.205
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.889,
+       0.106
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.203,
+       0.456,
+       0.341
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.609,
+       0.045,
+       0.346
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.312,
+       0.354,
+       0.334
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.097,
+       0.386,
+       0.518
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.334,
+       0.006,
+       0.661
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.854,
+       0.081,
+       0.065
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.934,
+       0.006,
+       0.06
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.025,
+       0.661,
+       0.314
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.131,
+       0.427,
+       0.442
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.9,
+       0.089
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.166,
+       0.74,
+       0.094
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.818,
+       0.008,
+       0.174
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.029,
+       0.937,
+       0.034
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.867,
+       0.113
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.924,
+       0.057
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.89,
+       0.107
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.807,
+       0.0,
+       0.193
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.928,
+       0.006,
+       0.066
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.032,
+       0.885,
+       0.084
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.852,
+       0.135
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.775,
+       0.019,
+       0.205
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.934,
+       0.012,
+       0.054
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.085,
+       0.733,
+       0.181
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.778,
+       0.209
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.065,
+       0.561,
+       0.374
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.908,
+       0.017,
+       0.075
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.106,
+       0.538,
+       0.356
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.874,
+       0.122
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.186,
+       0.011,
+       0.804
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.513,
+       0.365,
+       0.123
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.856,
+       0.038,
+       0.106
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.907,
+       0.091
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.332,
+       0.265,
+       0.403
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.941,
+       0.04,
+       0.019
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.213,
+       0.71,
+       0.077
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.979,
+       0.02
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.143,
+       0.766,
+       0.091
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.771,
+       0.188,
+       0.041
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.923,
+       0.018,
+       0.059
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.301,
+       0.148,
+       0.551
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.123,
+       0.068,
+       0.809
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.025,
+       0.923,
+       0.052
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.105,
+       0.796,
+       0.099
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.916,
+       0.001,
+       0.083
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.046,
+       0.831,
+       0.123
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.755,
+       0.122,
+       0.123
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.58,
+       0.035,
+       0.386
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.907,
+       0.079
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.066,
+       0.862,
+       0.072
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.891,
+       0.021,
+       0.089
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.095,
+       0.615,
+       0.29
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.81,
+       0.01,
+       0.18
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.111,
+       0.864,
+       0.026
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.855,
+       0.065,
+       0.08
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.919,
+       0.005,
+       0.075
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.03,
+       0.728,
+       0.242
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.204,
+       0.038,
+       0.758
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.3,
+       0.5,
+       0.2
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.104,
+       0.544,
+       0.352
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.779,
+       0.216
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.047,
+       0.842,
+       0.111
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.909,
+       0.039,
+       0.052
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.255,
+       0.68,
+       0.064
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.975,
+       0.022
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.408,
+       0.377,
+       0.214
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.033,
+       0.707,
+       0.26
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.911,
+       0.069
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.909,
+       0.089
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.262,
+       0.005,
+       0.733
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "agendar",
+      "gold": "incerto",
+      "pred": "sim",
+      "probs": [
+       0.941,
+       0.028,
+       0.031
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.625,
+       0.319,
+       0.056
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.939,
+       0.054
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.369,
+       0.334,
+       0.297
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.648,
+       0.029,
+       0.323
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.302,
+       0.342,
+       0.356
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.861,
+       0.132
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.192,
+       0.201,
+       0.608
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.908,
+       0.083
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.024,
+       0.946,
+       0.03
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.958,
+       0.04
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.604,
+       0.0,
+       0.395
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.778,
+       0.181,
+       0.04
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.322,
+       0.606,
+       0.072
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.969,
+       0.03
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.339,
+       0.099,
+       0.563
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.951,
+       0.017,
+       0.032
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.08,
+       0.709,
+       0.211
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.667,
+       0.33
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.011,
+       0.048,
+       0.941
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.933,
+       0.06
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.024,
+       0.961,
+       0.014
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.951,
+       0.046
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.331,
+       0.002,
+       0.667
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.885,
+       0.031,
+       0.084
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.215,
+       0.645,
+       0.139
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.876,
+       0.113
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.076,
+       0.647,
+       0.277
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.872,
+       0.1
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.947,
+       0.036
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.911,
+       0.005,
+       0.085
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.598,
+       0.001,
+       0.401
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.949,
+       0.046
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.968,
+       0.022
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.942,
+       0.056
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.576,
+       0.0,
+       0.424
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.644,
+       0.313,
+       0.043
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.738,
+       0.199,
+       0.064
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.881,
+       0.112
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.142,
+       0.755,
+       0.103
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.687,
+       0.191,
+       0.122
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.171,
+       0.681,
+       0.147
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.77,
+       0.217
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.007,
+       0.015,
+       0.978
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.035,
+       0.672,
+       0.294
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.031,
+       0.634,
+       0.335
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.805,
+       0.193
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.817,
+       0.001,
+       0.182
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.059,
+       0.735,
+       0.206
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.935,
+       0.046
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.936,
+       0.054
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.079,
+       0.001,
+       0.921
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.541,
+       0.197,
+       0.263
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.963,
+       0.019
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.958,
+       0.04
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.502,
+       0.001,
+       0.497
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.812,
+       0.119,
+       0.069
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.876,
+       0.009,
+       0.115
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.054,
+       0.616,
+       0.33
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.082,
+       0.81,
+       0.108
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.912,
+       0.022,
+       0.066
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.9,
+       0.004,
+       0.096
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.043,
+       0.754,
+       0.203
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.366,
+       0.482,
+       0.152
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.896,
+       0.056,
+       0.048
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.107,
+       0.693,
+       0.2
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.792,
+       0.203
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.121,
+       0.495,
+       0.384
+      ]
+     }
+    ]
+   },
+   "ood": {
+    "decisoes": 240,
+    "acuracia": 0.825,
+    "macro_f1": 0.5921,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 12,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.4753,
+      "acuracia": 0.7333,
+      "gold_por_rotulo": {
+       "sim": 12,
+       "nao": 47,
+       "incerto": 1
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.6623,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 21,
+       "nao": 39,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.6531,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 17,
+       "nao": 42,
+       "incerto": 1
+      }
+     },
+     "alarme": {
+      "macro_f1": 0.4278,
+      "acuracia": 0.6167,
+      "gold_por_rotulo": {
+       "sim": 12,
+       "nao": 47,
+       "incerto": 1
+      }
+     }
+    },
+    "alarme_perdidos_com_rede": 0,
+    "linhas": [
+     {
+      "id": "ood-0001",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.89,
+       0.091
+      ]
+     },
+     {
+      "id": "ood-0001",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.96,
+       0.025
+      ]
+     },
+     {
+      "id": "ood-0001",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.857,
+       0.001,
+       0.143
+      ]
+     },
+     {
+      "id": "ood-0001",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.024,
+       0.117,
+       0.859
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.949,
+       0.045
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.029,
+       0.91,
+       0.062
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.971,
+       0.0,
+       0.029
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.034,
+       0.939,
+       0.027
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.864,
+       0.054,
+       0.082
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.033,
+       0.752,
+       0.216
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.846,
+       0.152
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.086,
+       0.854,
+       0.06
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.201,
+       0.484,
+       0.315
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.423,
+       0.28,
+       0.297
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.784,
+       0.213
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.067,
+       0.015,
+       0.918
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.916,
+       0.044,
+       0.04
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.071,
+       0.902,
+       0.028
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.966,
+       0.032
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.567,
+       0.326,
+       0.108
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.936,
+       0.061
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.953,
+       0.036
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.817,
+       0.035,
+       0.148
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.059,
+       0.584,
+       0.357
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.916,
+       0.015,
+       0.069
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.058,
+       0.729,
+       0.213
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.896,
+       0.099
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.088,
+       0.686,
+       0.225
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.789,
+       0.083,
+       0.128
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.121,
+       0.576,
+       0.302
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "documento",
+      "gold": "incerto",
+      "pred": "sim",
+      "probs": [
+       0.739,
+       0.029,
+       0.232
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.297,
+       0.01,
+       0.694
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.237,
+       0.454,
+       0.309
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.949,
+       0.004,
+       0.047
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.025,
+       0.769,
+       0.206
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.173,
+       0.732,
+       0.095
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.32,
+       0.319,
+       0.361
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.878,
+       0.007,
+       0.115
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.831,
+       0.165
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.022,
+       0.86,
+       0.119
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.983,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.571,
+       0.007,
+       0.423
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.049,
+       0.893,
+       0.058
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "agendar",
+      "gold": "incerto",
+      "pred": "sim",
+      "probs": [
+       0.814,
+       0.111,
+       0.076
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.227,
+       0.46,
+       0.312
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.909,
+       0.082
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.116,
+       0.107,
+       0.776
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.887,
+       0.107
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.947,
+       0.044
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.829,
+       0.002,
+       0.168
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.038,
+       0.743,
+       0.219
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.074,
+       0.741,
+       0.185
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.959,
+       0.003,
+       0.038
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.037,
+       0.756,
+       0.207
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.199,
+       0.749,
+       0.052
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.3,
+       0.292,
+       0.408
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.789,
+       0.014,
+       0.197
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.854,
+       0.142
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.064,
+       0.829,
+       0.107
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.035,
+       0.786,
+       0.179
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.899,
+       0.088
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.769,
+       0.001,
+       0.23
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.035,
+       0.024,
+       0.941
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.895,
+       0.095
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.941,
+       0.038
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.746,
+       0.248
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.258,
+       0.258,
+       0.485
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.743,
+       0.246
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.025,
+       0.847,
+       0.128
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.806,
+       0.001,
+       0.193
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.105,
+       0.57,
+       0.325
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.363,
+       0.427,
+       0.209
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.939,
+       0.043
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.767,
+       0.22
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.053,
+       0.182,
+       0.765
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.356,
+       0.49,
+       0.154
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.873,
+       0.015,
+       0.113
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.791,
+       0.204
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.056,
+       0.893,
+       0.05
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.916,
+       0.013,
+       0.071
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.913,
+       0.004,
+       0.083
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.646,
+       0.333
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.083,
+       0.863,
+       0.054
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.639,
+       0.277,
+       0.084
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.304,
+       0.465,
+       0.231
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.844,
+       0.155
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.062,
+       0.872,
+       0.066
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.297,
+       0.585,
+       0.117
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.114,
+       0.819,
+       0.067
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.772,
+       0.221
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.113,
+       0.007,
+       0.881
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.09,
+       0.754,
+       0.156
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.895,
+       0.004,
+       0.101
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.923,
+       0.073
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.18,
+       0.795,
+       0.025
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.84,
+       0.002,
+       0.157
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.291,
+       0.276,
+       0.433
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.645,
+       0.353
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.054,
+       0.382,
+       0.564
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.839,
+       0.064,
+       0.097
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.827,
+       0.01,
+       0.163
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.848,
+       0.144
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.099,
+       0.86,
+       0.041
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.882,
+       0.112
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.957,
+       0.031
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.849,
+       0.146
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.063,
+       0.007,
+       0.93
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.806,
+       0.108,
+       0.086
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.799,
+       0.021,
+       0.18
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.851,
+       0.137
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.063,
+       0.785,
+       0.151
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.87,
+       0.12
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.919,
+       0.067
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.807,
+       0.002,
+       0.191
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.049,
+       0.9,
+       0.051
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.541,
+       0.14,
+       0.319
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.936,
+       0.06
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.853,
+       0.142
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.105,
+       0.008,
+       0.887
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.04,
+       0.817,
+       0.143
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.799,
+       0.036,
+       0.165
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.117,
+       0.284,
+       0.598
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.044,
+       0.464,
+       0.492
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.77,
+       0.177,
+       0.053
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.931,
+       0.024,
+       0.045
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.961,
+       0.033
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.339,
+       0.475,
+       0.186
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.228,
+       0.6,
+       0.172
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.885,
+       0.015,
+       0.1
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.947,
+       0.047
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.11,
+       0.665,
+       0.225
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.878,
+       0.094
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.229,
+       0.527,
+       0.244
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.783,
+       0.016,
+       0.201
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.046,
+       0.852,
+       0.102
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.133,
+       0.748,
+       0.118
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.844,
+       0.033,
+       0.123
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.921,
+       0.077
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.053,
+       0.703,
+       0.244
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.957,
+       0.036
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.03,
+       0.953,
+       0.017
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.936,
+       0.048
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.236,
+       0.002,
+       0.762
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.893,
+       0.022,
+       0.085
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.84,
+       0.142
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.902,
+       0.096
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.049,
+       0.073,
+       0.878
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.726,
+       0.147,
+       0.127
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.878,
+       0.01,
+       0.112
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.94,
+       0.057
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "alarme",
+      "gold": "incerto",
+      "pred": "incerto",
+      "probs": [
+       0.218,
+       0.015,
+       0.768
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.933,
+       0.06
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.047,
+       0.778,
+       0.175
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.949,
+       0.0,
+       0.051
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.087,
+       0.708,
+       0.205
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.701,
+       0.199,
+       0.099
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.098,
+       0.612,
+       0.29
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.694,
+       0.3
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.038,
+       0.79,
+       0.171
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.804,
+       0.008,
+       0.188
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.047,
+       0.477,
+       0.476
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.739,
+       0.254
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.304,
+       0.025,
+       0.671
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.793,
+       0.013,
+       0.194
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.078,
+       0.508,
+       0.414
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.673,
+       0.319
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.232,
+       0.008,
+       0.76
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.951,
+       0.028
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.972,
+       0.019
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.954,
+       0.001,
+       0.045
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.171,
+       0.473,
+       0.357
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.714,
+       0.087,
+       0.198
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.051,
+       0.767,
+       0.183
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.073,
+       0.532,
+       0.395
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.046,
+       0.25,
+       0.704
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.791,
+       0.103,
+       0.106
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.765,
+       0.099,
+       0.136
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.803,
+       0.192
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.169,
+       0.789,
+       0.041
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.98,
+       0.018
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.016,
+       0.946,
+       0.038
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.879,
+       0.003,
+       0.118
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.054,
+       0.864,
+       0.082
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.941,
+       0.055
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.977,
+       0.015
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.868,
+       0.001,
+       0.132
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.92,
+       0.06
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.96,
+       0.028,
+       0.012
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.334,
+       0.613,
+       0.052
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.989,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.367,
+       0.239,
+       0.394
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.918,
+       0.072
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.91,
+       0.061
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.637,
+       0.003,
+       0.36
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.02,
+       0.204,
+       0.775
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.965,
+       0.034
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.98,
+       0.014
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.935,
+       0.014,
+       0.052
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.015,
+       0.384,
+       0.601
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.882,
+       0.09
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.971,
+       0.021
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.937,
+       0.001,
+       0.063
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.029,
+       0.793,
+       0.178
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.646,
+       0.337,
+       0.017
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.939,
+       0.04,
+       0.021
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.927,
+       0.069
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.182,
+       0.752,
+       0.067
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.051,
+       0.777,
+       0.172
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.649,
+       0.089,
+       0.261
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.79,
+       0.2
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.646,
+       0.09,
+       0.264
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.782,
+       0.2
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.029,
+       0.806,
+       0.165
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.616,
+       0.002,
+       0.383
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.056,
+       0.59,
+       0.353
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.972,
+       0.005,
+       0.023
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.983,
+       0.003,
+       0.014
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.975,
+       0.022
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.087,
+       0.855,
+       0.058
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.055,
+       0.775,
+       0.17
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.083,
+       0.689,
+       0.228
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.001,
+       0.883,
+       0.116
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.511,
+       0.001,
+       0.488
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.119,
+       0.826,
+       0.055
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.906,
+       0.023,
+       0.071
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.971,
+       0.027
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.074,
+       0.11,
+       0.816
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.852,
+       0.041,
+       0.106
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.11,
+       0.666,
+       0.224
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.942,
+       0.055
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "incerto",
+      "probs": [
+       0.037,
+       0.001,
+       0.962
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.704,
+       0.09,
+       0.206
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.777,
+       0.205
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.917,
+       0.079
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.564,
+       0.005,
+       0.43
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.088,
+       0.789,
+       0.123
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.944,
+       0.007,
+       0.049
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.877,
+       0.115
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.056,
+       0.879,
+       0.064
+      ]
+     }
+    ]
+   }
+  },
+  "treinado": {
+   "test": {
+    "decisoes": 240,
+    "acuracia": 0.9625,
+    "macro_f1": 0.7737,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 19,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.589,
+      "acuracia": 0.8833,
+      "gold_por_rotulo": {
+       "sim": 21,
+       "nao": 37,
+       "incerto": 2
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.9773,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 14,
+       "nao": 46,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 1.0,
+      "acuracia": 1.0,
+      "gold_por_rotulo": {
+       "sim": 10,
+       "nao": 50,
+       "incerto": 0
+      }
+     },
+     "alarme": {
+      "macro_f1": 0.8847,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 19,
+       "nao": 40,
+       "incerto": 1
+      }
+     }
+    },
+    "alarme_perdidos_com_rede": 0,
+    "linhas": [
+     {
+      "id": "syn-0003",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.181,
+       0.706,
+       0.112
+      ]
+     },
+     {
+      "id": "syn-0003",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0003",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.992,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0003",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.986,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.994,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0005",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.004,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.99,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.949,
+       0.046,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0016",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.974,
+       0.011
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.989,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.987,
+       0.011
+      ]
+     },
+     {
+      "id": "syn-0020",
+      "pergunta": "alarme",
+      "gold": "incerto",
+      "pred": "incerto",
+      "probs": [
+       0.005,
+       0.003,
+       0.992
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.045,
+       0.939,
+       0.016
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.878,
+       0.119,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0021",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.985,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "agendar",
+      "gold": "incerto",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.963,
+       0.027
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.983,
+       0.012,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.98,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0026",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.746,
+       0.137,
+       0.117
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.926,
+       0.072,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.99,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.989,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0040",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.975,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.975,
+       0.022,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.004,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0043",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.982,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.994,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0046",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.004,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.991,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.984,
+       0.007,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0057",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.987,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.988,
+       0.009,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0061",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.559,
+       0.432
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.991,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.003,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0063",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.993,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.104,
+       0.854,
+       0.042
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.98,
+       0.017,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0067",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.043,
+       0.887,
+       0.07
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.963,
+       0.033,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.975,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0070",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.97,
+       0.011
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.981,
+       0.009
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0079",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.023,
+       0.96,
+       0.017
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.128,
+       0.821,
+       0.051
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0086",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.042,
+       0.946,
+       0.012
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.95,
+       0.046,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.949,
+       0.047,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0096",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.016,
+       0.977,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.989,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0098",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.987,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.003,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0104",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.003,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.972,
+       0.025,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.988,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0110",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.981,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.348,
+       0.636,
+       0.016
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0115",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.975,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.988,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.962,
+       0.025,
+       0.013
+      ]
+     },
+     {
+      "id": "syn-0119",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.979,
+       0.015
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.063,
+       0.918,
+       0.018
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.991,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0121",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.004,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.992,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.987,
+       0.011
+      ]
+     },
+     {
+      "id": "syn-0122",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.029,
+       0.943,
+       0.028
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.986,
+       0.012,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.989,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0131",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.982,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.03,
+       0.944,
+       0.026
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.987,
+       0.01,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.988,
+       0.009
+      ]
+     },
+     {
+      "id": "syn-0136",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.986,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.946,
+       0.049,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.02,
+       0.963,
+       0.017
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.965,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0145",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.974,
+       0.008,
+       0.018
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.034,
+       0.944,
+       0.022
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.988,
+       0.009,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0148",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.985,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.985,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.006,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0152",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.99,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.988,
+       0.009
+      ]
+     },
+     {
+      "id": "syn-0160",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.005,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.006,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.982,
+       0.009
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0167",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.984,
+       0.012,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.986,
+       0.011,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.988,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0169",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.982,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.395,
+       0.51,
+       0.095
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.024,
+       0.957,
+       0.018
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0176",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.985,
+       0.011,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.02,
+       0.967,
+       0.013
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.96,
+       0.037,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.989,
+       0.009
+      ]
+     },
+     {
+      "id": "syn-0181",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.016,
+       0.977,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.943,
+       0.054,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.99,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0187",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.984,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.034,
+       0.952,
+       0.014
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.961,
+       0.035,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.406,
+       0.474,
+       0.121
+      ]
+     },
+     {
+      "id": "syn-0188",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.973,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.991,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.003,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0203",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.19,
+       0.782,
+       0.028
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.943,
+       0.045,
+       0.012
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0207",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.984,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.979,
+       0.018,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.975,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.005,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0216",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.023,
+       0.973,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.044,
+       0.928,
+       0.028
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.989,
+       0.008,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.988,
+       0.009
+      ]
+     },
+     {
+      "id": "syn-0220",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.052,
+       0.911,
+       0.037
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.975,
+       0.012
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.986,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.994,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0221",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.805,
+       0.183,
+       0.012
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.988,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0224",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.979,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.987,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0225",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.985,
+       0.009,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "agendar",
+      "gold": "incerto",
+      "pred": "sim",
+      "probs": [
+       0.69,
+       0.287,
+       0.023
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.024,
+       0.965,
+       0.011
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.994,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0232",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.981,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.918,
+       0.075,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.974,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0237",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.979,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.989,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0238",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.004,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.231,
+       0.751,
+       0.018
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.987,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0252",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.978,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.982,
+       0.015,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.988,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0253",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.602,
+       0.39
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.987,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0257",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.953,
+       0.026,
+       0.021
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.96,
+       0.038,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0260",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.983,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.985,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0264",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0265",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.005,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.035,
+       0.957,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.896,
+       0.101,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0267",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.978,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.05,
+       0.925,
+       0.025
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.988,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.99,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0283",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "incerto",
+      "probs": [
+       0.014,
+       0.352,
+       0.634
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.989,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0292",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.986,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.987,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0293",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.906,
+       0.039,
+       0.055
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.066,
+       0.893,
+       0.04
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0307",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.006,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.109,
+       0.876,
+       0.015
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.98,
+       0.017,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.988,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0309",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.981,
+       0.006
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.271,
+       0.687,
+       0.041
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.006,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.988,
+       0.007
+      ]
+     },
+     {
+      "id": "syn-0315",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.978,
+       0.01
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.962,
+       0.035,
+       0.003
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.989,
+       0.008
+      ]
+     },
+     {
+      "id": "syn-0317",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.987,
+       0.006
+      ]
+     }
+    ]
+   },
+   "ood": {
+    "decisoes": 240,
+    "acuracia": 0.9333,
+    "macro_f1": 0.6134,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 12,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.4774,
+      "acuracia": 0.8,
+      "gold_por_rotulo": {
+       "sim": 12,
+       "nao": 47,
+       "incerto": 1
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.9625,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 21,
+       "nao": 39,
+       "incerto": 0
+      }
+     },
+     "documento": {
+      "macro_f1": 0.6571,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 17,
+       "nao": 42,
+       "incerto": 1
+      }
+     },
+     "alarme": {
+      "macro_f1": 0.6533,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 12,
+       "nao": 47,
+       "incerto": 1
+      }
+     }
+    },
+    "alarme_perdidos_com_rede": 0,
+    "linhas": [
+     {
+      "id": "ood-0001",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.987,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0001",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0001",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0001",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.985,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.002
+      ]
+     },
+     {
+      "id": "ood-0002",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.752,
+       0.237,
+       0.011
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.979,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0003",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.984,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.027,
+       0.943,
+       0.03
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.093,
+       0.863,
+       0.044
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0004",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.482,
+       0.229,
+       0.288
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.568,
+       0.408,
+       0.024
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.988,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0005",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.116,
+       0.868,
+       0.017
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.505,
+       0.478,
+       0.018
+      ]
+     },
+     {
+      "id": "ood-0006",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.985,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.977,
+       0.02,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.988,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0007",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.982,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.495,
+       0.482,
+       0.022
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.978,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "documento",
+      "gold": "incerto",
+      "pred": "sim",
+      "probs": [
+       0.958,
+       0.03,
+       0.011
+      ]
+     },
+     {
+      "id": "ood-0008",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.937,
+       0.038,
+       0.024
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.97,
+       0.014
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.99,
+       0.007,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0009",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.98,
+       0.011
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.049,
+       0.918,
+       0.033
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.988,
+       0.008,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0010",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.989,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.994,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.99,
+       0.003,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0011",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.986,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "agendar",
+      "gold": "incerto",
+      "pred": "nao",
+      "probs": [
+       0.086,
+       0.874,
+       0.04
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.969,
+       0.016
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0012",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.981,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.995,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0013",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.987,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.968,
+       0.015
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.004,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.988,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0014",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.99,
+       0.002
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.027,
+       0.956,
+       0.016
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.918,
+       0.069,
+       0.012
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0015",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.985,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.988,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0016",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.029,
+       0.953,
+       0.017
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0017",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.026,
+       0.966,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.995,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0018",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.978,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.978,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.982,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0019",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.03,
+       0.734,
+       0.236
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.965,
+       0.014
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.977,
+       0.02,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0020",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.988,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.943,
+       0.051,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.989,
+       0.007,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.985,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0021",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.979,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.144,
+       0.816,
+       0.04
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.024,
+       0.96,
+       0.016
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.983,
+       0.014
+      ]
+     },
+     {
+      "id": "ood-0022",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.985,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.99,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.986,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.987,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0023",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.838,
+       0.097,
+       0.065
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.991,
+       0.006,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.985,
+       0.012
+      ]
+     },
+     {
+      "id": "ood-0024",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.024,
+       0.967,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.99,
+       0.004,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.953,
+       0.034
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.982,
+       0.015
+      ]
+     },
+     {
+      "id": "ood-0025",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.98,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.106,
+       0.851,
+       0.044
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.982,
+       0.015,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.988,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0026",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.991,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0027",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.745,
+       0.157,
+       0.098
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.825,
+       0.169,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.972,
+       0.024,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.987,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0028",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.984,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0029",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.983,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.057,
+       0.911,
+       0.032
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.989,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.988,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0030",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.599,
+       0.159,
+       0.241
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.942,
+       0.052,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.035,
+       0.949,
+       0.015
+      ]
+     },
+     {
+      "id": "ood-0031",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.045,
+       0.933,
+       0.022
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.961,
+       0.036,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.992,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0032",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.976,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.975,
+       0.011
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.977,
+       0.02,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0033",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.987,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.991,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.018,
+       0.967,
+       0.014
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.829,
+       0.163,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0034",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.016,
+       0.98,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.008,
+       0.987,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.968,
+       0.029,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.984,
+       0.013
+      ]
+     },
+     {
+      "id": "ood-0035",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.993,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.981,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0036",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.957,
+       0.019,
+       0.024
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.277,
+       0.646,
+       0.077
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0037",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.021,
+       0.975,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.028,
+       0.956,
+       0.016
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.98,
+       0.017,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0038",
+      "pergunta": "alarme",
+      "gold": "incerto",
+      "pred": "sim",
+      "probs": [
+       0.603,
+       0.329,
+       0.068
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.989,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.985,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.003,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0039",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.796,
+       0.201,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.989,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0040",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.007,
+       0.988,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.962,
+       0.029,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.969,
+       0.018
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.986,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0041",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.89,
+       0.079,
+       0.031
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.978,
+       0.018,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.017,
+       0.968,
+       0.015
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.979,
+       0.016
+      ]
+     },
+     {
+      "id": "ood-0042",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.934,
+       0.04,
+       0.025
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.987,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.003,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0043",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.976,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.317,
+       0.661,
+       0.022
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.989,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.031,
+       0.962,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0044",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.026,
+       0.961,
+       0.013
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.667,
+       0.321,
+       0.012
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.826,
+       0.168,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.988,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0045",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.025,
+       0.968,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.992,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.979,
+       0.011,
+       0.011
+      ]
+     },
+     {
+      "id": "ood-0046",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.015,
+       0.981,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.995,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0047",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.989,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.77,
+       0.223,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.012,
+       0.982,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0048",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.971,
+       0.017
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.988,
+       0.006,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0049",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.986,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.993,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.994,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.931,
+       0.056,
+       0.013
+      ]
+     },
+     {
+      "id": "ood-0050",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.988,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.994,
+       0.003,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0051",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.987,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.053,
+       0.94,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.943,
+       0.055,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.002,
+       0.989,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0052",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.019,
+       0.971,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.988,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.321,
+       0.631,
+       0.049
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.987,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0053",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.506,
+       0.493,
+       0.002
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.006,
+       0.988,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.989,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "documento",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.003,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0054",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.014,
+       0.979,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "sim",
+      "probs": [
+       0.608,
+       0.272,
+       0.12
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.992,
+       0.005,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.993,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0055",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.984,
+       0.007
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.009,
+       0.986,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.02,
+       0.967,
+       0.013
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.991,
+       0.006
+      ]
+     },
+     {
+      "id": "ood-0056",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.993,
+       0.003,
+       0.004
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.99,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.965,
+       0.032,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.99,
+       0.008
+      ]
+     },
+     {
+      "id": "ood-0057",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.984,
+       0.005
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.37,
+       0.6,
+       0.03
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.011,
+       0.981,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.989,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0058",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.654,
+       0.184,
+       0.163
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "agendar",
+      "gold": "sim",
+      "pred": "nao",
+      "probs": [
+       0.145,
+       0.787,
+       0.069
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "remarcar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.005,
+       0.983,
+       0.013
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.004,
+       0.987,
+       0.01
+      ]
+     },
+     {
+      "id": "ood-0059",
+      "pergunta": "alarme",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.7,
+       0.133,
+       0.167
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "agendar",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.013,
+       0.979,
+       0.009
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "remarcar",
+      "gold": "sim",
+      "pred": "sim",
+      "probs": [
+       0.988,
+       0.009,
+       0.003
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "documento",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.003,
+       0.984,
+       0.013
+      ]
+     },
+     {
+      "id": "ood-0060",
+      "pergunta": "alarme",
+      "gold": "nao",
+      "pred": "nao",
+      "probs": [
+       0.01,
+       0.958,
+       0.032
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "freeze_sha256": "7d6f7181c0749b12835f3e9ff49f49d809c6920116925d006d094566f51c12e9",
+ "metas": {
+  "aviso": "com dados sintéticos isto verifica o pipeline, não o domínio; metas reais exigem dados reais",
+  "alarme_perdidos_teste": {
+   "meta": 0,
+   "obtido_modelo": 0,
+   "obtido_com_rede": 0
+  },
+  "ood_macro_f1_min": {
+   "meta": 0.7,
+   "obtido": 0.6134
+  },
+  "queda_ood_max_pp": {
+   "meta": 15,
+   "obtido": 16.0
+  }
+ }
+}

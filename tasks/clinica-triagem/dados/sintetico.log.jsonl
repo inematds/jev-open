@@ -1,0 +1,764 @@
+{"tentativa": 1, "aceito": true, "divergencias": {}}
+{"tentativa": 2, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"], "documento": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 3, "aceito": true, "divergencias": {}}
+{"tentativa": 4, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 5, "aceito": true, "divergencias": {}}
+{"tentativa": 6, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 7, "aceito": true, "divergencias": {}}
+{"tentativa": 8, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 9, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 10, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 11, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 12, "aceito": true, "divergencias": {}}
+{"tentativa": 13, "aceito": true, "divergencias": {}}
+{"tentativa": 14, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 15, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 16, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 17, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 18, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["sim", "incerto"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 19, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 20, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 21, "aceito": true, "divergencias": {}}
+{"tentativa": 22, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 23, "aceito": true, "divergencias": {}}
+{"tentativa": 24, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 25, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 26, "aceito": false, "divergencias": {"agendar": ["sim", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 27, "aceito": true, "divergencias": {}}
+{"tentativa": 28, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 29, "aceito": false, "divergencias": {"alarme": ["incerto", "sim"]}}
+{"tentativa": 30, "aceito": true, "divergencias": {}}
+{"tentativa": 31, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 32, "aceito": true, "divergencias": {}}
+{"tentativa": 33, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 34, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 35, "aceito": true, "divergencias": {}}
+{"tentativa": 36, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 37, "aceito": true, "divergencias": {}}
+{"tentativa": 38, "aceito": true, "divergencias": {}}
+{"tentativa": 39, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 40, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 41, "aceito": true, "divergencias": {}}
+{"tentativa": 42, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 43, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 44, "aceito": true, "divergencias": {}}
+{"tentativa": 45, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["sim", "nao"], "documento": ["incerto", "nao"], "alarme": ["nao", "sim"]}}
+{"tentativa": 46, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 47, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 48, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 49, "aceito": true, "divergencias": {}}
+{"tentativa": 50, "aceito": true, "divergencias": {}}
+{"tentativa": 51, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 52, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 53, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 54, "aceito": true, "divergencias": {}}
+{"tentativa": 55, "aceito": true, "divergencias": {}}
+{"tentativa": 56, "aceito": true, "divergencias": {}}
+{"tentativa": 57, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 58, "aceito": true, "divergencias": {}}
+{"tentativa": 59, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 60, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 61, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"], "documento": ["incerto", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 62, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 63, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 64, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 65, "aceito": true, "divergencias": {}}
+{"tentativa": 66, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 67, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 68, "aceito": true, "divergencias": {}}
+{"tentativa": 69, "aceito": true, "divergencias": {}}
+{"tentativa": 70, "aceito": false, "divergencias": {"documento": ["nao", "incerto"]}}
+{"tentativa": 71, "aceito": true, "divergencias": {}}
+{"tentativa": 72, "aceito": true, "divergencias": {}}
+{"tentativa": 73, "aceito": true, "divergencias": {}}
+{"tentativa": 74, "aceito": true, "divergencias": {}}
+{"tentativa": 75, "aceito": true, "divergencias": {}}
+{"tentativa": 76, "aceito": true, "divergencias": {}}
+{"tentativa": 77, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 78, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 79, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 80, "aceito": true, "divergencias": {}}
+{"tentativa": 81, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 82, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 83, "aceito": true, "divergencias": {}}
+{"tentativa": 84, "aceito": true, "divergencias": {}}
+{"tentativa": 85, "aceito": true, "divergencias": {}}
+{"tentativa": 86, "aceito": false, "divergencias": {"remarcar": ["nao", "incerto"]}}
+{"tentativa": 87, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 88, "aceito": true, "divergencias": {}}
+{"tentativa": 89, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 90, "aceito": true, "divergencias": {}}
+{"tentativa": 91, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 92, "aceito": false, "divergencias": {"remarcar": ["nao", "sim"], "alarme": ["nao", "sim"]}}
+{"tentativa": 93, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 94, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 95, "aceito": true, "divergencias": {}}
+{"tentativa": 96, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 97, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 98, "aceito": true, "divergencias": {}}
+{"tentativa": 99, "aceito": true, "divergencias": {}}
+{"tentativa": 100, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 101, "aceito": true, "divergencias": {}}
+{"tentativa": 102, "aceito": true, "divergencias": {}}
+{"tentativa": 103, "aceito": false, "divergencias": {"remarcar": ["nao", "sim"]}}
+{"tentativa": 104, "aceito": true, "divergencias": {}}
+{"tentativa": 105, "aceito": true, "divergencias": {}}
+{"tentativa": 106, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "alarme": ["nao", "sim"]}}
+{"tentativa": 107, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 108, "aceito": true, "divergencias": {}}
+{"tentativa": 109, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 110, "aceito": true, "divergencias": {}}
+{"tentativa": 111, "aceito": true, "divergencias": {}}
+{"tentativa": 112, "aceito": true, "divergencias": {}}
+{"tentativa": 113, "aceito": true, "divergencias": {}}
+{"tentativa": 114, "aceito": true, "divergencias": {}}
+{"tentativa": 115, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 116, "aceito": false, "divergencias": {"documento": ["nao", "sim"]}}
+{"tentativa": 117, "aceito": true, "divergencias": {}}
+{"tentativa": 118, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "documento": ["incerto", "nao"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 119, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 120, "aceito": true, "divergencias": {}}
+{"tentativa": 121, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 122, "aceito": true, "divergencias": {}}
+{"tentativa": 123, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 124, "aceito": true, "divergencias": {}}
+{"tentativa": 125, "aceito": true, "divergencias": {}}
+{"tentativa": 126, "aceito": true, "divergencias": {}}
+{"tentativa": 127, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 128, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 129, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 130, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 131, "aceito": true, "divergencias": {}}
+{"tentativa": 132, "aceito": false, "divergencias": {"agendar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 133, "aceito": true, "divergencias": {}}
+{"tentativa": 134, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 135, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["incerto", "nao"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 136, "aceito": true, "divergencias": {}}
+{"tentativa": 137, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 138, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 139, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 140, "aceito": true, "divergencias": {}}
+{"tentativa": 141, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 142, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 143, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 144, "aceito": true, "divergencias": {}}
+{"tentativa": 145, "aceito": true, "divergencias": {}}
+{"tentativa": 146, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 147, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 148, "aceito": true, "divergencias": {}}
+{"tentativa": 149, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 150, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 151, "aceito": true, "divergencias": {}}
+{"tentativa": 152, "aceito": true, "divergencias": {}}
+{"tentativa": 153, "aceito": true, "divergencias": {}}
+{"tentativa": 154, "aceito": true, "divergencias": {}}
+{"tentativa": 155, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 156, "aceito": true, "divergencias": {}}
+{"tentativa": 157, "aceito": true, "divergencias": {}}
+{"tentativa": 158, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["nao", "incerto"], "alarme": ["nao", "sim"]}}
+{"tentativa": 159, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 160, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 161, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 162, "aceito": true, "divergencias": {}}
+{"tentativa": 163, "aceito": true, "divergencias": {}}
+{"tentativa": 164, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 165, "aceito": true, "divergencias": {}}
+{"tentativa": 166, "aceito": true, "divergencias": {}}
+{"tentativa": 167, "aceito": true, "divergencias": {}}
+{"tentativa": 168, "aceito": true, "divergencias": {}}
+{"tentativa": 169, "aceito": false, "divergencias": {"remarcar": ["nao", "incerto"]}}
+{"tentativa": 170, "aceito": false, "divergencias": {"documento": ["incerto", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 171, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 172, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 173, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 174, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 175, "aceito": true, "divergencias": {}}
+{"tentativa": 176, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 177, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 178, "aceito": true, "divergencias": {}}
+{"tentativa": 179, "aceito": false, "divergencias": {"alarme": ["incerto", "sim"]}}
+{"tentativa": 180, "aceito": true, "divergencias": {}}
+{"tentativa": 181, "aceito": true, "divergencias": {}}
+{"tentativa": 182, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 183, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 184, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 185, "aceito": true, "divergencias": {}}
+{"tentativa": 186, "aceito": true, "divergencias": {}}
+{"tentativa": 187, "aceito": false, "divergencias": {"documento": ["sim", "incerto"]}}
+{"tentativa": 188, "aceito": false, "divergencias": {"remarcar": ["nao", "sim"]}}
+{"tentativa": 189, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 190, "aceito": true, "divergencias": {}}
+{"tentativa": 191, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "alarme": ["nao", "incerto"]}}
+{"tentativa": 192, "aceito": true, "divergencias": {}}
+{"tentativa": 193, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 194, "aceito": true, "divergencias": {}}
+{"tentativa": 195, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "documento": ["incerto", "nao"], "alarme": ["nao", "sim"]}}
+{"tentativa": 196, "aceito": true, "divergencias": {}}
+{"tentativa": 197, "aceito": true, "divergencias": {}}
+{"tentativa": 198, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 199, "aceito": true, "divergencias": {}}
+{"tentativa": 200, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 201, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 202, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 203, "aceito": true, "divergencias": {}}
+{"tentativa": 204, "aceito": true, "divergencias": {}}
+{"tentativa": 205, "aceito": true, "divergencias": {}}
+{"tentativa": 206, "aceito": true, "divergencias": {}}
+{"tentativa": 207, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 208, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 209, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 210, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 211, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 212, "aceito": true, "divergencias": {}}
+{"tentativa": 213, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 214, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 215, "aceito": true, "divergencias": {}}
+{"tentativa": 216, "aceito": false, "divergencias": {"alarme": ["sim", "incerto"]}}
+{"tentativa": 217, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 218, "aceito": true, "divergencias": {}}
+{"tentativa": 219, "aceito": true, "divergencias": {}}
+{"tentativa": 220, "aceito": true, "divergencias": {}}
+{"tentativa": 221, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 222, "aceito": true, "divergencias": {}}
+{"tentativa": 223, "aceito": true, "divergencias": {}}
+{"tentativa": 224, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 225, "aceito": true, "divergencias": {}}
+{"tentativa": 226, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["incerto", "sim"], "documento": ["incerto", "sim"]}}
+{"tentativa": 227, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 228, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 229, "aceito": true, "divergencias": {}}
+{"tentativa": 230, "aceito": true, "divergencias": {}}
+{"tentativa": 231, "aceito": true, "divergencias": {}}
+{"tentativa": 232, "aceito": false, "divergencias": {"documento": ["nao", "sim"]}}
+{"tentativa": 233, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 234, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 235, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 236, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 237, "aceito": true, "divergencias": {}}
+{"tentativa": 238, "aceito": true, "divergencias": {}}
+{"tentativa": 239, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 240, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 241, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 242, "aceito": false, "divergencias": {"agendar": ["sim", "incerto"], "remarcar": ["sim", "incerto"]}}
+{"tentativa": 243, "aceito": true, "divergencias": {}}
+{"tentativa": 244, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 245, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 246, "aceito": true, "divergencias": {}}
+{"tentativa": 247, "aceito": true, "divergencias": {}}
+{"tentativa": 248, "aceito": true, "divergencias": {}}
+{"tentativa": 249, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 250, "aceito": true, "divergencias": {}}
+{"tentativa": 251, "aceito": false, "divergencias": {"remarcar": ["sim", "incerto"], "documento": ["incerto", "nao"]}}
+{"tentativa": 252, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 253, "aceito": false, "divergencias": {"alarme": ["nao", "incerto"]}}
+{"tentativa": 254, "aceito": true, "divergencias": {}}
+{"tentativa": 255, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 256, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 257, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 258, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 259, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 260, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 261, "aceito": true, "divergencias": {}}
+{"tentativa": 262, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 263, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 264, "aceito": true, "divergencias": {}}
+{"tentativa": 265, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 266, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 267, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 268, "aceito": true, "divergencias": {}}
+{"tentativa": 269, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 270, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 271, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 272, "aceito": true, "divergencias": {}}
+{"tentativa": 273, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 274, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 275, "aceito": true, "divergencias": {}}
+{"tentativa": 276, "aceito": true, "divergencias": {}}
+{"tentativa": 277, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 278, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 279, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"]}}
+{"tentativa": 280, "aceito": true, "divergencias": {}}
+{"tentativa": 281, "aceito": true, "divergencias": {}}
+{"tentativa": 282, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 283, "aceito": true, "divergencias": {}}
+{"tentativa": 284, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 285, "aceito": false, "divergencias": {"documento": ["nao", "sim"]}}
+{"tentativa": 286, "aceito": true, "divergencias": {}}
+{"tentativa": 287, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 288, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 289, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 290, "aceito": true, "divergencias": {}}
+{"tentativa": 291, "aceito": false, "divergencias": {"remarcar": ["sim", "incerto"]}}
+{"tentativa": 292, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 293, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 294, "aceito": true, "divergencias": {}}
+{"tentativa": 295, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 296, "aceito": true, "divergencias": {}}
+{"tentativa": 297, "aceito": false, "divergencias": {"agendar": ["sim", "incerto"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 298, "aceito": true, "divergencias": {}}
+{"tentativa": 299, "aceito": true, "divergencias": {}}
+{"tentativa": 300, "aceito": true, "divergencias": {}}
+{"tentativa": 301, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 302, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 303, "aceito": true, "divergencias": {}}
+{"tentativa": 304, "aceito": true, "divergencias": {}}
+{"tentativa": 305, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 306, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 307, "aceito": true, "divergencias": {}}
+{"tentativa": 308, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 309, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 310, "aceito": true, "divergencias": {}}
+{"tentativa": 311, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 312, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 313, "aceito": true, "divergencias": {}}
+{"tentativa": 314, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 315, "aceito": true, "divergencias": {}}
+{"tentativa": 316, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 317, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 318, "aceito": true, "divergencias": {}}
+{"tentativa": 319, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 320, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 321, "aceito": true, "divergencias": {}}
+{"tentativa": 322, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 323, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 324, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 325, "aceito": true, "divergencias": {}}
+{"tentativa": 326, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 327, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 328, "aceito": true, "divergencias": {}}
+{"tentativa": 329, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 330, "aceito": false, "divergencias": {"remarcar": ["sim", "incerto"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 331, "aceito": true, "divergencias": {}}
+{"tentativa": 332, "aceito": true, "divergencias": {}}
+{"tentativa": 333, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 334, "aceito": true, "divergencias": {}}
+{"tentativa": 335, "aceito": true, "divergencias": {}}
+{"tentativa": 336, "aceito": true, "divergencias": {}}
+{"tentativa": 337, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 338, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["sim", "nao"]}}
+{"tentativa": 339, "aceito": true, "divergencias": {}}
+{"tentativa": 340, "aceito": true, "divergencias": {}}
+{"tentativa": 341, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 342, "aceito": true, "divergencias": {}}
+{"tentativa": 343, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 344, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"]}}
+{"tentativa": 345, "aceito": true, "divergencias": {}}
+{"tentativa": 346, "aceito": true, "divergencias": {}}
+{"tentativa": 347, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 348, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 349, "aceito": false, "divergencias": {"alarme": ["incerto", "sim"]}}
+{"tentativa": 350, "aceito": true, "divergencias": {}}
+{"tentativa": 351, "aceito": false, "divergencias": {"documento": ["sim", "incerto"]}}
+{"tentativa": 352, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 353, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"]}}
+{"tentativa": 354, "aceito": true, "divergencias": {}}
+{"tentativa": 355, "aceito": true, "divergencias": {}}
+{"tentativa": 356, "aceito": true, "divergencias": {}}
+{"tentativa": 357, "aceito": true, "divergencias": {}}
+{"tentativa": 358, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 359, "aceito": true, "divergencias": {}}
+{"tentativa": 360, "aceito": true, "divergencias": {}}
+{"tentativa": 361, "aceito": true, "divergencias": {}}
+{"tentativa": 362, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 363, "aceito": true, "divergencias": {}}
+{"tentativa": 364, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 365, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 366, "aceito": true, "divergencias": {}}
+{"tentativa": 367, "aceito": true, "divergencias": {}}
+{"tentativa": 368, "aceito": true, "divergencias": {}}
+{"tentativa": 369, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 370, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 371, "aceito": true, "divergencias": {}}
+{"tentativa": 372, "aceito": true, "divergencias": {}}
+{"tentativa": 373, "aceito": true, "divergencias": {}}
+{"tentativa": 374, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 375, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["sim", "nao"]}}
+{"tentativa": 376, "aceito": true, "divergencias": {}}
+{"tentativa": 377, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 378, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 379, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 380, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 381, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 382, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 383, "aceito": true, "divergencias": {}}
+{"tentativa": 384, "aceito": false, "divergencias": {"alarme": ["incerto", "sim"]}}
+{"tentativa": 385, "aceito": true, "divergencias": {}}
+{"tentativa": 386, "aceito": true, "divergencias": {}}
+{"tentativa": 387, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["nao", "sim"]}}
+{"tentativa": 388, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 389, "aceito": true, "divergencias": {}}
+{"tentativa": 390, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 391, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 392, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["nao", "incerto"], "documento": ["nao", "incerto"]}}
+{"tentativa": 393, "aceito": true, "divergencias": {}}
+{"tentativa": 394, "aceito": true, "divergencias": {}}
+{"tentativa": 395, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 396, "aceito": true, "divergencias": {}}
+{"tentativa": 397, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 398, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 399, "aceito": true, "divergencias": {}}
+{"tentativa": 400, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 401, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 402, "aceito": true, "divergencias": {}}
+{"tentativa": 403, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 404, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 405, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 406, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 407, "aceito": true, "divergencias": {}}
+{"tentativa": 408, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 409, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 410, "aceito": true, "divergencias": {}}
+{"tentativa": 411, "aceito": false, "divergencias": {"agendar": ["sim", "incerto"]}}
+{"tentativa": 412, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 413, "aceito": true, "divergencias": {}}
+{"tentativa": 414, "aceito": true, "divergencias": {}}
+{"tentativa": 415, "aceito": true, "divergencias": {}}
+{"tentativa": 416, "aceito": true, "divergencias": {}}
+{"tentativa": 417, "aceito": true, "divergencias": {}}
+{"tentativa": 418, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 419, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 420, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 421, "aceito": true, "divergencias": {}}
+{"tentativa": 422, "aceito": true, "divergencias": {}}
+{"tentativa": 423, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 424, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 425, "aceito": true, "divergencias": {}}
+{"tentativa": 426, "aceito": true, "divergencias": {}}
+{"tentativa": 427, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 428, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 429, "aceito": true, "divergencias": {}}
+{"tentativa": 430, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 431, "aceito": true, "divergencias": {}}
+{"tentativa": 432, "aceito": true, "divergencias": {}}
+{"tentativa": 433, "aceito": false, "divergencias": {"alarme": ["incerto", "sim"]}}
+{"tentativa": 434, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 435, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 436, "aceito": true, "divergencias": {}}
+{"tentativa": 437, "aceito": false, "divergencias": {"documento": ["sim", "incerto"]}}
+{"tentativa": 438, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 439, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 440, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 441, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "alarme": ["nao", "incerto"]}}
+{"tentativa": 442, "aceito": true, "divergencias": {}}
+{"tentativa": 443, "aceito": true, "divergencias": {}}
+{"tentativa": 444, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 445, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["incerto", "nao"], "documento": ["incerto", "nao"], "alarme": ["nao", "sim"]}}
+{"tentativa": 446, "aceito": true, "divergencias": {}}
+{"tentativa": 447, "aceito": true, "divergencias": {}}
+{"tentativa": 448, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 449, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["incerto", "nao"], "alarme": ["nao", "sim"]}}
+{"tentativa": 450, "aceito": true, "divergencias": {}}
+{"tentativa": 451, "aceito": true, "divergencias": {}}
+{"tentativa": 452, "aceito": true, "divergencias": {}}
+{"tentativa": 453, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 454, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 455, "aceito": true, "divergencias": {}}
+{"tentativa": 456, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 457, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 458, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 459, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 460, "aceito": true, "divergencias": {}}
+{"tentativa": 461, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 462, "aceito": true, "divergencias": {}}
+{"tentativa": 463, "aceito": true, "divergencias": {}}
+{"tentativa": 464, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 465, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 466, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 467, "aceito": true, "divergencias": {}}
+{"tentativa": 468, "aceito": true, "divergencias": {}}
+{"tentativa": 469, "aceito": true, "divergencias": {}}
+{"tentativa": 470, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 471, "aceito": true, "divergencias": {}}
+{"tentativa": 472, "aceito": true, "divergencias": {}}
+{"tentativa": 473, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "alarme": ["nao", "incerto"]}}
+{"tentativa": 474, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 475, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 476, "aceito": true, "divergencias": {}}
+{"tentativa": 477, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 478, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 479, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 480, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 481, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 482, "aceito": true, "divergencias": {}}
+{"tentativa": 483, "aceito": true, "divergencias": {}}
+{"tentativa": 484, "aceito": true, "divergencias": {}}
+{"tentativa": 485, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 486, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 487, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 488, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 489, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 490, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 491, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 492, "aceito": true, "divergencias": {}}
+{"tentativa": 493, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 494, "aceito": true, "divergencias": {}}
+{"tentativa": 495, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 496, "aceito": true, "divergencias": {}}
+{"tentativa": 497, "aceito": true, "divergencias": {}}
+{"tentativa": 498, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 499, "aceito": true, "divergencias": {}}
+{"tentativa": 500, "aceito": true, "divergencias": {}}
+{"tentativa": 501, "aceito": true, "divergencias": {}}
+{"tentativa": 502, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 503, "aceito": true, "divergencias": {}}
+{"tentativa": 504, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 505, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 506, "aceito": true, "divergencias": {}}
+{"tentativa": 507, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 508, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 509, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 510, "aceito": true, "divergencias": {}}
+{"tentativa": 511, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 512, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 513, "aceito": true, "divergencias": {}}
+{"tentativa": 514, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 515, "aceito": true, "divergencias": {}}
+{"tentativa": 516, "aceito": true, "divergencias": {}}
+{"tentativa": 517, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 518, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 519, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 520, "aceito": true, "divergencias": {}}
+{"tentativa": 521, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 522, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 523, "aceito": true, "divergencias": {}}
+{"tentativa": 524, "aceito": true, "divergencias": {}}
+{"tentativa": 525, "aceito": true, "divergencias": {}}
+{"tentativa": 526, "aceito": true, "divergencias": {}}
+{"tentativa": 527, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["incerto", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 528, "aceito": true, "divergencias": {}}
+{"tentativa": 529, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 530, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 531, "aceito": true, "divergencias": {}}
+{"tentativa": 532, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["nao", "incerto"], "documento": ["nao", "incerto"]}}
+{"tentativa": 533, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 534, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 535, "aceito": true, "divergencias": {}}
+{"tentativa": 536, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 537, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 538, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 539, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 540, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 541, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 542, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 543, "aceito": true, "divergencias": {}}
+{"tentativa": 544, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 545, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 546, "aceito": true, "divergencias": {}}
+{"tentativa": 547, "aceito": false, "divergencias": {"agendar": ["sim", "nao"], "remarcar": ["sim", "incerto"], "alarme": ["nao", "sim"]}}
+{"tentativa": 548, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 549, "aceito": true, "divergencias": {}}
+{"tentativa": 550, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 551, "aceito": true, "divergencias": {}}
+{"tentativa": 552, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 553, "aceito": true, "divergencias": {}}
+{"tentativa": 554, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 555, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 556, "aceito": true, "divergencias": {}}
+{"tentativa": 557, "aceito": true, "divergencias": {}}
+{"tentativa": 558, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "alarme": ["nao", "sim"]}}
+{"tentativa": 559, "aceito": true, "divergencias": {}}
+{"tentativa": 560, "aceito": true, "divergencias": {}}
+{"tentativa": 561, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 562, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 563, "aceito": true, "divergencias": {}}
+{"tentativa": 564, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 565, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 566, "aceito": true, "divergencias": {}}
+{"tentativa": 567, "aceito": true, "divergencias": {}}
+{"tentativa": 568, "aceito": true, "divergencias": {}}
+{"tentativa": 569, "aceito": false, "divergencias": {"documento": ["nao", "incerto"]}}
+{"tentativa": 570, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 571, "aceito": true, "divergencias": {}}
+{"tentativa": 572, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 573, "aceito": true, "divergencias": {}}
+{"tentativa": 574, "aceito": false, "divergencias": {"remarcar": ["nao", "sim"]}}
+{"tentativa": 575, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 576, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 577, "aceito": true, "divergencias": {}}
+{"tentativa": 578, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 579, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "alarme": ["nao", "sim"]}}
+{"tentativa": 580, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 581, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["nao", "incerto"], "alarme": ["sim", "nao"]}}
+{"tentativa": 582, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 583, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 584, "aceito": true, "divergencias": {}}
+{"tentativa": 585, "aceito": true, "divergencias": {}}
+{"tentativa": 586, "aceito": false, "divergencias": {"documento": ["sim", "incerto"]}}
+{"tentativa": 587, "aceito": true, "divergencias": {}}
+{"tentativa": 588, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 589, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 590, "aceito": true, "divergencias": {}}
+{"tentativa": 591, "aceito": true, "divergencias": {}}
+{"tentativa": 592, "aceito": true, "divergencias": {}}
+{"tentativa": 593, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 594, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 595, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 596, "aceito": true, "divergencias": {}}
+{"tentativa": 597, "aceito": false, "divergencias": {"agendar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 598, "aceito": true, "divergencias": {}}
+{"tentativa": 599, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 600, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 601, "aceito": true, "divergencias": {}}
+{"tentativa": 602, "aceito": true, "divergencias": {}}
+{"tentativa": 603, "aceito": true, "divergencias": {}}
+{"tentativa": 604, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 605, "aceito": true, "divergencias": {}}
+{"tentativa": 606, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 607, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 608, "aceito": true, "divergencias": {}}
+{"tentativa": 609, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 610, "aceito": false, "divergencias": {"remarcar": ["nao", "incerto"]}}
+{"tentativa": 611, "aceito": false, "divergencias": {"remarcar": ["sim", "incerto"]}}
+{"tentativa": 612, "aceito": true, "divergencias": {}}
+{"tentativa": 613, "aceito": true, "divergencias": {}}
+{"tentativa": 614, "aceito": false, "divergencias": {"remarcar": ["sim", "incerto"]}}
+{"tentativa": 615, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 616, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 617, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 618, "aceito": true, "divergencias": {}}
+{"tentativa": 619, "aceito": true, "divergencias": {}}
+{"tentativa": 620, "aceito": true, "divergencias": {}}
+{"tentativa": 621, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 622, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 623, "aceito": true, "divergencias": {}}
+{"tentativa": 624, "aceito": true, "divergencias": {}}
+{"tentativa": 625, "aceito": true, "divergencias": {}}
+{"tentativa": 626, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 627, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["sim", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 628, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 629, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 630, "aceito": true, "divergencias": {}}
+{"tentativa": 631, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 632, "aceito": true, "divergencias": {}}
+{"tentativa": 633, "aceito": true, "divergencias": {}}
+{"tentativa": 634, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 635, "aceito": true, "divergencias": {}}
+{"tentativa": 636, "aceito": true, "divergencias": {}}
+{"tentativa": 637, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 638, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 639, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 640, "aceito": true, "divergencias": {}}
+{"tentativa": 641, "aceito": true, "divergencias": {}}
+{"tentativa": 642, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 643, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 644, "aceito": true, "divergencias": {}}
+{"tentativa": 645, "aceito": true, "divergencias": {}}
+{"tentativa": 646, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 647, "aceito": true, "divergencias": {}}
+{"tentativa": 648, "aceito": true, "divergencias": {}}
+{"tentativa": 649, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 650, "aceito": false, "divergencias": {"documento": ["sim", "nao"], "alarme": ["sim", "nao"]}}
+{"tentativa": 651, "aceito": true, "divergencias": {}}
+{"tentativa": 652, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["nao", "incerto"]}}
+{"tentativa": 653, "aceito": false, "divergencias": {"documento": ["incerto", "sim"]}}
+{"tentativa": 654, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 655, "aceito": true, "divergencias": {}}
+{"tentativa": 656, "aceito": false, "divergencias": {"agendar": ["sim", "incerto"]}}
+{"tentativa": 657, "aceito": true, "divergencias": {}}
+{"tentativa": 658, "aceito": true, "divergencias": {}}
+{"tentativa": 659, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 660, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "remarcar": ["sim", "incerto"]}}
+{"tentativa": 661, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 662, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 663, "aceito": false, "divergencias": {"alarme": ["sim", "nao"]}}
+{"tentativa": 664, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 665, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 666, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 667, "aceito": true, "divergencias": {}}
+{"tentativa": 668, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 669, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 670, "aceito": true, "divergencias": {}}
+{"tentativa": 671, "aceito": true, "divergencias": {}}
+{"tentativa": 672, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 673, "aceito": true, "divergencias": {}}
+{"tentativa": 674, "aceito": true, "divergencias": {}}
+{"tentativa": 675, "aceito": true, "divergencias": {}}
+{"tentativa": 676, "aceito": true, "divergencias": {}}
+{"tentativa": 677, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 678, "aceito": true, "divergencias": {}}
+{"tentativa": 679, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 680, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 681, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 682, "aceito": true, "divergencias": {}}
+{"tentativa": 683, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 684, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["nao", "incerto"]}}
+{"tentativa": 685, "aceito": true, "divergencias": {}}
+{"tentativa": 686, "aceito": false, "divergencias": {"documento": ["nao", "incerto"]}}
+{"tentativa": 687, "aceito": false, "divergencias": {"remarcar": ["incerto", "nao"]}}
+{"tentativa": 688, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 689, "aceito": true, "divergencias": {}}
+{"tentativa": 690, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 691, "aceito": true, "divergencias": {}}
+{"tentativa": 692, "aceito": true, "divergencias": {}}
+{"tentativa": 693, "aceito": true, "divergencias": {}}
+{"tentativa": 694, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 695, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 696, "aceito": true, "divergencias": {}}
+{"tentativa": 697, "aceito": true, "divergencias": {}}
+{"tentativa": 698, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 699, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 700, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 701, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 702, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 703, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 704, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"]}}
+{"tentativa": 705, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 706, "aceito": true, "divergencias": {}}
+{"tentativa": 707, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 708, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 709, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 710, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "remarcar": ["incerto", "nao"]}}
+{"tentativa": 711, "aceito": true, "divergencias": {}}
+{"tentativa": 712, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 713, "aceito": true, "divergencias": {}}
+{"tentativa": 714, "aceito": true, "divergencias": {}}
+{"tentativa": 715, "aceito": true, "divergencias": {}}
+{"tentativa": 716, "aceito": false, "divergencias": {"alarme": ["incerto", "sim"]}}
+{"tentativa": 717, "aceito": true, "divergencias": {}}
+{"tentativa": 718, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 719, "aceito": true, "divergencias": {}}
+{"tentativa": 720, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 721, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 722, "aceito": true, "divergencias": {}}
+{"tentativa": 723, "aceito": true, "divergencias": {}}
+{"tentativa": 724, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 725, "aceito": true, "divergencias": {}}
+{"tentativa": 726, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 727, "aceito": true, "divergencias": {}}
+{"tentativa": 728, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 729, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 730, "aceito": true, "divergencias": {}}
+{"tentativa": 731, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "documento": ["sim", "nao"]}}
+{"tentativa": 732, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 733, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 734, "aceito": true, "divergencias": {}}
+{"tentativa": 735, "aceito": false, "divergencias": {"agendar": ["sim", "nao"], "alarme": ["incerto", "sim"]}}
+{"tentativa": 736, "aceito": true, "divergencias": {}}
+{"tentativa": 737, "aceito": false, "divergencias": {"alarme": ["incerto", "nao"]}}
+{"tentativa": 738, "aceito": false, "divergencias": {"alarme": ["nao", "sim"]}}
+{"tentativa": 739, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "remarcar": ["sim", "nao"]}}
+{"tentativa": 740, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 741, "aceito": true, "divergencias": {}}
+{"tentativa": 742, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "remarcar": ["nao", "incerto"], "alarme": ["incerto", "nao"]}}
+{"tentativa": 743, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 744, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 745, "aceito": true, "divergencias": {}}
+{"tentativa": 746, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 747, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 748, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 749, "aceito": true, "divergencias": {}}
+{"tentativa": 750, "aceito": true, "divergencias": {}}
+{"tentativa": 751, "aceito": true, "divergencias": {}}
+{"tentativa": 752, "aceito": true, "divergencias": {}}
+{"tentativa": 753, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"]}}
+{"tentativa": 754, "aceito": true, "divergencias": {}}
+{"tentativa": 755, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 756, "aceito": false, "divergencias": {"remarcar": ["sim", "nao"]}}
+{"tentativa": 757, "aceito": true, "divergencias": {}}
+{"tentativa": 758, "aceito": false, "divergencias": {"remarcar": ["incerto", "sim"]}}
+{"tentativa": 759, "aceito": true, "divergencias": {}}
+{"tentativa": 760, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 761, "aceito": true, "divergencias": {}}
+{"tentativa": 762, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 763, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"]}}
+{"tentativa": 764, "aceito": true, "divergencias": {}}

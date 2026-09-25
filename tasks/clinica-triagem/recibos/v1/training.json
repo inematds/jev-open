@@ -1,0 +1,228 @@
+{
+ "data": "2026-09-25T06:05:19+00:00",
+ "escopo": "[simulação] dados sintéticos",
+ "receita": {
+  "modelo": {
+   "id": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652"
+  },
+  "camadas_treinadas": 2,
+  "lr": 1e-05,
+  "lote_decisoes": 8,
+  "epocas": 4,
+  "seed": 20260925,
+  "otimizador": "AdamW wd=0.01, clip 1.0",
+  "device": "cuda"
+ },
+ "historia": [
+  {
+   "epoca": 1,
+   "loss_treino": 0.4811,
+   "dev": {
+    "decisoes": 240,
+    "acuracia": 0.9333,
+    "macro_f1": 0.6219,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 16,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.8295,
+      "acuracia": 0.8667,
+      "gold_por_rotulo": {
+       "sim": 13,
+       "nao": 47,
+       "incerto": 0
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.6492,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 17,
+       "nao": 42,
+       "incerto": 1
+      }
+     },
+     "documento": {
+      "macro_f1": 0.9661,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 26,
+       "nao": 34,
+       "incerto": 0
+      }
+     },
+     "alarme": {
+      "macro_f1": 0.6284,
+      "acuracia": 0.9333,
+      "gold_por_rotulo": {
+       "sim": 16,
+       "nao": 44,
+       "incerto": 0
+      }
+     }
+    }
+   },
+   "segundos": 32.4
+  },
+  {
+   "epoca": 2,
+   "loss_treino": 0.2237,
+   "dev": {
+    "decisoes": 240,
+    "acuracia": 0.9625,
+    "macro_f1": 0.6394,
+    "alarme_perdidos": 1,
+    "alarme_sim_total": 16,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.8863,
+      "acuracia": 0.9167,
+      "gold_por_rotulo": {
+       "sim": 13,
+       "nao": 47,
+       "incerto": 0
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.6627,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 17,
+       "nao": 42,
+       "incerto": 1
+      }
+     },
+     "documento": {
+      "macro_f1": 0.9661,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 26,
+       "nao": 34,
+       "incerto": 0
+      }
+     },
+     "alarme": {
+      "macro_f1": 0.9783,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 16,
+       "nao": 44,
+       "incerto": 0
+      }
+     }
+    }
+   },
+   "segundos": 65.0
+  },
+  {
+   "epoca": 3,
+   "loss_treino": 0.1584,
+   "dev": {
+    "decisoes": 240,
+    "acuracia": 0.95,
+    "macro_f1": 0.6291,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 16,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.8327,
+      "acuracia": 0.8833,
+      "gold_por_rotulo": {
+       "sim": 13,
+       "nao": 47,
+       "incerto": 0
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.6343,
+      "acuracia": 0.95,
+      "gold_por_rotulo": {
+       "sim": 17,
+       "nao": 42,
+       "incerto": 1
+      }
+     },
+     "documento": {
+      "macro_f1": 0.9661,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 26,
+       "nao": 34,
+       "incerto": 0
+      }
+     },
+     "alarme": {
+      "macro_f1": 1.0,
+      "acuracia": 1.0,
+      "gold_por_rotulo": {
+       "sim": 16,
+       "nao": 44,
+       "incerto": 0
+      }
+     }
+    }
+   },
+   "segundos": 97.7
+  },
+  {
+   "epoca": 4,
+   "loss_treino": 0.1799,
+   "dev": {
+    "decisoes": 240,
+    "acuracia": 0.9667,
+    "macro_f1": 0.6428,
+    "alarme_perdidos": 0,
+    "alarme_sim_total": 16,
+    "por_pergunta": {
+     "agendar": {
+      "macro_f1": 0.8863,
+      "acuracia": 0.9167,
+      "gold_por_rotulo": {
+       "sim": 13,
+       "nao": 47,
+       "incerto": 0
+      }
+     },
+     "remarcar": {
+      "macro_f1": 0.6627,
+      "acuracia": 0.9833,
+      "gold_por_rotulo": {
+       "sim": 17,
+       "nao": 42,
+       "incerto": 1
+      }
+     },
+     "documento": {
+      "macro_f1": 0.9661,
+      "acuracia": 0.9667,
+      "gold_por_rotulo": {
+       "sim": 26,
+       "nao": 34,
+       "incerto": 0
+      }
+     },
+     "alarme": {
+      "macro_f1": 1.0,
+      "acuracia": 1.0,
+      "gold_por_rotulo": {
+       "sim": 16,
+       "nao": 44,
+       "incerto": 0
+      }
+     }
+    }
+   },
+   "segundos": 130.2
+  }
+ ],
+ "melhor": {
+  "epoca": 4,
+  "macro_f1": 0.6428
+ },
+ "calibracao": {
+  "temperatura": 1.8221,
+  "nll_dev": 0.1284,
+  "nll_dev_t1": 0.178
+ }
+}

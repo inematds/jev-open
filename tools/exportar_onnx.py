@@ -32,7 +32,7 @@ for t in textos:
 lat.sort()
 print(json.dumps({'carga_s': round(carga, 2), 'n': len(lat), 'p50_ms': round(lat[len(lat) // 2], 1),
                   'p95_ms': round(lat[int(len(lat) * .95) - 1], 1), 'max_ms': round(lat[-1], 1),
-                  'rss_max_mb': round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024, 1), 'obs': obs}))
+                  'obs': obs}))
 '''
 
 

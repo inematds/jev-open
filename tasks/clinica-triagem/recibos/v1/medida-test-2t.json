@@ -1,0 +1,20 @@
+{
+ "data": "2026-09-25T06:30:05+00:00",
+ "pacote": "clinica-triagem-v1-05a719f3",
+ "escopo": "[medido] nesta máquina, processo limpo sem torch; NÃO é uma VPS",
+ "maquina": {
+  "cpu": "aarch64",
+  "threads_onnx": 2
+ },
+ "split": "test",
+ "n": 60,
+ "perguntas_por_mensagem": 4,
+ "carga_s": 1.28,
+ "p50_ms": 734.7,
+ "p95_ms": 1138.8,
+ "max_ms": 2240.2,
+ "ram_pico_mb": 1164.9,
+ "ram_pico_apos_carga_mb": 938.6,
+ "ram_python_antes_mb": 52.8,
+ "corrige": "rss_max_mb do servir.json (ru_maxrss herdado do processo pai com torch)"
+}
