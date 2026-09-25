@@ -6,6 +6,7 @@ versao_ficha: 1
 idioma: pt-BR
 entrada: "Uma mensagem de paciente ou acompanhante (WhatsApp ou e-mail) enviada à recepção"
 rotulos: [sim, nao, incerto]          # a ordem é o contrato: índice 0, 1, 2
+fila_revisao: fila_secretaria              # para onde vai o que o modelo não consegue observar (vazio, longo, erro)
 
 # Portão 1: significados dos rótulos e os 5 exemplos APROVADOS pelo usuário em 2026-09-25.
 portao_1: {aprovado: true, data: 2026-09-25, por: usuario}

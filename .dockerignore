@@ -1,0 +1,8 @@
+.venv/
+workshops/
+docs/
+pacotes/
+**/__pycache__/
+**/dados/
+**/recibos/
+.git/

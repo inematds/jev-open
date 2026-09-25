@@ -1,0 +1,11 @@
+# docker compose up  ->  http://localhost:8080/health
+# Antes: copie cada workshops/<tarefa>-v1/pacote/ para ./pacotes/<tarefa>/ (fora do Git).
+services:
+  jev-open:
+    build: .
+    ports: ["8080:8080"]
+    volumes: ["./pacotes:/pacotes:ro"]
+    environment: {JEV_THREADS: "2"}
+    mem_limit: 4g
+    cpus: 2
+    restart: unless-stopped

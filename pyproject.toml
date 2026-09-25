@@ -1,6 +1,6 @@
 [project]
 name = "jev-open"
-version = "0.3.3"
+version = "0.4.4"
 description = "Especialista classificador local: o modelo observa, o código decide, a incerteza vira revisão."
 requires-python = ">=3.12,<3.13"
 dependencies = [
@@ -9,6 +9,12 @@ dependencies = [
 ]
 
 [dependency-groups]
+serve = [
+    "numpy>=2.5.3",
+    "onnxruntime>=1.30.0",
+    "pyyaml>=6.0.3",
+    "tokenizers>=0.22.2",
+]
 # Treino e avaliação (GB10/GPU). A VPS não precisa deste grupo: ela serve via ONNX (fase 6).
 train = [
     "torch>=2.10",
@@ -19,6 +25,8 @@ train = [
     "safetensors",
     "scikit-learn",
     "huggingface_hub",
+    "onnx>=1.23.0",
+    "onnxscript>=0.7.2",
 ]
 
 [tool.uv]

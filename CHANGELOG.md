@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.4.4 — 2026-09-25
+
+- `docs/PASSO-A-PASSO.md`: guia para construir o especialista num nicho (os dois exemplos), como ir além na advocacia e na clínica, e receita do zero para outros nichos.
+- Ferramentas das fases 2–6, independentes de domínio, **ainda não executadas de ponta a ponta**: `tools/gerar_sintetico.py` (LLM local gerador + verificador), `tools/pipeline.py` (preparar/baseline/treinar/testar, recibos imutáveis), `core/especialista.py` (treino das 2 últimas camadas + cabeça, temperatura), `core/metricas.py`, `tools/exportar_onnx.py` (int8 + paridade + latência), `serve/` (API em CPU sem torch, contrato da ficha conferido na carga, vazio/longo/erro → revisão humana, logs sem texto), `tools/testar_servico.py`, `Dockerfile` e `docker-compose.yml`.
+- Fichas ganham `fila_revisao`. Dependências: grupos `train` (+onnx, onnxscript) e `serve` (onnxruntime, tokenizers).
+- Testes de mecânica em rascunho [medido]: o treino roda e a loss cai (16 decisões, CPU); ONNX fp32 = torch numa mensagem; int8 570 MB, ~1,1 s/mensagem em 2 threads na CPU da GB10 (não é VPS).
+
 ## v0.3.3 — 2026-09-25
 
 - Novo domínio `tasks/advocacia-atendimento/`: 7 perguntas (agendar, serviço, andamento, pagamento, documento, dúvida jurídica, urgência), escopo administrativo (sem parecer, sem cálculo de prazo, andamento só após verificação de identidade), rede de palavras-chave de urgência (só escalona), `regras.py` e meta de urgências perdidas = 0.
