@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.2 — 2026-09-25
+
+- `docs/COMO-FUNCIONA.md`: onde entram o Jev, o LLM e o código puro no exemplo do hotel; demo reproduzido localmente (Maya: decline → review), com capturas.
+
 ## v0.1.1 — 2026-09-24
 
 - PLANO: requisito "roda em qualquer VPS" (treino na GB10, serviço em CPU via ONNX int8, Docker amd64/arm64, imagem em 3 níveis) e exemplo de clínica médica (escopo administrativo, sem diagnóstico, LGPD, meta de alarmes perdidos = 0).
