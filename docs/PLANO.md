@@ -36,7 +36,10 @@ jev-open/
 │   ├── calibrate.py           # temperatura no dev, limiar de revisão
 │   ├── stages.py              # prepare/download/baseline/train/freeze/test/ood/predict
 │   └── receipts.py            # hashes, manifestos, escrita "x" (sem sobrescrever)
-├── serve/api.py               # FastAPI: POST /classify {tarefa, documento} -> observações
+├── export/                    # checkpoint -> ONNX int8 + pacote com manifesto
+├── serve/api.py               # FastAPI + ONNX Runtime (CPU): POST /classify {tarefa, documento}
+├── vision/                    # opcional: CLIP/SigLIP zero-shot (CPU) ou VLM pequeno
+├── deploy/                    # Dockerfile (amd64+arm64), docker-compose.yml, Caddyfile
 ├── rules/                     # motor de regras: observações + perfil -> match/recusa/revisão
 ├── tasks/<dominio>/           # UM diretório por sistema que adota o padrão
 │   ├── ficha.yaml             # perguntas, hipóteses, significados, ações
@@ -91,7 +94,7 @@ Cada fase só termina com **um recibo salvo** e o portão aprovado.
 | 3 | Baselines | Zero-shot do modelo base (EN e multilíngue) + baseline de regras/regex no dev | `baseline.json`; **decisão explícita**: treinar ou não (se o zero-shot já bate a meta, parar aqui) |
 | 4 | Treino | Smoke (8 decisões) → completo; 2 camadas + cabeça, seed fixa, escolha de checkpoint pelo dev; calibrar temperatura | `training.json` + `freeze.json`; loss finita; curva salva |
 | 5 | Teste final + OOD | Uma execução: base vs. treinado no teste e na raia OOD, com as mesmas entradas | `test.json` com todas as predições; metas da ficha aprovadas **ou** relatório de falha preservado |
-| 6 | Servir | `serve/api.py` (CUDA), `POST /classify`; motor de regras com ramo de revisão; testes com entrada ambígua, contraditória, ausente e longa | Resultado inspecionável: observação + probabilidade calibrada + evidência + ação |
+| 6 | Servir | Export ONNX int8 + pacote; `serve/api.py` em CPU; Docker amd64/arm64; motor de regras com ramo de revisão; testes com entrada ambígua, contraditória, ausente e longa | int8 empata com FP32 no teste congelado (±1 pp); **latência e RAM medidas numa VPS de 2 vCPU/4 GB**; resultado inspecionável |
 | 7 | Imagem (opcional) | Só se o domínio pedir. VLM local separado (ex.: via Ollama/ComfyUI na GB10) gera observações visuais; regras combinam | Testes: foto enganosa, foto ausente; imagem nunca prova cláusula |
 | 8 | Comparação com Jev (opcional) | Mesmo teste pelo `jev-gw` do repo `jev` | **Só com autorização explícita** para as chamadas pagas; resultado marcado [medido] com data |
 
@@ -114,7 +117,50 @@ Cada fase só termina com **um recibo salvo** e o portão aprovado.
 | Cursos INEMA | texto de uma aula | cita fonte verificável? | cita / não cita / ambíguo |
 | Políticas / contratos | cláusula | permite uso comercial? | permite / proíbe / não especifica |
 
-Recomendação: **começar pela réplica de viagem em PT**. Ela tem dados e gabarito comparáveis ao original e isola a variável "idioma/modelo base" antes de mudar de domínio.
+Recomendação: **começar pela réplica de viagem em PT**. Ela tem dados e gabarito comparáveis ao original e isola a variável "idioma/modelo base" antes de mudar de domínio. Depois disso, a clínica médica (seção 7B) vira o primeiro caso "de verdade".
+
+## 7A. Rodar em qualquer VPS (requisito)
+
+A ideia é **treinar na GB10 e servir em qualquer lugar.** Treinar exige GPU e acontece raramente. Servir precisa só de CPU e roda o tempo todo.
+
+```
+GB10 (treino, GPU)                          VPS qualquer (serviço, só CPU)
+  fases 2–5 → checkpoint congelado            docker compose up
+  → export ONNX + quantização int8   ───►     jev-open-api  (texto, ONNX Runtime CPU)
+  → pacote: modelo + ficha + rules            jev-open-vision (opcional, imagem)
+    + manifesto (hashes, metas batidas)       sem GPU, sem internet obrigatória
+```
+
+- **Pacote de modelo** (`dist/<tarefa>-vX.tar`): `model.onnx` (int8) + tokenizer + `ficha.yaml` + `rules.yaml` + `manifest.json` (hashes, temperatura de calibração, métricas do teste). A API **se recusa a subir** se o hash ou o contrato não baterem.
+- **Runtime**: ONNX Runtime em CPU, sem PyTorch e sem CUDA na VPS. Imagem Docker alvo < 1 GB e duas arquiteturas (amd64 e arm64), para servir em Hetzner, Contabo, Oracle ARM etc.
+- **Porte mínimo alvo (a medir, não medido)**: 2 vCPU e 4 GB de RAM só para texto. Modelo base de ~150–280M parâmetros vira ~150–300 MB em int8. Estimativa de 0,3–2 s por documento com 4 perguntas em 2 vCPU; **a fase 6 mede isso de verdade**, numa VPS barata real.
+- **Quantização é um experimento**: o int8 roda o mesmo teste congelado. Se cair mais que 1 pp, entrega FP32 e registra a diferença.
+- **Imagem na VPS**: um VLM grande em CPU é lento demais, então há 3 níveis:
+  1. **CLIP/SigLIP zero-shot** (~150–400M parâmetros, roda em CPU) para perguntas visuais simples ("há documento na foto?", "está legível?", "é piscina ou lago?").
+  2. **VLM pequeno** (2–4B, int4) só se o nível 1 não bastar, com 8 GB+ de RAM e latência de segundos.
+  3. **Imagem desligada**: a tarefa roda só com texto.
+- **Operação**: `docker compose` com `/health`, `/classify` e `/version`, um token por cliente, log de auditoria sem conteúdo sensível, e HTTPS via Caddy.
+- **Multi-tarefa**: a mesma API serve várias tarefas (`/classify?tarefa=clinica-triagem`), cada uma com o próprio pacote.
+
+## 7B. Exemplo: consultório / clínica médica
+
+**Escopo seguro: o modelo classifica texto administrativo e de atendimento. Ele NÃO diagnostica, não interpreta exame e não prioriza clinicamente.** Diagnóstico e análise de imagem médica são software como dispositivo médico, com regulação da ANVISA, e ficam fora do escopo.
+
+| Tarefa | Entrada | Perguntas (3 respostas cada) | Ação do código |
+|---|---|---|---|
+| **Triagem de mensagens** (WhatsApp/e-mail) | mensagem do paciente | quer agendar? quer remarcar/cancelar? pede resultado/documento? **menciona sintoma de alarme?** | encaminha para a fila certa; **sintoma de alarme = "sim" OU "não dá pra saber" → humano na hora + orientação padrão de urgência (192/PS)**; nunca descarta |
+| **Conferência de pedido de exame/guia** | texto do pedido ou da guia (OCR) | tem nome do paciente? tem CRM/assinatura? tem o procedimento? tem a data dentro da validade? | completo → segue; faltando → devolve com o motivo; incerto → secretária confere |
+| **Regras do convênio** | termos do plano + procedimento | procedimento coberto? exige autorização prévia? tem carência? | cruza com o cadastro do paciente (código) → "autorizar", "pedir autorização", "revisar" |
+| **Documentos por foto** (imagem, nível 1) | foto de carteirinha, pedido ou documento | é o documento esperado? está legível? está dentro da validade (o OCR lê, o código compara)? | foto ruim → pede outra; nunca aceita no lugar do texto |
+
+É o mesmo padrão da agência de viagens: **o modelo observa, o código decide** (agenda, convênio, validade) **e a dúvida vai para a secretária.**
+
+Regras específicas da saúde (entram na ficha):
+
+- **Assimetria de erro**: na pergunta "sintoma de alarme", errar para menos é inaceitável. A meta é *recall ≈ 100% no teste* para "sim"; "não dá pra saber" também escala para um humano; e a métrica principal é **alarmes perdidos = 0**, não acurácia.
+- **LGPD, dado sensível de saúde**: tudo roda na VPS da própria clínica (é mais um motivo para rodar local), sem enviar conteúdo a APIs externas. Logs guardam só IDs, rótulos e hashes. A anonimização dos exemplos acontece **antes** do treino. Dados reais de paciente nunca entram no Git.
+- **Dados**: começar com mensagens sintéticas marcadas como sintéticas e, com autorização da clínica, usar amostras reais anonimizadas e anotadas pela equipe dela. O teste independente vem de outra clínica ou de outro período.
+- **Aviso no produto**: "triagem administrativa automatizada; não substitui avaliação profissional".
 
 ## 8. Custos e tempo (estimativas, não medidas)
 
