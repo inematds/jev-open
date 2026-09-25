@@ -7,6 +7,12 @@ idioma: pt-BR
 entrada: "Uma mensagem de paciente ou acompanhante (WhatsApp ou e-mail) enviada à recepção"
 rotulos: [sim, nao, incerto]          # a ordem é o contrato: índice 0, 1, 2
 
+# Portão 1: significados dos rótulos e os 5 exemplos APROVADOS pelo usuário em 2026-09-25.
+portao_1: {aprovado: true, data: 2026-09-25, por: usuario}
+# Os exemplos de revisão contam SOMENTE como teste (smoke/regressão da pilha).
+# Nunca entram em treino, dev, teste final, OOD nem em métrica de benchmark.
+somente_teste: [exemplos-revisao.jsonl]
+
 # Significado geral dos rótulos NESTA tarefa (diferente do hotel):
 #  - pedidos (agendar, remarcar, documento): se a mensagem não pede, é "nao".
 #    "incerto" só quando há pista mas é ambíguo.

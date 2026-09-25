@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.3 — 2026-09-25
+
+- Portão 1 aprovado pelo usuário: significados dos rótulos e os 5 exemplos da `clinica-triagem` (registrado em `portao_1` na ficha).
+- Os 5 exemplos de revisão contam **somente como teste** (smoke/regressão da pilha): campo `somente_teste` na ficha e guarda `exige_uso_em_dados()` em `core/task.py`, que barra o arquivo como treino, dev, teste final ou OOD. O recibo do smoke da v0.2.2 não é benchmark.
+
 ## v0.2.2 — 2026-09-25
 
 - Fase 0: ambiente com uv; `torch 2.14.0+cu130` com CUDA ativo na GB10 [medido].

@@ -23,7 +23,7 @@ assert rotulos == ['sim', 'nao', 'incerto'], 'modo unica assume a ordem sim/nao/
 sys.path.insert(0, str(ROOT / 'tasks' / tarefa))
 from rede_alarme import dispara
 
-report = {'escopo': 'smoke zero-shot, NÃO é benchmark', 'tarefa': tarefa,
+report = {'escopo': 'smoke zero-shot com exemplos somente_teste; NÃO é benchmark', 'tarefa': tarefa,
           'data': datetime.now(timezone.utc).isoformat(timespec='seconds'),
           'dados_sha256': hashlib.sha256(arq.read_bytes()).hexdigest(),
           'n_decisoes': len(records) * len(ficha['perguntas']), 'motores': {}}

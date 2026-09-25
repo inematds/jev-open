@@ -50,3 +50,9 @@ def load_records(path, ficha):
     if not out:
         raise ValueError('arquivo vazio')
     return out
+
+
+def exige_uso_em_dados(path, ficha):
+    """Barra arquivos marcados em `somente_teste` na ficha antes de usá-los como dados (treino/dev/teste/OOD)."""
+    if Path(path).name in ficha.get('somente_teste', []):
+        raise ValueError(f'{Path(path).name} é somente teste (ficha: somente_teste); não entra em treino, dev, teste final nem OOD')
