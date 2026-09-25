@@ -1,0 +1,10 @@
+docs/originais/
+docs/ref-away-together-starter/
+workshops/
+*.safetensors
+.venv/
+__pycache__/
+*.pyc
+.env*
+node_modules/
+.DS_Store
