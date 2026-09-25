@@ -49,7 +49,7 @@ Metas da ficha (definidas antes de treinar), avaliadas nos dados sintéticos:
 | Macro-F1 OOD ≥ 0,70 | reprovada (0,64) | reprovada (0,61) |
 | Queda teste→OOD ≤ 15 pp | aprovada (−1,1) | **reprovada** (16,0) |
 
-**Achado 3: a urgência perdida na advocacia.** Mensagem de remarcar reunião porque o cliente "adoeceu repentinamente com uma febre alta" e "precisamos agilizar qualquer pendência urgente". O gabarito (gerado por IA) diz urgência jurídica = sim; o modelo deu 44% sim contra 51% não. O rótulo é discutível (é um problema de saúde, não um prazo judicial), mas pela regra da ficha conta como perdido. Um limiar de confiança calibrado **no dev** teria mandado esse caso para uma pessoa; o ajuste **não** foi feito olhando o teste.
+**Achado 3: a urgência perdida na advocacia.** Mensagem de remarcar reunião porque o cliente "adoeceu repentinamente com uma febre alta" e "precisamos agilizar qualquer pendência urgente". O gabarito (gerado por IA) diz urgência jurídica = sim; o modelo deu 44% sim contra 51% não. O rótulo é discutível (é um problema de saúde, não um prazo judicial), mas pela regra da ficha conta como perdido. A confiança do "não" foi 0,505: um limiar acima de ~0,51 na pergunta crítica mandaria esse caso para uma pessoa. Se um limiar calibrado no dev chegaria lá **não foi medido** (as probabilidades do dev não foram salvas), e nada foi ajustado olhando o teste.
 
 ## Serviço em CPU (fase 6)
 
@@ -66,7 +66,7 @@ Container com os dois nichos (`--memory 4g --cpus 2`): **1,87 GB** em uso [medid
 
 **Achado 4: o portão int8 da clínica reprovou** por 2,3 pp, embora só ~1 decisão em 240 mude. O macro-F1 é instável aqui porque "incerto" é raríssimo. Próximo passo: quantizar deixando a cabeça e a última camada em fp32 e medir de novo, ou servir fp32 (2,3 GB, ~5× mais lento).
 
-**Achado 5: o caso ambíguo da advocacia** ("recebi uma carta do tribunal, não entendi, o que eu faço?") foi para a fila do advogado por dúvida jurídica, mas **não** como urgência imediata: o modelo disse "não" para urgência onde o gabarito dizia "incerto". Com um limiar de confiança na pergunta crítica, isso viraria revisão imediata.
+**Achado 5: o caso ambíguo da advocacia** ("recebi uma carta do tribunal, não entendi, o que eu faço?") foi para a fila do advogado por dúvida jurídica, mas **não** como urgência imediata: o modelo disse "não" para urgência onde o gabarito dizia "incerto". Um limiar de confiança na pergunta crítica poderia transformar isso em revisão imediata, dependendo da confiança do "não" nesse caso (não medido aqui).
 
 ## Falhas corrigidas no caminho
 
