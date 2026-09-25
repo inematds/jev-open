@@ -1,0 +1,346 @@
+{
+ "data": "2026-09-25T05:20:21+00:00",
+ "split": "dev",
+ "escopo": "[simulação] dados sintéticos",
+ "dev_sha256": "738fce0aab45588db3805da00eb90bc3224c78c028b370971b5db2589abe13a3",
+ "motores": {
+  "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7|hipoteses": {
+   "modelo": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "revisao": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+   "modo": "hipoteses",
+   "device": "cpu",
+   "segundos": 319.8,
+   "decisoes": 420,
+   "acuracia": 0.2,
+   "macro_f1": 0.1478,
+   "urgencia_perdidos": 0,
+   "urgencia_sim_total": 7,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.0909,
+     "acuracia": 0.1,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "servico": {
+     "macro_f1": 0.28,
+     "acuracia": 0.3,
+     "gold_por_rotulo": {
+      "sim": 14,
+      "nao": 46,
+      "incerto": 0
+     }
+    },
+    "andamento": {
+     "macro_f1": 0.25,
+     "acuracia": 0.3333,
+     "gold_por_rotulo": {
+      "sim": 20,
+      "nao": 40,
+      "incerto": 0
+     }
+    },
+    "pagamento": {
+     "macro_f1": 0.2063,
+     "acuracia": 0.3,
+     "gold_por_rotulo": {
+      "sim": 8,
+      "nao": 52,
+      "incerto": 0
+     }
+    },
+    "documento": {
+     "macro_f1": 0.0952,
+     "acuracia": 0.1667,
+     "gold_por_rotulo": {
+      "sim": 10,
+      "nao": 48,
+      "incerto": 2
+     }
+    },
+    "duvida_juridica": {
+     "macro_f1": 0.0615,
+     "acuracia": 0.1,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "urgencia": {
+     "macro_f1": 0.1517,
+     "acuracia": 0.1,
+     "gold_por_rotulo": {
+      "sim": 7,
+      "nao": 52,
+      "incerto": 1
+     }
+    }
+   }
+  },
+  "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7|unica": {
+   "modelo": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+   "revisao": "b5113eb38ab63efdd7f280f8c144ea8b13f978ce",
+   "modo": "unica",
+   "device": "cpu",
+   "segundos": 221.4,
+   "decisoes": 420,
+   "acuracia": 0.1952,
+   "macro_f1": 0.1615,
+   "urgencia_perdidos": 0,
+   "urgencia_sim_total": 7,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.0538,
+     "acuracia": 0.0833,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "servico": {
+     "macro_f1": 0.2017,
+     "acuracia": 0.2833,
+     "gold_por_rotulo": {
+      "sim": 14,
+      "nao": 46,
+      "incerto": 0
+     }
+    },
+    "andamento": {
+     "macro_f1": 0.25,
+     "acuracia": 0.3333,
+     "gold_por_rotulo": {
+      "sim": 20,
+      "nao": 40,
+      "incerto": 0
+     }
+    },
+    "pagamento": {
+     "macro_f1": 0.2581,
+     "acuracia": 0.1667,
+     "gold_por_rotulo": {
+      "sim": 8,
+      "nao": 52,
+      "incerto": 0
+     }
+    },
+    "documento": {
+     "macro_f1": 0.2328,
+     "acuracia": 0.1833,
+     "gold_por_rotulo": {
+      "sim": 10,
+      "nao": 48,
+      "incerto": 2
+     }
+    },
+    "duvida_juridica": {
+     "macro_f1": 0.0714,
+     "acuracia": 0.1,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "urgencia": {
+     "macro_f1": 0.2693,
+     "acuracia": 0.2167,
+     "gold_por_rotulo": {
+      "sim": 7,
+      "nao": 52,
+      "incerto": 1
+     }
+    }
+   }
+  },
+  "MoritzLaurer/bge-m3-zeroshot-v2.0|hipoteses": {
+   "modelo": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652",
+   "modo": "hipoteses",
+   "device": "cpu",
+   "segundos": 386.3,
+   "decisoes": 420,
+   "acuracia": 0.7143,
+   "macro_f1": 0.5084,
+   "urgencia_perdidos": 0,
+   "urgencia_sim_total": 7,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.5556,
+     "acuracia": 0.9167,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "servico": {
+     "macro_f1": 0.5582,
+     "acuracia": 0.8833,
+     "gold_por_rotulo": {
+      "sim": 14,
+      "nao": 46,
+      "incerto": 0
+     }
+    },
+    "andamento": {
+     "macro_f1": 0.3341,
+     "acuracia": 0.4833,
+     "gold_por_rotulo": {
+      "sim": 20,
+      "nao": 40,
+      "incerto": 0
+     }
+    },
+    "pagamento": {
+     "macro_f1": 0.6412,
+     "acuracia": 0.9667,
+     "gold_por_rotulo": {
+      "sim": 8,
+      "nao": 52,
+      "incerto": 0
+     }
+    },
+    "documento": {
+     "macro_f1": 0.4187,
+     "acuracia": 0.4,
+     "gold_por_rotulo": {
+      "sim": 10,
+      "nao": 48,
+      "incerto": 2
+     }
+    },
+    "duvida_juridica": {
+     "macro_f1": 0.3041,
+     "acuracia": 0.4667,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "urgencia": {
+     "macro_f1": 0.7037,
+     "acuracia": 0.8833,
+     "gold_por_rotulo": {
+      "sim": 7,
+      "nao": 52,
+      "incerto": 1
+     }
+    }
+   }
+  },
+  "MoritzLaurer/ModernBERT-base-zeroshot-v2.0|hipoteses": {
+   "modelo": "MoritzLaurer/ModernBERT-base-zeroshot-v2.0",
+   "revisao": "d421c4545a438fd006fb43f8b981c5d908faa1e1",
+   "modo": "hipoteses",
+   "device": "cpu",
+   "segundos": 292.8,
+   "decisoes": 420,
+   "acuracia": 0.1976,
+   "macro_f1": 0.1485,
+   "urgencia_perdidos": 0,
+   "urgencia_sim_total": 7,
+   "por_pergunta": {
+    "agendar": {
+     "macro_f1": 0.086,
+     "acuracia": 0.1333,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "servico": {
+     "macro_f1": 0.1475,
+     "acuracia": 0.25,
+     "gold_por_rotulo": {
+      "sim": 14,
+      "nao": 46,
+      "incerto": 0
+     }
+    },
+    "andamento": {
+     "macro_f1": 0.25,
+     "acuracia": 0.3333,
+     "gold_por_rotulo": {
+      "sim": 20,
+      "nao": 40,
+      "incerto": 0
+     }
+    },
+    "pagamento": {
+     "macro_f1": 0.1212,
+     "acuracia": 0.1667,
+     "gold_por_rotulo": {
+      "sim": 8,
+      "nao": 52,
+      "incerto": 0
+     }
+    },
+    "documento": {
+     "macro_f1": 0.101,
+     "acuracia": 0.1667,
+     "gold_por_rotulo": {
+      "sim": 10,
+      "nao": 48,
+      "incerto": 2
+     }
+    },
+    "duvida_juridica": {
+     "macro_f1": 0.1105,
+     "acuracia": 0.1167,
+     "gold_por_rotulo": {
+      "sim": 6,
+      "nao": 54,
+      "incerto": 0
+     }
+    },
+    "urgencia": {
+     "macro_f1": 0.1999,
+     "acuracia": 0.2167,
+     "gold_por_rotulo": {
+      "sim": 7,
+      "nao": 52,
+      "incerto": 1
+     }
+    }
+   }
+  }
+ },
+ "rede_palavras_chave": {
+  "pergunta": "urgencia",
+  "decisoes": 60,
+  "acuracia": 0.95,
+  "macro_f1": 0.6095,
+  "urgencia_perdidos": 1,
+  "urgencia_sim_total": 7,
+  "por_pergunta": {
+   "urgencia": {
+    "macro_f1": 0.6095,
+    "acuracia": 0.95,
+    "gold_por_rotulo": {
+     "sim": 7,
+     "nao": 52,
+     "incerto": 1
+    }
+   }
+  }
+ },
+ "decisao": {
+  "meta_macro_f1_dev_min": 0.85,
+  "melhor_zero_shot": "MoritzLaurer/bge-m3-zeroshot-v2.0|hipoteses",
+  "macro_f1": 0.5084,
+  "treinar": true,
+  "modelo_para_treino": {
+   "id": "MoritzLaurer/bge-m3-zeroshot-v2.0",
+   "revisao": "9abf1c8aaeb82a2447809c20753ed0b106b76652"
+  },
+  "regra": "treina o melhor candidato do modo hipoteses se o zero-shot não bate a meta no dev"
+ }
+}

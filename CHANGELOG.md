@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.5.4 — 2026-09-25
+
+- Guia público em `guia/index.html` (GitHub Pages via Actions), capa em `capa/capa.png`, README com link do guia. Repositório tornado público a pedido do usuário; `docs/originais/` e o clone do starter continuam fora do Git.
+- Advocacia, fase 2 [simulação]: 320 registros sintéticos (qwen3.6:35b-a3b gera, qwen3:30b confere; ~31% aceitos) + 60 OOD (llama3.1:8b, estilo e-mail; 29% aceitos; a tentativa com command-r:35b foi abandonada por lentidão e os 10 registros parciais descartados). Split 200/60/60/60, sem duplicatas. **Achado:** "incerto" quase some (0–3 por pergunta por split), porque os dois LLMs raramente concordam sobre ambiguidade.
+- Advocacia, fase 3 [simulação, dev sintético, CPU]: macro-F1 zero-shot bge-m3 0,508; mDeBERTa 0,148/0,162; ModernBERT 0,149; rede de urgência 0,610 (só na pergunta urgência); urgências perdidas pelo bge-m3 = 0. Decisão: treinar o bge-m3.
+- `core/metricas.py`: macro-F1 ignora rótulo ausente no gabarito e na previsão (antes contava F1 = 0).
+
 ## v0.4.4 — 2026-09-25
 
 - `docs/PASSO-A-PASSO.md`: guia para construir o especialista num nicho (os dois exemplos), como ir além na advocacia e na clínica, e receita do zero para outros nichos.

@@ -1,0 +1,206 @@
+{"tentativa": 1, "aceito": true, "divergencias": {}}
+{"tentativa": 2, "aceito": true, "divergencias": {}}
+{"tentativa": 3, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "pagamento": ["incerto", "nao"]}}
+{"tentativa": 4, "aceito": false, "divergencias": {"duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 5, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 6, "aceito": false, "divergencias": {"andamento": ["sim", "nao"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 7, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 8, "aceito": false, "divergencias": {"pagamento": ["sim", "nao"], "duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 9, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 10, "aceito": true, "divergencias": {}}
+{"tentativa": 11, "aceito": false, "divergencias": {"servico": ["sim", "incerto"]}}
+{"tentativa": 12, "aceito": true, "divergencias": {}}
+{"tentativa": 13, "aceito": false, "divergencias": {"documento": ["nao", "sim"]}}
+{"tentativa": 14, "aceito": false, "divergencias": {"duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 15, "aceito": false, "divergencias": {"pagamento": ["incerto", "nao"]}}
+{"tentativa": 16, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 17, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 18, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 19, "aceito": false, "divergencias": {"urgencia": ["incerto", "nao"]}}
+{"tentativa": 20, "aceito": false, "divergencias": {"servico": ["incerto", "sim"], "andamento": ["incerto", "nao"], "duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 21, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 22, "aceito": false, "divergencias": {"servico": ["sim", "nao"], "andamento": ["nao", "sim"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 23, "aceito": true, "divergencias": {}}
+{"tentativa": 24, "aceito": false, "divergencias": {"urgencia": ["incerto", "nao"]}}
+{"tentativa": 25, "aceito": true, "divergencias": {}}
+{"tentativa": 26, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 27, "aceito": false, "divergencias": {"andamento": ["nao", "incerto"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 28, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 29, "aceito": true, "divergencias": {}}
+{"tentativa": 30, "aceito": true, "divergencias": {}}
+{"tentativa": 31, "aceito": false, "divergencias": {"servico": ["nao", "sim"]}}
+{"tentativa": 32, "aceito": true, "divergencias": {}}
+{"tentativa": 33, "aceito": true, "divergencias": {}}
+{"tentativa": 34, "aceito": false, "divergencias": {"agendar": ["incerto", "sim"], "servico": ["nao", "incerto"], "duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 35, "aceito": false, "divergencias": {"agendar": ["sim", "nao"]}}
+{"tentativa": 36, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "pagamento": ["incerto", "sim"]}}
+{"tentativa": 37, "aceito": true, "divergencias": {}}
+{"tentativa": 38, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 39, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 40, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 41, "aceito": true, "divergencias": {}}
+{"tentativa": 42, "aceito": false, "divergencias": {"servico": ["incerto", "sim"], "duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 43, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "documento": ["incerto", "nao"]}}
+{"tentativa": 44, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "andamento": ["nao", "sim"]}}
+{"tentativa": 45, "aceito": false, "divergencias": {"pagamento": ["sim", "nao"], "duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 46, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 47, "aceito": false, "divergencias": {"documento": ["incerto", "nao"]}}
+{"tentativa": 48, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 49, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 50, "aceito": true, "divergencias": {}}
+{"tentativa": 51, "aceito": true, "divergencias": {}}
+{"tentativa": 52, "aceito": true, "divergencias": {}}
+{"tentativa": 53, "aceito": false, "divergencias": {"pagamento": ["incerto", "nao"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 54, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "andamento": ["nao", "sim"], "duvida_juridica": ["nao", "sim"]}}
+{"tentativa": 55, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "andamento": ["nao", "sim"]}}
+{"tentativa": 56, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "pagamento": ["incerto", "nao"]}}
+{"tentativa": 57, "aceito": true, "divergencias": {}}
+{"tentativa": 58, "aceito": true, "divergencias": {}}
+{"tentativa": 59, "aceito": true, "divergencias": {}}
+{"tentativa": 60, "aceito": true, "divergencias": {}}
+{"tentativa": 61, "aceito": true, "divergencias": {}}
+{"tentativa": 62, "aceito": false, "divergencias": {"documento": ["nao", "sim"]}}
+{"tentativa": 63, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 64, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "documento": ["sim", "incerto"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 65, "aceito": true, "divergencias": {}}
+{"tentativa": 66, "aceito": true, "divergencias": {}}
+{"tentativa": 67, "aceito": true, "divergencias": {}}
+{"tentativa": 68, "aceito": true, "divergencias": {}}
+{"tentativa": 69, "aceito": false, "divergencias": {"documento": ["incerto", "nao"], "duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 70, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 71, "aceito": true, "divergencias": {}}
+{"tentativa": 72, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "duvida_juridica": ["nao", "sim"], "urgencia": ["sim", "incerto"]}}
+{"tentativa": 73, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "andamento": ["nao", "sim"]}}
+{"tentativa": 74, "aceito": false, "divergencias": {"pagamento": ["sim", "nao"]}}
+{"tentativa": 75, "aceito": true, "divergencias": {}}
+{"tentativa": 76, "aceito": true, "divergencias": {}}
+{"tentativa": 77, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 78, "aceito": false, "divergencias": {"servico": ["incerto", "nao"], "documento": ["nao", "sim"]}}
+{"tentativa": 79, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 80, "aceito": true, "divergencias": {}}
+{"tentativa": 81, "aceito": false, "divergencias": {"servico": ["nao", "incerto"]}}
+{"tentativa": 82, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 83, "aceito": false, "divergencias": {"documento": ["sim", "nao"], "duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 84, "aceito": false, "divergencias": {"servico": ["nao", "incerto"]}}
+{"tentativa": 85, "aceito": false, "divergencias": {"duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 86, "aceito": true, "divergencias": {}}
+{"tentativa": 87, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "servico": ["nao", "incerto"], "duvida_juridica": ["sim", "incerto"], "urgencia": ["nao", "sim"]}}
+{"tentativa": 88, "aceito": true, "divergencias": {}}
+{"tentativa": 89, "aceito": false, "divergencias": {"pagamento": ["sim", "nao"]}}
+{"tentativa": 90, "aceito": false, "divergencias": {"duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 91, "aceito": false, "divergencias": {"andamento": ["incerto", "nao"]}}
+{"tentativa": 92, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 93, "aceito": true, "divergencias": {}}
+{"tentativa": 94, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 95, "aceito": true, "divergencias": {}}
+{"tentativa": 96, "aceito": true, "divergencias": {}}
+{"tentativa": 97, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "servico": ["nao", "incerto"], "duvida_juridica": ["nao", "incerto"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 98, "aceito": false, "divergencias": {"urgencia": ["sim", "nao"]}}
+{"tentativa": 99, "aceito": true, "divergencias": {}}
+{"tentativa": 100, "aceito": true, "divergencias": {}}
+{"tentativa": 101, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "pagamento": ["incerto", "nao"]}}
+{"tentativa": 102, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 103, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 104, "aceito": false, "divergencias": {"agendar": ["nao", "incerto"], "andamento": ["nao", "sim"], "documento": ["nao", "incerto"]}}
+{"tentativa": 105, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 106, "aceito": false, "divergencias": {"agendar": ["sim", "nao"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 107, "aceito": true, "divergencias": {}}
+{"tentativa": 108, "aceito": false, "divergencias": {"servico": ["nao", "incerto"]}}
+{"tentativa": 109, "aceito": true, "divergencias": {}}
+{"tentativa": 110, "aceito": true, "divergencias": {}}
+{"tentativa": 111, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 112, "aceito": false, "divergencias": {"documento": ["nao", "sim"]}}
+{"tentativa": 113, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "servico": ["nao", "incerto"], "andamento": ["incerto", "sim"]}}
+{"tentativa": 114, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 115, "aceito": false, "divergencias": {"pagamento": ["incerto", "sim"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 116, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"]}}
+{"tentativa": 117, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 118, "aceito": false, "divergencias": {"duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 119, "aceito": true, "divergencias": {}}
+{"tentativa": 120, "aceito": true, "divergencias": {}}
+{"tentativa": 121, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 122, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 123, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 124, "aceito": true, "divergencias": {}}
+{"tentativa": 125, "aceito": false, "divergencias": {"servico": ["incerto", "nao"]}}
+{"tentativa": 126, "aceito": false, "divergencias": {"documento": ["sim", "nao"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 127, "aceito": false, "divergencias": {"andamento": ["sim", "nao"]}}
+{"tentativa": 128, "aceito": true, "divergencias": {}}
+{"tentativa": 129, "aceito": true, "divergencias": {}}
+{"tentativa": 130, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 131, "aceito": false, "divergencias": {"pagamento": ["sim", "incerto"]}}
+{"tentativa": 132, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 133, "aceito": true, "divergencias": {}}
+{"tentativa": 134, "aceito": false, "divergencias": {"duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 135, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "servico": ["sim", "nao"]}}
+{"tentativa": 136, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "andamento": ["incerto", "sim"]}}
+{"tentativa": 137, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "andamento": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 138, "aceito": false, "divergencias": {"andamento": ["nao", "incerto"], "duvida_juridica": ["sim", "incerto"]}}
+{"tentativa": 139, "aceito": true, "divergencias": {}}
+{"tentativa": 140, "aceito": false, "divergencias": {"agendar": ["incerto", "nao"], "duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 141, "aceito": true, "divergencias": {}}
+{"tentativa": 142, "aceito": false, "divergencias": {"duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 143, "aceito": true, "divergencias": {}}
+{"tentativa": 144, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "documento": ["incerto", "nao"], "duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 145, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "documento": ["nao", "sim"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 146, "aceito": false, "divergencias": {"pagamento": ["sim", "nao"]}}
+{"tentativa": 147, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 148, "aceito": false, "divergencias": {"servico": ["incerto", "nao"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 149, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "documento": ["incerto", "nao"], "duvida_juridica": ["nao", "sim"]}}
+{"tentativa": 150, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 151, "aceito": false, "divergencias": {"servico": ["incerto", "nao"]}}
+{"tentativa": 152, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "documento": ["nao", "sim"]}}
+{"tentativa": 153, "aceito": false, "divergencias": {"documento": ["sim", "incerto"]}}
+{"tentativa": 154, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "andamento": ["nao", "incerto"], "documento": ["nao", "incerto"], "duvida_juridica": ["nao", "incerto"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 155, "aceito": false, "divergencias": {"pagamento": ["incerto", "nao"], "documento": ["nao", "incerto"]}}
+{"tentativa": 156, "aceito": true, "divergencias": {}}
+{"tentativa": 157, "aceito": true, "divergencias": {}}
+{"tentativa": 158, "aceito": false, "divergencias": {"urgencia": ["sim", "nao"]}}
+{"tentativa": 159, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 160, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "documento": ["incerto", "nao"]}}
+{"tentativa": 161, "aceito": false, "divergencias": {"servico": ["nao", "incerto"]}}
+{"tentativa": 162, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"], "documento": ["nao", "sim"]}}
+{"tentativa": 163, "aceito": false, "divergencias": {"duvida_juridica": ["sim", "nao"]}}
+{"tentativa": 164, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 165, "aceito": false, "divergencias": {"servico": ["incerto", "nao"]}}
+{"tentativa": 166, "aceito": false, "divergencias": {"andamento": ["incerto", "sim"]}}
+{"tentativa": 167, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "andamento": ["nao", "sim"]}}
+{"tentativa": 168, "aceito": false, "divergencias": {"documento": ["sim", "nao"]}}
+{"tentativa": 169, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 170, "aceito": true, "divergencias": {}}
+{"tentativa": 171, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "pagamento": ["incerto", "sim"]}}
+{"tentativa": 172, "aceito": true, "divergencias": {}}
+{"tentativa": 173, "aceito": true, "divergencias": {}}
+{"tentativa": 174, "aceito": false, "divergencias": {"urgencia": ["incerto", "nao"]}}
+{"tentativa": 175, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "urgencia": ["nao", "sim"]}}
+{"tentativa": 176, "aceito": true, "divergencias": {}}
+{"tentativa": 177, "aceito": false, "divergencias": {"urgencia": ["incerto", "nao"]}}
+{"tentativa": 178, "aceito": true, "divergencias": {}}
+{"tentativa": 179, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "documento": ["nao", "incerto"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 180, "aceito": true, "divergencias": {}}
+{"tentativa": 181, "aceito": false, "divergencias": {"pagamento": ["incerto", "sim"]}}
+{"tentativa": 182, "aceito": true, "divergencias": {}}
+{"tentativa": 183, "aceito": false, "divergencias": {"servico": ["nao", "incerto"]}}
+{"tentativa": 184, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 185, "aceito": false, "divergencias": {"documento": ["incerto", "nao"], "duvida_juridica": ["nao", "incerto"]}}
+{"tentativa": 186, "aceito": false, "divergencias": {"servico": ["sim", "incerto"]}}
+{"tentativa": 187, "aceito": true, "divergencias": {}}
+{"tentativa": 188, "aceito": false, "divergencias": {"agendar": ["nao", "sim"], "servico": ["incerto", "nao"], "andamento": ["incerto", "nao"]}}
+{"tentativa": 189, "aceito": false, "divergencias": {"andamento": ["nao", "sim"]}}
+{"tentativa": 190, "aceito": false, "divergencias": {"agendar": ["nao", "sim"]}}
+{"tentativa": 191, "aceito": false, "divergencias": {"duvida_juridica": ["nao", "incerto"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 192, "aceito": false, "divergencias": {"servico": ["incerto", "nao"], "documento": ["incerto", "nao"]}}
+{"tentativa": 193, "aceito": false, "divergencias": {"andamento": ["incerto", "nao"]}}
+{"tentativa": 194, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "duvida_juridica": ["sim", "incerto"]}}
+{"tentativa": 195, "aceito": false, "divergencias": {"servico": ["nao", "incerto"]}}
+{"tentativa": 196, "aceito": false, "divergencias": {"duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 197, "aceito": false, "divergencias": {"duvida_juridica": ["incerto", "nao"]}}
+{"tentativa": 198, "aceito": false, "divergencias": {"pagamento": ["incerto", "nao"], "documento": ["nao", "sim"]}}
+{"tentativa": 199, "aceito": true, "divergencias": {}}
+{"tentativa": 200, "aceito": true, "divergencias": {}}
+{"tentativa": 201, "aceito": false, "divergencias": {"andamento": ["nao", "incerto"]}}
+{"tentativa": 202, "aceito": false, "divergencias": {"servico": ["nao", "incerto"], "urgencia": ["sim", "nao"]}}
+{"tentativa": 203, "aceito": false, "divergencias": {"urgencia": ["incerto", "nao"]}}
+{"tentativa": 204, "aceito": false, "divergencias": {"andamento": ["sim", "nao"], "pagamento": ["incerto", "nao"]}}
+{"tentativa": 205, "aceito": false, "divergencias": {"andamento": ["nao", "sim"], "documento": ["nao", "incerto"], "urgencia": ["incerto", "nao"]}}
+{"tentativa": 206, "aceito": true, "divergencias": {}}

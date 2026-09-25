@@ -2,13 +2,15 @@
 
 
 def macro_f1(gold, pred, n=3):
+    """Média do F1 dos rótulos presentes no gabarito ou na previsão (ausente dos dois não conta)."""
     f1s = []
     for c in range(n):
         tp = sum(g == c and p == c for g, p in zip(gold, pred))
         fp = sum(g != c and p == c for g, p in zip(gold, pred))
         fn = sum(g == c and p != c for g, p in zip(gold, pred))
-        f1s.append(0.0 if tp == 0 else 2 * tp / (2 * tp + fp + fn))
-    return sum(f1s) / n
+        if tp + fp + fn:
+            f1s.append(2 * tp / (2 * tp + fp + fn))
+    return sum(f1s) / len(f1s) if f1s else 1.0
 
 
 def resumo(decs, pred, ficha):

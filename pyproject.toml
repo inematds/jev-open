@@ -1,6 +1,6 @@
 [project]
 name = "jev-open"
-version = "0.4.4"
+version = "0.5.4"
 description = "Especialista classificador local: o modelo observa, o código decide, a incerteza vira revisão."
 requires-python = ">=3.12,<3.13"
 dependencies = [

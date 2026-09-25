@@ -1,0 +1,207 @@
+{
+ "data": "2026-09-25T05:20:12+00:00",
+ "tarefa": "advocacia-atendimento",
+ "run": "v1",
+ "sintetico": true,
+ "aviso": "dados 100% sintéticos gerados e conferidos por LLMs locais; resultados são [simulação] do pipeline, não evidência do domínio",
+ "fontes": {
+  "indist": {
+   "arquivo": "tasks/advocacia-atendimento/dados/sintetico.jsonl",
+   "sha256": "40757ea23c2377de772bbe70d153ff03c38259aef8526f99a3d0fea1f9fe47d5",
+   "registros": 320
+  },
+  "ood": {
+   "arquivo": "tasks/advocacia-atendimento/dados/ood-sintetico.jsonl",
+   "sha256": "b3105b486b2e49f5a24ac7488adf1d586bc779e9bf5cd96468163709bacd11ff",
+   "registros": 60
+  }
+ },
+ "dedup": {
+  "jaccard_5gramas": 0.6,
+  "pares_perto_no_indist_agrupados": 0,
+  "descartes": {
+   "exato": 0,
+   "perto_de_revisao": 0,
+   "ood_perto_de_indist": 0
+  },
+  "ids_descartados": {
+   "exato": [],
+   "perto_de_revisao": [],
+   "ood_perto_de_indist": []
+  }
+ },
+ "splits": {
+  "train": {
+   "arquivo": "tasks/advocacia-atendimento/dados/train.jsonl",
+   "sha256": "809c23d4413083cdf75eccd54498fbd847c0403541fcef47f9bc79717b333e80",
+   "registros": 200,
+   "grupos": 200,
+   "rotulos": {
+    "agendar": {
+     "sim": 50,
+     "nao": 150,
+     "incerto": 0
+    },
+    "servico": {
+     "sim": 41,
+     "nao": 155,
+     "incerto": 4
+    },
+    "andamento": {
+     "sim": 37,
+     "nao": 161,
+     "incerto": 2
+    },
+    "pagamento": {
+     "sim": 32,
+     "nao": 167,
+     "incerto": 1
+    },
+    "documento": {
+     "sim": 29,
+     "nao": 168,
+     "incerto": 3
+    },
+    "duvida_juridica": {
+     "sim": 15,
+     "nao": 182,
+     "incerto": 3
+    },
+    "urgencia": {
+     "sim": 26,
+     "nao": 174,
+     "incerto": 0
+    }
+   }
+  },
+  "dev": {
+   "arquivo": "tasks/advocacia-atendimento/dados/dev.jsonl",
+   "sha256": "738fce0aab45588db3805da00eb90bc3224c78c028b370971b5db2589abe13a3",
+   "registros": 60,
+   "grupos": 60,
+   "rotulos": {
+    "agendar": {
+     "sim": 6,
+     "nao": 54,
+     "incerto": 0
+    },
+    "servico": {
+     "sim": 14,
+     "nao": 46,
+     "incerto": 0
+    },
+    "andamento": {
+     "sim": 20,
+     "nao": 40,
+     "incerto": 0
+    },
+    "pagamento": {
+     "sim": 8,
+     "nao": 52,
+     "incerto": 0
+    },
+    "documento": {
+     "sim": 10,
+     "nao": 48,
+     "incerto": 2
+    },
+    "duvida_juridica": {
+     "sim": 6,
+     "nao": 54,
+     "incerto": 0
+    },
+    "urgencia": {
+     "sim": 7,
+     "nao": 52,
+     "incerto": 1
+    }
+   }
+  },
+  "test": {
+   "arquivo": "tasks/advocacia-atendimento/dados/test.jsonl",
+   "sha256": "b636189f67709d4aa52ed30fa51cac4fdf41af297200de182d7470cafd8bbf4e",
+   "registros": 60,
+   "grupos": 60,
+   "rotulos": {
+    "agendar": {
+     "sim": 14,
+     "nao": 45,
+     "incerto": 1
+    },
+    "servico": {
+     "sim": 5,
+     "nao": 54,
+     "incerto": 1
+    },
+    "andamento": {
+     "sim": 13,
+     "nao": 47,
+     "incerto": 0
+    },
+    "pagamento": {
+     "sim": 13,
+     "nao": 46,
+     "incerto": 1
+    },
+    "documento": {
+     "sim": 11,
+     "nao": 47,
+     "incerto": 2
+    },
+    "duvida_juridica": {
+     "sim": 2,
+     "nao": 57,
+     "incerto": 1
+    },
+    "urgencia": {
+     "sim": 10,
+     "nao": 49,
+     "incerto": 1
+    }
+   }
+  },
+  "ood": {
+   "arquivo": "tasks/advocacia-atendimento/dados/ood.jsonl",
+   "sha256": "b3105b486b2e49f5a24ac7488adf1d586bc779e9bf5cd96468163709bacd11ff",
+   "registros": 60,
+   "grupos": 60,
+   "rotulos": {
+    "agendar": {
+     "sim": 11,
+     "nao": 49,
+     "incerto": 0
+    },
+    "servico": {
+     "sim": 12,
+     "nao": 47,
+     "incerto": 1
+    },
+    "andamento": {
+     "sim": 14,
+     "nao": 46,
+     "incerto": 0
+    },
+    "pagamento": {
+     "sim": 12,
+     "nao": 48,
+     "incerto": 0
+    },
+    "documento": {
+     "sim": 8,
+     "nao": 51,
+     "incerto": 1
+    },
+    "duvida_juridica": {
+     "sim": 2,
+     "nao": 58,
+     "incerto": 0
+    },
+    "urgencia": {
+     "sim": 2,
+     "nao": 58,
+     "incerto": 0
+    }
+   }
+  }
+ }
+}
