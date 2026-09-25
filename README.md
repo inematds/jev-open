@@ -1,5 +1,7 @@
 # jev-open
 
+![jev-open — especialista local de triagem](guia/assets/banner.jpg)
+
 ## 📖 Guia de uso
 
 Guia completo (landing + passo a passo): **https://inematds.github.io/jev-open/guia/**
