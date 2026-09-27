@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.6.5 — 2026-09-26
+
+- `docs/SUGESTAO-ROTEAMENTO.md` (sugestão, nada implementado): usar o jev-open para escolher modelo e ferramenta em assistentes como jarvisv7 e openpcbotv3, perguntando propriedades do pedido (o código mapeia para tier/agente/skill), com roteiro em degraus observar → filtrar → decidir. Referenciado no README.
+
 ## v0.6.4 — 2026-09-25
 
 - **Run v1 de ponta a ponta nos dois nichos** (fases 2–6), com dados 100% sintéticos: resultados [simulação] do pipeline, latência/RAM [medido] na GB10. Relatório: `docs/RESULTADOS-v1.md`.

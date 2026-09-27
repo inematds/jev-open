@@ -15,6 +15,7 @@ Status: **v0.6.4.** Run v1 completo nos dois nichos de exemplo (`tasks/advocacia
 - [Plano do modelo padrão para qualquer sistema](docs/PLANO.md)
 - [Passo a passo por nicho (e do zero em outros)](docs/PASSO-A-PASSO.md)
 - [Resultados do run v1](docs/RESULTADOS-v1.md)
+- [Sugestão: escolher modelo e ferramenta em assistentes (Jarvis, openpcbotv3)](docs/SUGESTAO-ROTEAMENTO.md) — não implementado
 - [Ficha de tarefa (template)](templates/FICHA-TAREFA.md)
 
 Referência pública: <https://github.com/earlyaidopters/away-together-starter> (MIT). Projeto independente; não é uma implementação oficial do Jev.
