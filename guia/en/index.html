@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>jev-open — especialista classificador local</title>
-<meta content="Modelo pequeno e local que lê mensagens e responde perguntas fixas com sim, não ou não dá pra saber; o código decide e a dúvida vai para uma pessoa. Exemplos: advocacia e clínica." name="description"/>
+<title>jev-open — local classification specialist</title>
+<meta content="A small, local model that reads messages and answers fixed questions with yes, no, or can’t tell; the code makes the decision, and uncertain cases go to a person. Examples: law firms and clinics." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
@@ -92,7 +92,7 @@
   .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:0 4px}
 </style>
 <link href="https://inematds.github.io/jev-open/guia/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/jev-open/guia/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/jev-open/guia/es/" hreflang="es" rel="alternate"/></head>
-<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <nav><div class="wrap">
 <a class="brand" href="#top"><span class="emoji">🧭</span> jev-open</a>
 <span class="sep">|</span>
@@ -102,12 +102,12 @@
 <a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
 </span>
 <div class="links">
-<a class="sec" href="#oque">O que é</a>
-<a class="sec" href="#fluxo">Como funciona</a>
-<a class="sec" href="#guia">Guia de uso</a>
-<a class="sec" href="#exemplos">Exemplos</a>
+<a class="sec" href="#oque">What it is</a>
+<a class="sec" href="#fluxo">How it works</a>
+<a class="sec" href="#guia">User guide</a>
+<a class="sec" href="#exemplos">Examples</a>
 <a class="sec" href="#roadmap">Roadmap</a>
-<button aria-label="Alternar tema" class="tgl" id="themeToggle" title="Alternar tema">🌙</button>
+<button aria-label="Toggle theme" class="tgl" id="themeToggle" title="Toggle theme">🌙</button>
 <a class="btn" href="https://github.com/inematds/jev-open" rel="noopener" target="_blank">GitHub</a>
 </div>
 </div></nav>
@@ -115,94 +115,94 @@
 <div class="glow"></div>
 <div class="wrap">
 <div>
-<span class="chip">Pesquisa · IA local · open-source</span>
-<h1>O modelo <span class="amb">observa</span>, o código decide.</h1>
-<p class="lead">Um especialista pequeno, que roda na sua máquina, lê cada mensagem e responde perguntas fixas com sim, não ou não dá pra saber. A dúvida sempre vai para uma pessoa.</p>
+<span class="chip">Research · local AI · open source</span>
+<h1>The model <span class="amb">observes</span>, the code decides.</h1>
+<p class="lead">A small specialist that runs on your machine, reads each message, and answers fixed questions with yes, no, or can’t tell. Uncertain cases always go to a person.</p>
 <div class="cta">
-<a class="btn" href="#guia">Começar o guia</a>
-<a class="btn ghost" href="https://github.com/inematds/jev-open" rel="noopener" target="_blank">Ver no GitHub</a>
+<a class="btn" href="#guia">Start the guide</a>
+<a class="btn ghost" href="https://github.com/inematds/jev-open" rel="noopener" target="_blank">View on GitHub</a>
 </div>
 </div>
-<figure><img alt="Banner do jev-open: especialista local de triagem — o modelo observa, o código decide. Perguntas fixas; sim, não ou sem evidência; regras no código; dúvida para pessoa; roda em CPU; open-source" src="assets/banner.jpg"/></figure>
+<figure><img alt="jev-open banner: local triage specialist — the model observes, the code decides. Fixed questions; yes, no, or no evidence; rules in code; refer questions to a person; runs on CPU; open source" src="../assets/banner.jpg"/></figure>
 </div>
 </header>
 <section id="oque"><div class="wrap">
-<span class="chip">O que é</span>
-<h2>Um classificador local no estilo Jev, para triagem de atendimento</h2>
-<p class="sub">Projeto de pesquisa e educação. Não declara paridade com o Jev nem prontidão para produção. Os exemplos do repositório usam dados sintéticos, e todo número vem marcado como [medido], [relato] ou [simulação].</p>
+<span class="chip">What it is</span>
+<h2>A Jev-style local classifier for service triage</h2>
+<p class="sub">Research and education project. It does not claim parity with Jev or production readiness. The repository examples use synthetic data, and every number is labeled [measured], [reported], or [simulated].</p>
 <div class="grid g3">
-<div class="card"><h3>🧩 Três respostas por pergunta</h3><p>Cada pergunta da ficha ("quer agendar?", "há urgência?") vira sim / não / incerto, com probabilidade calibrada. Falta de evidência nunca vira "sim".</p></div>
-<div class="card"><h3>⚙️ Regras no código</h3><p>Agenda, prazos, valores, prioridade e filas ficam em código comum. O modelo só observa, e uma lista de palavras-chave pode escalar casos críticos.</p></div>
-<div class="card"><h3>🖥️ Roda em CPU</h3><p>Treina na GPU, serve em CPU com ONNX int8 (~570 MB), numa API sem torch e num container Docker. Nenhuma mensagem sai da máquina.</p></div>
+<div class="card"><h3>🧩 Three answers per question</h3><p>Each question on the form (“do you want to schedule?”, “is there an urgent issue?”) becomes yes / no / uncertain, with a calibrated probability. Lack of evidence never becomes “yes.”</p></div>
+<div class="card"><h3>⚙️ Rules in code</h3><p>Scheduling, deadlines, amounts, priority, and queues are handled in shared code. The model only observes, and a keyword list can escalate critical cases.</p></div>
+<div class="card"><h3>🖥️ Runs on CPU</h3><p>Trains on a GPU, serves on a CPU with ONNX int8 (~570 MB), in an API without torch and in a Docker container. No message leaves the machine.</p></div>
 </div>
 </div></section>
 <section id="fluxo"><div class="wrap">
-<span class="chip">Como funciona</span>
-<h2>Da mensagem à fila certa</h2>
-<p class="sub">Toda mensagem continua chegando a uma pessoa. O especialista só ordena a fila e sinaliza o que é urgente.</p>
+<span class="chip">How it works</span>
+<h2>From message to the right queue</h2>
+<p class="sub">Every message still reaches a person. The specialist only prioritizes the queue and flags urgent cases.</p>
 <div class="flow">
-<span>Mensagem</span><span class="arr">→</span>
-<span>Modelo: 7 perguntas × 3 hipóteses</span><span class="arr">→</span>
-<span>sim / não / incerto + %</span><span class="arr">→</span>
-<span>Código: regras + palavras-chave</span><span class="arr">→</span>
-<span>Fila + motivos</span>
+<span>Message</span><span class="arr">→</span>
+<span>Model: 7 questions × 3 hypotheses</span><span class="arr">→</span>
+<span>yes / no / uncertain + %</span><span class="arr">→</span>
+<span>Code: rules + keywords</span><span class="arr">→</span>
+<span>Queue + reasons</span>
 </div>
 <div class="grid g3" style="margin-top:24px">
-<div class="card"><h3>Construção (uma vez)</h3><p>Ficha da tarefa → exemplos revisados → dados → baseline sem treino → treino das 2 últimas camadas → teste final congelado + raia OOD.</p></div>
-<div class="card"><h3>Uso (sempre)</h3><p>API <code>POST /classify</code> em CPU. Texto vazio, longo demais (nunca truncado) ou erro interno vai direto para revisão humana.</p></div>
-<div class="card"><h3>Recibos</h3><p>Cada etapa grava um JSON com hashes, métricas e todas as predições. Nada é sobrescrito, e o teste final roda uma vez só.</p></div>
+<div class="card"><h3>Build (one time)</h3><p>Task form → reviewed examples → data → untrained baseline → train the last 2 layers → frozen final test + OOD lane.</p></div>
+<div class="card"><h3>Use (always)</h3><p>API <code>POST /classify</code> on CPU. Empty text, text that is too long (never truncated), or an internal error goes directly to human review.</p></div>
+<div class="card"><h3>Receipts</h3><p>Each stage saves a JSON with hashes, metrics, and all predictions. Nothing is overwritten, and the final test runs only once.</p></div>
 </div>
 </div></section>
 <section id="pre"><div class="wrap">
-<span class="chip">Pré-requisitos</span>
-<h2>O que precisa ter</h2>
-<p class="sub">Para treinar, uma GPU ajuda muito. Para servir, basta CPU.</p>
+<span class="chip">Prerequisites</span>
+<h2>What it needs</h2>
+<p class="sub">A GPU helps a lot for training. A CPU is enough for serving.</p>
 <div class="grid g3">
-<div class="card"><h3>Python 3.12 + uv</h3><p>Gerencia as dependências de treino (torch, transformers, onnx).</p><pre><span class="k">uv sync</span></pre></div>
-<div class="card"><h3>Ollama (opcional)</h3><p>Só para gerar dados sintéticos de protótipo com LLM local, sem custo de API.</p><pre><span class="k">ollama pull</span> qwen3:30b</pre></div>
-<div class="card"><h3>Docker (serviço)</h3><p>A imagem leva só onnxruntime e tokenizers. Os pesos são montados em <code>/pacotes</code>.</p><pre><span class="k">docker compose up</span> --build</pre></div>
+<div class="card"><h3>Python 3.12 + uv</h3><p>Manages training dependencies (torch, transformers, onnx).</p><pre><span class="k">uv sync</span></pre></div>
+<div class="card"><h3>Ollama (optional)</h3><p>Only for generating synthetic prototype data with a local LLM, at no API cost.</p><pre><span class="k">ollama pull</span> qwen3:30b</pre></div>
+<div class="card"><h3>Docker (service)</h3><p>The image only includes onnxruntime and tokenizers. The weights are mounted in <code>/pacotes</code>.</p><pre><span class="k">docker compose up</span> --build</pre></div>
 </div>
 </div></section>
 <section id="guia"><div class="wrap">
-<span class="chip">Guia de uso · passo a passo</span>
-<h2>Do zero a um especialista servindo</h2>
-<p class="sub">Os mesmos comandos servem para qualquer nicho: só a pasta <code>tasks/&lt;nicho&gt;/</code> muda. O passo a passo completo, com os cuidados de cada nicho, está em <a href="https://github.com/inematds/jev-open/blob/main/docs/PASSO-A-PASSO.md">docs/PASSO-A-PASSO.md</a>.</p>
+<span class="chip">User guide · step by step</span>
+<h2>From scratch to a serving specialist</h2>
+<p class="sub">The same commands work for any niche; only the folder <code>tasks/&lt;nicho&gt;/</code> changes. The complete step-by-step guide, including precautions for each niche, is in <a href="https://github.com/inematds/jev-open/blob/main/docs/PASSO-A-PASSO.md">docs/PASSO-A-PASSO.md</a>.</p>
 <div class="step"><div class="b">1</div><div>
-<h3>Clonar e preparar o ambiente</h3>
-<p>Confere se o torch enxerga a GPU.</p>
+<h3>Clone and set up the environment</h3>
+<p>Check whether torch can see the GPU.</p>
 <pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/jev-open</span> &amp;&amp; <span class="k">cd</span> jev-open
 <span class="k">uv sync</span>
 <span class="k">uv run python</span> -c <span class="s">"import torch; print(torch.cuda.is_available())"</span></pre>
 </div></div>
 <div class="step"><div class="b">2</div><div>
-<h3>Escrever a ficha do nicho</h3>
-<p>Perguntas, três hipóteses por pergunta, significados de cada rótulo, ações por fila, pergunta crítica e metas. Use um nicho existente como molde.</p>
+<h3>Write the niche form</h3>
+<p>Questions, three hypotheses per question, the meaning of each label, actions for each queue, a critical question, and targets. Use an existing niche as a template.</p>
 <pre><span class="k">mkdir</span> tasks/meu-nicho
 <span class="k">cp</span> tasks/advocacia-atendimento/{ficha.yaml,regras.py,rede_urgencia.py,__init__.py} tasks/meu-nicho/
-<span class="c"># edite ficha.yaml, regras.py e a lista de palavras-chave</span></pre>
+<span class="c"># edit ficha.yaml, regras.py, and the keyword list</span></pre>
 </div></div>
 <div class="step"><div class="b">3</div><div>
-<h3>5 exemplos + teste de fumaça</h3>
-<p>Uma pessoa do nicho revisa os exemplos (portão 1). Eles contam só como teste e nunca viram dado de treino.</p>
-<pre><span class="k">uv run python</span> tools/zeroshot_smoke.py meu-nicho   <span class="c"># recibo em tasks/meu-nicho/recibos/</span></pre>
+<h3>5 examples + smoke test</h3>
+<p>A person from the niche reviews the examples (gate 1). They count only as a test and never become training data.</p>
+<pre><span class="k">uv run python</span> tools/zeroshot_smoke.py meu-nicho   <span class="c"># receipt in tasks/meu-nicho/recibos/</span></pre>
 </div></div>
 <div class="step"><div class="b">4</div><div>
-<h3>Dados</h3>
-<p>O ideal são mensagens reais anonimizadas. Para prototipar, o gerador sintético usa um LLM local e um segundo LLM como verificador, com tudo marcado como sintético.</p>
+<h3>Data</h3>
+<p>Real, anonymized messages are ideal. For prototyping, the synthetic data generator uses a local LLM and a second LLM as a verifier, with everything labeled as synthetic.</p>
 <pre><span class="k">uv run python</span> tools/gerar_sintetico.py meu-nicho tasks/meu-nicho/dados/sintetico.jsonl \
     --n 320 --gerador qwen3.6:35b-a3b --verificador qwen3:30b --prefixo syn
-<span class="k">uv run python</span> tools/pipeline.py preparar meu-nicho   <span class="c"># split por grupo + dedup + manifest</span></pre>
+<span class="k">uv run python</span> tools/pipeline.py preparar meu-nicho   <span class="c"># split by group + dedup + manifest</span></pre>
 </div></div>
 <div class="step"><div class="b">5</div><div>
-<h3>Baseline, treino e teste final</h3>
-<p>O baseline decide se vale treinar. O teste final roda uma vez, com base e treinado, no teste e na raia OOD.</p>
+<h3>Baseline, training, and final test</h3>
+<p>The baseline determines whether training is worthwhile. The final test runs once, with both the baseline and trained model, on the test set and the OOD split.</p>
 <pre><span class="k">uv run python</span> tools/pipeline.py baseline meu-nicho
 <span class="k">uv run python</span> tools/pipeline.py treinar  meu-nicho
 <span class="k">uv run python</span> tools/pipeline.py testar   meu-nicho</pre>
 </div></div>
 <div class="step"><div class="b">6</div><div>
-<h3>Exportar e servir em CPU</h3>
-<p>ONNX int8, com portão de paridade (±1 pp contra o fp32) e medição de latência. A API recusa o pacote se a ficha tiver mudado depois do treino.</p>
+<h3>Export and serve on CPU</h3>
+<p>ONNX int8, with a parity gate (±1 pp against fp32) and latency measurement. The API rejects the package if the spec has changed since training.</p>
 <pre><span class="k">uv run python</span> tools/exportar_onnx.py meu-nicho
 <span class="k">mkdir</span> -p pacotes &amp;&amp; <span class="k">cp</span> -r workshops/meu-nicho-v1/pacote pacotes/meu-nicho
 JEV_PACOTES=pacotes <span class="k">uv run python</span> -m serve.api --tarefas meu-nicho
@@ -210,17 +210,17 @@ JEV_PACOTES=pacotes <span class="k">uv run python</span> -m serve.api --tarefas 
 </div></div>
 </div></section>
 <section id="exemplos"><div class="wrap">
-<span class="chip">Exemplos</span>
-<h2>Dois nichos no repositório</h2>
-<p class="sub">Escopo sempre administrativo: sem parecer jurídico, sem diagnóstico. As listas de palavras-chave e os textos fixos precisam ser validados por profissionais antes de qualquer uso real.</p>
+<span class="chip">Examples</span>
+<h2>Two niches in the repository</h2>
+<p class="sub">Always limited to administrative tasks: no legal opinions, no diagnosis. Keyword lists and fixed texts must be validated by professionals before any real use.</p>
 <div class="grid g2">
-<div class="card"><h3>⚖️ Atendimento de advocacia</h3><p>7 perguntas: agendar, serviço, andamento do processo, pagamento, documento, dúvida jurídica e <strong>urgência</strong> (prisão, audiência ou prazo hoje/amanhã, mandado, despejo). Urgência "sim" ou "incerto" vai para o advogado na hora; a meta é zero urgências perdidas. Andamento só depois de verificar a identidade (sigilo).</p></div>
-<div class="card"><h3>🩺 Recepção de clínica</h3><p>4 perguntas: agendar, remarcar, documento e <strong>sintoma de alarme</strong>. Alarme "sim" ou "incerto" vai para uma pessoa na hora; a meta é zero alarmes perdidos. Dado de saúde é sensível na LGPD, por isso tudo roda na máquina da clínica.</p></div>
+<div class="card"><h3>⚖️ Legal services</h3><p>7 questions: schedule, service, case status, payment, document, legal question, and <strong>urgency</strong> (jail, hearing, or deadline today/tomorrow, warrant, eviction). Urgency marked “yes” or “uncertain” goes to the attorney immediately; the goal is zero missed urgent cases. Case updates only after verifying identity (confidentiality).</p></div>
+<div class="card"><h3>🩺 Clinic reception</h3><p>4 questions: schedule, reschedule, document, and <strong>warning symptom</strong>. An alert marked “yes” or “uncertain” goes to a person immediately; the goal is zero missed alerts. Health data is sensitive under the LGPD, so everything runs on the clinic’s machine.</p></div>
 </div>
 <pre style="margin-top:18px"><span class="k">POST</span> /classify?tarefa=advocacia-atendimento
 {<span class="s">"texto"</span>: <span class="s">"Boa noite, meu filho foi preso agora há pouco e está na delegacia do centro..."</span>}
 
-<span class="c"># formato da resposta (trecho)</span>
+<span class="c"># response format (excerpt)</span>
 {<span class="s">"decisao"</span>: {<span class="s">"prioridade"</span>: <span class="s">"advogado_imediato"</span>,
              <span class="s">"motivos"</span>: [<span class="s">"urgencia=sim -&gt; advogado_imediato"</span>,
                          <span class="s">"rede de palavras-chave: delegacia, preso -&gt; advogado_imediato"</span>]},
@@ -228,17 +228,17 @@ JEV_PACOTES=pacotes <span class="k">uv run python</span> -m serve.api --tarefas 
 </div></section>
 <section id="roadmap"><div class="wrap">
 <span class="chip">Roadmap</span>
-<h2>Onde o projeto está</h2>
-<p class="sub">Estado em 2026-09-25. O que depende de dados reais ou de uma VPS real ainda não foi medido.</p>
-<div class="phase"><div class="tag">Feito</div><div class="d"><strong>Fases 0–1: ambiente, fichas e teste de fumaça</strong><span>torch com CUDA na GB10 [medido]; dois nichos com ficha, regras e palavras-chave; teste de fumaça sem nenhum caso crítico perdido [medido, 5 exemplos sintéticos].</span></div></div>
-<div class="phase"><div class="tag">Feito</div><div class="d"><strong>Run v1 completo, com dados sintéticos [simulação]</strong><span>Advocacia: acurácia no teste de 72% para 96%, com 1 urgência perdida (meta reprovada). Clínica: de 82% para 96%, zero alarmes perdidos. ONNX int8 de 570 MB, 0,7–1,5 s por mensagem e ~1,2–1,3 GB de RAM por nicho em 2 threads [medido na GB10, não numa VPS]; API e Docker passaram os 9 testes de serviço. Detalhes e reprovações em <a href="https://github.com/inematds/jev-open/blob/main/docs/RESULTADOS-v1.md">RESULTADOS-v1.md</a>.</span></div></div>
-<div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Dados reais anonimizados + limiar calibrado</strong><span>Mensagens reais com autorização, anotadas por duas pessoas; raia OOD de outro escritório ou clínica; limiar de confiança por pergunta calibrado no dev; metas verificadas de verdade.</span></div></div>
-<div class="phase"><div class="tag">Depois</div><div class="d"><strong>VPS real e novas tarefas</strong><span>Latência e RAM numa VPS de 2 vCPU / 4 GB; triagem de intimações, conferência de procuração e guias de convênio.</span></div></div>
+<h2>Where the project stands</h2>
+<p class="sub">Status as of 2026-09-25. Anything that depends on real data or a real VPS has not yet been measured.</p>
+<div class="phase"><div class="tag">Done</div><div class="d"><strong>Phases 0–1: environment, forms, and smoke test</strong><span>torch with CUDA on the GB10 [measured]; two niches with a spec, rules, and keywords; smoke test with no critical cases missed [measured, 5 synthetic examples].</span></div></div>
+<div class="phase"><div class="tag">Done</div><div class="d"><strong>Full v1 run, with synthetic data [simulated]</strong><span>Law firm: test accuracy increased from 72% to 96%, with 1 missed urgent case (goal not met). Clinic: from 82% to 96%, with zero missed alerts. 570 MB ONNX int8, 0.7–1.5 s per message, and ~1.2–1.3 GB of RAM per niche with 2 threads [measured on the GB10, not on a VPS]; the API and Docker passed all 9 service tests. Details and failed criteria in <a href="https://github.com/inematds/jev-open/blob/main/docs/RESULTADOS-v1.md">RESULTADOS-v1.md</a>.</span></div></div>
+<div class="phase"><div class="tag">Next</div><div class="d"><strong>Real anonymized data + calibrated threshold</strong><span>Real messages used with authorization and annotated by two people; an OOD lane from another law firm or clinic; a confidence threshold per question calibrated on the dev set; targets genuinely verified.</span></div></div>
+<div class="phase"><div class="tag">After</div><div class="d"><strong>Real VPS and new tasks</strong><span>Latency and RAM on a VPS with 2 vCPU / 4 GB; triage of legal notices, power of attorney review, and insurance plan guides.</span></div></div>
 </div></section>
 <footer>
 <div class="wrap">
 <div class="pill">Python</div><div class="pill">transformers · ONNX Runtime</div><div class="pill">bge-m3 / mDeBERTa NLI</div><div class="pill">Docker</div>
-<p style="margin-top:18px">jev-open · projeto de pesquisa e educação, independente do Jev ·
+<p style="margin-top:18px">jev-open · independent research and education project, not affiliated with Jev ·
       <a href="https://github.com/inematds/jev-open">inematds/jev-open</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
 </div>

@@ -1,5 +1,7 @@
 # jev-open
 
+**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
 ![jev-open — especialista local de triagem](guia/assets/banner.jpg)
 
 ## 📖 Guia de uso
